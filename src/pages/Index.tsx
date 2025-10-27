@@ -46,69 +46,85 @@ const accommodations = [
 ];
 
 const Index = () => {
-  const [sortBy, setSortBy] = useState("recommended");
+  const [sortBy, setSortBy] = useState("");
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="flex h-screen">
+    <div className="min-h-screen bg-background relative">
+      {/* Full Screen Map Background */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src={mapStatic} 
+          alt="Map showing accommodation locations"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="flex h-screen relative z-10">
         {/* Left Panel - Listings */}
-        <div className="w-[35%] overflow-y-auto">
-          <div className="p-6">
-            {/* Controls Bar */}
-            <div className="flex items-center gap-8 mb-12">
+        <div className="w-[42%] relative flex flex-col">
+          {/* Controls Bar - Fixed at top */}
+          <div className="fixed top-0 left-0 w-[42%] z-20 px-3 pt-6">
+            <div className="flex items-center px-4 py-3 rounded-2xl bg-white gap-4">
               <img 
                 src="/unite-students-logo.svg" 
                 alt="Unite Students Logo" 
                 className="h-10 w-auto"
               />
-              <Button variant="ghost" size="sm" disabled className="gap-2">
-                <ChevronLeft className="w-4 h-4" />
-                Back
-              </Button>
-              <AIAssistant />
-              <Button variant="outline" size="sm" className="gap-2 ml-auto">
-                <SlidersHorizontal className="w-4 h-4" />
-                5 × Filters
-              </Button>
+              <div className="flex-1"></div>
+              <div className="flex items-center gap-3">
+                <Button variant="ghost" size="sm" disabled className="gap-2">
+                  <ChevronLeft className="w-4 h-4" />
+                  Back
+                </Button>
+                <AIAssistant />
+                <Button variant="outline" size="sm" className="gap-2">
+                  <SlidersHorizontal className="w-4 h-4" />
+                  5 × Filters
+                </Button>
+              </div>
             </div>
+          </div>
 
-            {/* Results header */}
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-lg font-semibold">22 results</h2>
-              
-              <Select value={sortBy} onValueChange={setSortBy}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Sort by" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="recommended">Recommended</SelectItem>
-                  <SelectItem value="price-low">Price: High to low</SelectItem>
-                  <SelectItem value="price-high">Price: Low to high</SelectItem>
-                  <SelectItem value="distance">A to Z</SelectItem>
-                  <SelectItem value="distance">Z to A</SelectItem>
-                </SelectContent>
-              </Select>
+          {/* Gap - Shows map background */}
+          <div className="h-24 flex-shrink-0" />
+
+          {/* Results header - Fixed */}
+          <div className="relative z-20 bg-white rounded-tr-2xl">
+            <div className="p-6 pt-0 pb-2">
+              <div className="flex items-center justify-between p-4 rounded-2xl bg-white">
+                <h2 className="text-lg font-semibold">22 results</h2>
+                
+                <Select value={sortBy} onValueChange={setSortBy}>
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Sort by" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="recommended">Recommended</SelectItem>
+                    <SelectItem value="offers">Offers</SelectItem>
+                    <SelectItem value="price-high">Price: High to low</SelectItem>
+                    <SelectItem value="price-low">Price: Low to high</SelectItem>
+                    <SelectItem value="a-to-z">A to Z</SelectItem>
+                    <SelectItem value="z-to-a">Z to A</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
+          </div>
 
-            {/* Listings Grid */}
-            <div className="grid gap-6">
-              {accommodations.map((accommodation) => (
-                <AccommodationCard key={accommodation.id} {...accommodation} />
-              ))}
+          {/* Scrollable Listings */}
+          <div className="flex-1 overflow-y-auto relative z-20 bg-white">
+            <div className="p-6 pt-0">
+              <div className="grid gap-6">
+                {accommodations.map((accommodation) => (
+                  <AccommodationCard key={accommodation.id} {...accommodation} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right Panel - Map */}
-        <div className="hidden lg:block flex-1 relative border-l">
-          <div className="absolute inset-0 bg-muted">
-            <img 
-              src={mapStatic} 
-              alt="Map showing accommodation locations"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
+        {/* Right Panel - Map transparent overlay */}
+        <div className="hidden lg:block flex-1 relative" />
       </div>
     </div>
   );

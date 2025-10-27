@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Building2, Users, GraduationCap, Dumbbell } from "lucide-react";
+import { Building2, Users, GraduationCap, Dumbbell, ExternalLink } from "lucide-react";
 
 interface AccommodationCardProps {
   image: string;
@@ -18,8 +18,9 @@ const amenityIcons: { [key: string]: React.ReactNode } = {
 
 const AccommodationCard = ({ image, tag, title, price, amenities }: AccommodationCardProps) => {
   return (
-    <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow">
-      <div className="relative h-48">
+    <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col md:flex-row">
+      {/* Image Section - Left Side */}
+      <div className="relative w-full h-28 md:w-1/2 md:h-[200px] flex-shrink-0">
         <img 
           src={image} 
           alt={title}
@@ -30,26 +31,35 @@ const AccommodationCard = ({ image, tag, title, price, amenities }: Accommodatio
         </div>
       </div>
       
-      <div className="p-4">
-        <h3 className="font-semibold text-lg mb-3">{title}</h3>
-        
-        <div className="flex gap-3 mb-4 flex-wrap">
-          {amenities.map((amenity, index) => (
-            <div key={index} className="flex items-center gap-1 text-muted-foreground text-xs">
-              {amenityIcons[amenity]}
-              <span className="hidden sm:inline">{amenity}</span>
-            </div>
-          ))}
+      {/* Content Section - Right Side */}
+      <div className="p-3 flex flex-col flex-1 justify-between">
+        <div>
+          {/* Title with external link icon */}
+          <div className="flex items-center gap-2 mb-2">
+            <h3 className="font-semibold text-lg">{title}</h3>
+            <ExternalLink className="w-4 h-4 text-muted-foreground" />
+          </div>
+          
+          {/* Amenities */}
+          <div className="flex gap-2 mb-2 flex-wrap">
+            {amenities.map((amenity, index) => (
+              <div key={index} className="flex items-center gap-0.5 text-muted-foreground text-sm">
+                {amenityIcons[amenity]}
+                <span>{amenity}</span>
+              </div>
+            ))}
+          </div>
         </div>
         
-        <div className="flex items-center justify-between">
+        {/* Price and Button */}
+        <div className="flex items-center justify-between mt-2">
           <div>
             <span className="text-sm text-muted-foreground">From </span>
             <span className="font-bold text-xl">£{price}</span>
-            <span className="text-sm text-muted-foreground"> per week</span>
+            <span className="text-sm text-muted-foreground"> Per week</span>
           </div>
           
-          <Button size="default">
+          <Button size="sm" className="rounded-full min-w-[140px]">
             View rooms
           </Button>
         </div>
