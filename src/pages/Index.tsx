@@ -80,8 +80,8 @@ const Index = () => {
         {/* Left Panel - Listings */}
         <div className="w-[42%] relative flex flex-col">
           {/* Controls Bar - Fixed at top */}
-          <div className="fixed top-0 left-0 w-[42%] z-20 px-3 pt-6">
-            <div className="flex items-center gap-4">
+          <div className="fixed top-0 left-0 w-full z-20 px-3 pt-6">
+            <div className="w-[42%] flex items-center gap-4">
               <div className="flex items-center justify-center px-4 py-4 rounded-2xl bg-white">
                 <img 
                   src="/unite-students-real-logo.jpg" 
@@ -89,12 +89,14 @@ const Index = () => {
                   className="h-7 w-auto"
                 />
               </div>
-              <div className="flex items-center px-4 py-3 rounded-2xl bg-white gap-4">
+              <div className="flex items-center flex-1 px-4 py-3 rounded-2xl bg-white gap-4">
                 <Button variant="ghost" size="sm" disabled className="gap-2">
                   <ChevronLeft className="w-4 h-4" />
                   Back
                 </Button>
-                <AIAssistant onGetStarted={handleAIGetStarted} open={aiAssistantOpen} onOpenChange={setAiAssistantOpen} />
+                <div className="flex-1 flex">
+                  <AIAssistant onGetStarted={handleAIGetStarted} open={aiAssistantOpen} onOpenChange={setAiAssistantOpen} />
+                </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
                   4 × Filters

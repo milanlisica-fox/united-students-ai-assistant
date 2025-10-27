@@ -29,7 +29,7 @@ const AIAssistant = ({ onGetStarted, open: controlledOpen, onOpenChange }: AIAss
     <>
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center justify-center gap-2 px-4 py-2 bg-card border border-border rounded-lg hover:bg-muted/50 transition-colors whitespace-nowrap"
+        className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-card border border-border rounded-lg hover:bg-muted/50 transition-colors whitespace-nowrap"
       >
         <Sparkles className="w-4 h-4 text-accent" />
         <span className="text-sm font-medium">AI Real Estate Assistant</span>
