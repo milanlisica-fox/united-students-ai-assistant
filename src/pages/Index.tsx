@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SlidersHorizontal, ChevronLeft } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
@@ -48,6 +48,7 @@ const accommodations = [
 const Index = () => {
   const [sortBy, setSortBy] = useState("");
   const [isAIFiltered, setIsAIFiltered] = useState(false);
+  const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
 
   // Filtered accommodations when AI is active
   const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
@@ -57,6 +58,10 @@ const Index = () => {
   };
 
   const handleModifySearch = () => {
+    setAiAssistantOpen(true);
+  };
+
+  const handleClear = () => {
     setIsAIFiltered(false);
   };
 
@@ -89,7 +94,7 @@ const Index = () => {
                   <ChevronLeft className="w-4 h-4" />
                   Back
                 </Button>
-                {!isAIFiltered && <AIAssistant onGetStarted={handleAIGetStarted} />}
+                <AIAssistant onGetStarted={handleAIGetStarted} open={aiAssistantOpen} onOpenChange={setAiAssistantOpen} />
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
                   4 × Filters
@@ -107,7 +112,7 @@ const Index = () => {
               <div className="flex items-center justify-between p-4 rounded-2xl bg-white">
                 <div className="flex items-center gap-4">
                   <h2 className="text-lg font-semibold">
-                    {isAIFiltered ? "My pick for you" : "22 results"}
+                    {isAIFiltered ? "My picks for you" : "22 results"}
                   </h2>
                   {isAIFiltered && (
                     <div className="flex items-center gap-2">
@@ -117,9 +122,16 @@ const Index = () => {
                         onClick={handleModifySearch}
                         className="gap-2"
                       >
+                        <Sparkles className="w-4 h-4 text-accent" />
                         Modify search
                       </Button>
-                      <AIAssistant onGetStarted={handleAIGetStarted} />
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        onClick={handleClear}
+                      >
+                        Clear
+                      </Button>
                     </div>
                   )}
                 </div>

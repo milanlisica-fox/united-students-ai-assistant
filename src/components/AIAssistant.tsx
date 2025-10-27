@@ -6,11 +6,17 @@ import { Sparkles } from "lucide-react";
 
 interface AIAssistantProps {
   onGetStarted?: () => void;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
-const AIAssistant = ({ onGetStarted }: AIAssistantProps) => {
-  const [open, setOpen] = useState(false);
+const AIAssistant = ({ onGetStarted, open: controlledOpen, onOpenChange }: AIAssistantProps) => {
+  const [internalOpen, setInternalOpen] = useState(false);
   const [userInput, setUserInput] = useState("");
+  
+  const isControlled = controlledOpen !== undefined;
+  const open = isControlled ? controlledOpen : internalOpen;
+  const setOpen = isControlled ? (onOpenChange || (() => {})) : setInternalOpen;
 
   const handleGetStarted = () => {
     if (onGetStarted) {
