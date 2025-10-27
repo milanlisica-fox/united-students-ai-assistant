@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { ChevronLeft, SlidersHorizontal } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import Header from "@/components/Header";
 import AIAssistant from "@/components/AIAssistant";
 import AccommodationCard from "@/components/AccommodationCard";
 import accommodation1 from "@/assets/accommodation-1.jpg";
@@ -51,22 +50,23 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      
-      <div className="flex h-[calc(100vh-4rem)]">
+      <div className="flex h-screen">
         {/* Left Panel - Listings */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="w-[35%] overflow-y-auto">
           <div className="p-6">
             {/* Controls Bar */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-8 mb-12">
+              <img 
+                src="/unite-students-logo.svg" 
+                alt="Unite Students Logo" 
+                className="h-10 w-auto"
+              />
               <Button variant="ghost" size="sm" disabled className="gap-2">
                 <ChevronLeft className="w-4 h-4" />
                 Back
               </Button>
-              
               <AIAssistant />
-              
-              <Button variant="outline" size="sm" className="ml-auto gap-2">
+              <Button variant="outline" size="sm" className="gap-2 ml-auto">
                 <SlidersHorizontal className="w-4 h-4" />
                 5 × Filters
               </Button>
@@ -82,9 +82,10 @@ const Index = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="recommended">Recommended</SelectItem>
-                  <SelectItem value="price-low">Price: Low to High</SelectItem>
-                  <SelectItem value="price-high">Price: High to Low</SelectItem>
-                  <SelectItem value="distance">Distance</SelectItem>
+                  <SelectItem value="price-low">Price: High to low</SelectItem>
+                  <SelectItem value="price-high">Price: Low to high</SelectItem>
+                  <SelectItem value="distance">A to Z</SelectItem>
+                  <SelectItem value="distance">Z to A</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -99,7 +100,7 @@ const Index = () => {
         </div>
 
         {/* Right Panel - Map */}
-        <div className="hidden lg:block w-[50%] relative border-l">
+        <div className="hidden lg:block flex-1 relative border-l">
           <div className="absolute inset-0 bg-muted">
             <img 
               src={mapStatic} 

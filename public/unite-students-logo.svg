@@ -1,0 +1,7 @@
+<svg width="250" height="80" xmlns="http://www.w3.org/2000/svg">
+  <text x="125" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2C2C2C" text-anchor="middle">UNITE</text>
+  <text x="125" y="52" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2C2C2C" text-anchor="middle">STUDENTS</text>
+  <line x1="60" y1="58" x2="190" y2="58" stroke="#FFD500" stroke-width="3"/>
+  <rect x="120" y="58" width="10" height="6" fill="#FFD500"/>
+</svg>
+

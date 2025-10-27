@@ -1,9 +1,11 @@
 const Header = () => {
   return (
-    <header className="bg-primary h-16 flex items-center px-6 border-b">
-      <div className="text-primary-foreground font-bold text-lg tracking-wide">
-        UNITE STUDENTS
-      </div>
+    <header className="h-16 flex items-center px-6">
+      <img 
+        src="/unite-students-logo.svg" 
+        alt="Unite Students Logo" 
+        className="h-12 w-auto"
+      />
     </header>
   );
 };
