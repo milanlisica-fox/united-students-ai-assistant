@@ -47,6 +47,18 @@ const accommodations = [
 
 const Index = () => {
   const [sortBy, setSortBy] = useState("");
+  const [isAIFiltered, setIsAIFiltered] = useState(false);
+
+  // Filtered accommodations when AI is active
+  const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
+
+  const handleAIGetStarted = () => {
+    setIsAIFiltered(true);
+  };
+
+  const handleModifySearch = () => {
+    setIsAIFiltered(false);
+  };
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -64,22 +76,23 @@ const Index = () => {
         <div className="w-[42%] relative flex flex-col">
           {/* Controls Bar - Fixed at top */}
           <div className="fixed top-0 left-0 w-[42%] z-20 px-3 pt-6">
-            <div className="flex items-center px-4 py-3 rounded-2xl bg-white gap-4">
-              <img 
-                src="/unite-students-logo.svg" 
-                alt="Unite Students Logo" 
-                className="h-10 w-auto"
-              />
-              <div className="flex-1"></div>
-              <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center px-4 py-4 rounded-2xl bg-white">
+                <img 
+                  src="/unite-students-real-logo.jpg" 
+                  alt="Unite Students Logo" 
+                  className="h-7 w-auto"
+                />
+              </div>
+              <div className="flex items-center px-4 py-3 rounded-2xl bg-white gap-4">
                 <Button variant="ghost" size="sm" disabled className="gap-2">
                   <ChevronLeft className="w-4 h-4" />
                   Back
                 </Button>
-                <AIAssistant />
-                <Button variant="outline" size="sm" className="gap-2">
+                {!isAIFiltered && <AIAssistant onGetStarted={handleAIGetStarted} />}
+                <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
-                  5 × Filters
+                  4 × Filters
                 </Button>
               </div>
             </div>
@@ -92,7 +105,24 @@ const Index = () => {
           <div className="relative z-20 bg-white rounded-tr-2xl">
             <div className="p-6 pt-0 pb-2">
               <div className="flex items-center justify-between p-4 rounded-2xl bg-white">
-                <h2 className="text-lg font-semibold">22 results</h2>
+                <div className="flex items-center gap-4">
+                  <h2 className="text-lg font-semibold">
+                    {isAIFiltered ? "My pick for you" : "22 results"}
+                  </h2>
+                  {isAIFiltered && (
+                    <div className="flex items-center gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        onClick={handleModifySearch}
+                        className="gap-2"
+                      >
+                        Modify search
+                      </Button>
+                      <AIAssistant onGetStarted={handleAIGetStarted} />
+                    </div>
+                  )}
+                </div>
                 
                 <Select value={sortBy} onValueChange={setSortBy}>
                   <SelectTrigger className="w-[180px]">
@@ -115,7 +145,7 @@ const Index = () => {
           <div className="flex-1 overflow-y-auto relative z-20 bg-white">
             <div className="p-6 pt-0">
               <div className="grid gap-6">
-                {accommodations.map((accommodation) => (
+                {filteredAccommodations.map((accommodation) => (
                   <AccommodationCard key={accommodation.id} {...accommodation} />
                 ))}
               </div>

@@ -20,7 +20,7 @@ const AccommodationCard = ({ image, tag, title, price, amenities }: Accommodatio
   return (
     <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col md:flex-row">
       {/* Image Section - Left Side */}
-      <div className="relative w-full h-28 md:w-1/2 md:h-[200px] flex-shrink-0">
+      <div className="relative w-full h-24 md:w-1/2 md:h-[170px] flex-shrink-0">
         <img 
           src={image} 
           alt={title}

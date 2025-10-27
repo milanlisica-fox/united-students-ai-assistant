@@ -1,16 +1,29 @@
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import { Sparkles } from "lucide-react";
 
-const AIAssistant = () => {
+interface AIAssistantProps {
+  onGetStarted?: () => void;
+}
+
+const AIAssistant = ({ onGetStarted }: AIAssistantProps) => {
   const [open, setOpen] = useState(false);
+  const [userInput, setUserInput] = useState("");
+
+  const handleGetStarted = () => {
+    if (onGetStarted) {
+      onGetStarted();
+    }
+    setOpen(false);
+  };
 
   return (
     <>
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center justify-center gap-2 px-4 py-2 bg-card border border-border rounded-lg hover:bg-muted/50 transition-colors whitespace-nowrap w-[28.8rem]"
+        className="flex items-center justify-center gap-2 px-4 py-2 bg-card border border-border rounded-lg hover:bg-muted/50 transition-colors whitespace-nowrap"
       >
         <Sparkles className="w-4 h-4 text-accent" />
         <span className="text-sm font-medium">AI Real Estate Assistant</span>
@@ -28,7 +41,7 @@ const AIAssistant = () => {
             <p className="text-muted-foreground mb-3">
               Hello! I'm your AI assistant. I can help you find the perfect accommodation based on your preferences.
             </p>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <div className="p-2 bg-muted/50 rounded-lg">
                 <p className="text-sm font-medium mb-1">What I can help with:</p>
                 <ul className="text-sm text-muted-foreground space-y-0.5 ml-4 list-disc">
@@ -38,13 +51,24 @@ const AIAssistant = () => {
                   <li>Answering questions about listings</li>
                 </ul>
               </div>
+              <div>
+                <label className="text-sm font-medium mb-2 block">
+                  Describe what you're looking for:
+                </label>
+                <Textarea
+                  placeholder="e.g., A 2-bedroom apartment near city center with parking..."
+                  value={userInput}
+                  onChange={(e) => setUserInput(e.target.value)}
+                  className="min-h-[100px]"
+                />
+              </div>
             </div>
           </div>
           <div className="flex justify-end gap-2">
             <Button variant="outline" onClick={() => setOpen(false)}>
               Close
             </Button>
-            <Button onClick={() => setOpen(false)}>
+            <Button onClick={handleGetStarted}>
               Get Started
             </Button>
           </div>
