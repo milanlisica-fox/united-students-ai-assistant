@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SlidersHorizontal, ChevronLeft, Sparkles } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
@@ -49,12 +49,17 @@ const Index = () => {
   const [sortBy, setSortBy] = useState("");
   const [isAIFiltered, setIsAIFiltered] = useState(false);
   const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
+  const [aiInputValue, setAiInputValue] = useState("");
 
   // Filtered accommodations when AI is active
   const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
 
   const handleAIGetStarted = () => {
-    setIsAIFiltered(true);
+    if (aiInputValue.trim()) {
+      setIsAIFiltered(true);
+      setAiInputValue("");
+      setAiAssistantOpen(false);
+    }
   };
 
   const handleModifySearch = () => {
@@ -63,6 +68,14 @@ const Index = () => {
 
   const handleClear = () => {
     setIsAIFiltered(false);
+    setAiAssistantOpen(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleAIGetStarted();
+    }
   };
 
   return (
@@ -94,7 +107,7 @@ const Index = () => {
                   <ChevronLeft className="w-4 h-4" />
                   Back
                 </Button>
-                <div className="flex-1 flex">
+                <div className="flex-1 flex relative">
                   <AIAssistant onGetStarted={handleAIGetStarted} open={aiAssistantOpen} onOpenChange={setAiAssistantOpen} />
                 </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
@@ -107,6 +120,35 @@ const Index = () => {
 
           {/* Gap - Shows map background */}
           <div className="h-24 flex-shrink-0" />
+
+          {/* AI Assistant Input - Appears between control bar and results */}
+          {aiAssistantOpen && (
+            <div className="relative z-20 bg-white px-6 py-4 border-b">
+              <div className="mb-4">
+                <p className="text-muted-foreground text-sm">
+                  Hello! I'm your AI assistant. I can help you find the perfect accommodation based on your preferences.
+                </p>
+              </div>
+              <div className="flex gap-2 items-end">
+                <textarea
+                  placeholder="Describe what you're looking for..."
+                  value={aiInputValue}
+                  onChange={(e) => setAiInputValue(e.target.value)}
+                  onKeyDown={handleKeyDown}
+                  className="flex-1 min-h-[100px] max-h-[200px] resize-none rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  autoFocus
+                />
+                <Button
+                  onClick={handleAIGetStarted}
+                  size="icon"
+                  className="h-10 w-10 flex-shrink-0 rounded-full"
+                  disabled={!aiInputValue.trim()}
+                >
+                  <ArrowUpCircle className="w-5 h-5" />
+                </Button>
+              </div>
+            </div>
+          )}
 
           {/* Results header - Fixed */}
           <div className="relative z-20 bg-white rounded-tr-2xl">
