@@ -17,6 +17,7 @@ interface AIAssistantProps {
   onGetStarted?: () => void;
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
+  placement?: "bottom-left" | "top-right";
 }
 
 type ChatStage = "idle" | "askedRoomType" | "askedLength" | "recommendations";
@@ -30,9 +31,9 @@ type Message = {
 type RoomType = "En-suite" | "Non-en-suite" | "Studio" | "Accessible rooms";
 type StayLength = "Full year" | "Academic year";
 
-const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _onOpenChange }: AIAssistantProps) => {
+const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _onOpenChange, placement = "bottom-left" }: AIAssistantProps) => {
 
-  const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
+  const [isChatOpen, setIsChatOpen] = useState<boolean>(_open ?? false);
   const [stage, setStage] = useState<ChatStage>("idle");
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState<string>("");
@@ -46,7 +47,14 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
   const toggleChat = () => {
     const next = !isChatOpen;
     setIsChatOpen(next);
+    _onOpenChange?.(next);
   };
+
+  useEffect(() => {
+    if (typeof _open === "boolean" && _open !== isChatOpen) {
+      setIsChatOpen(_open);
+    }
+  }, [_open]);
 
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -156,7 +164,11 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
 
       {isChatOpen &&
         createPortal(
-          <div className="fixed bottom-4 left-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)]">
+          <div className={
+            placement === "top-right"
+              ? "fixed top-4 right-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)]"
+              : "fixed bottom-4 left-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)]"
+          }>
             <Card className="border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-xl overflow-hidden">
             <div className="px-4 py-3 border-b border-border flex items-center justify-between">
               <div className="flex items-center gap-2">

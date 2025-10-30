@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
@@ -50,6 +50,7 @@ const Index = () => {
   const [isAIFiltered, setIsAIFiltered] = useState(false);
   const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
   const [aiInputValue, setAiInputValue] = useState("");
+  const [chatOpen, setChatOpen] = useState(false);
 
   // Filtered accommodations when AI is active
   const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
@@ -108,7 +109,7 @@ const Index = () => {
                   Back
                 </Button>
                 <div className="flex-1 flex relative">
-                  <AIAssistant onGetStarted={handleAIGetStarted} open={aiAssistantOpen} onOpenChange={setAiAssistantOpen} />
+                  <AIAssistant onGetStarted={handleAIGetStarted} open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
                 </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
@@ -208,6 +209,15 @@ const Index = () => {
             </div>
           </div>
         </div>
+
+        {/* Top-right Chat Bot Icon */}
+        <button
+          aria-label="Open AI Assistant"
+          onClick={() => setChatOpen(true)}
+          className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
+        >
+          <Bot className="w-10 h-10 text-black" />
+        </button>
 
         {/* Right Panel - Map transparent overlay */}
         <div className="hidden lg:block flex-1 relative" />
