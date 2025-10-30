@@ -3,6 +3,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { createPortal } from "react-dom";
+import acc1 from "@/assets/accommodation-1.jpg";
+import acc2 from "@/assets/accommodation-2.jpg";
 import {
   Dialog,
   DialogContent,
@@ -54,13 +56,13 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
     () => [
       {
         id: "rec-1",
-        image: "/placeholder.svg",
+        image: acc1,
         title: "Cozy Studio near Downtown",
         description: "1 bed • 1 bath • 25 m² • £850/month",
       },
       {
         id: "rec-2",
-        image: "/placeholder.svg",
+        image: acc2,
         title: "Modern En-suite by Campus",
         description: "1 bed • Shared kitchen • 18 m² • £720/month",
       },
@@ -204,11 +206,6 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
               {/* Room type options */}
               {stage === "askedRoomType" && (
                 <div className="flex flex-col gap-2 animate-in fade-in slide-in-from-bottom-2">
-                  <div className="flex justify-start">
-                    <div className="max-w-[85%] rounded-2xl bg-muted px-3 py-2 text-sm">
-                      What room type would you like?
-                    </div>
-                  </div>
                   <div className="grid grid-cols-2 gap-2">
                     {(["En-suite", "Non-en-suite", "Studio", "Accessible rooms"] as RoomType[]).map(
                       (label) => (
@@ -230,11 +227,6 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
               {/* Stay length options */}
               {stage === "askedLength" && (
                 <div className="flex flex-col gap-2 animate-in fade-in slide-in-from-bottom-2">
-                  <div className="flex justify-start">
-                    <div className="max-w-[85%] rounded-2xl bg-muted px-3 py-2 text-sm">
-                      Got it! What is desired length of stay?
-                    </div>
-                  </div>
                   <div className="grid grid-cols-2 gap-2">
                     {(["Full year", "Academic year"] as StayLength[]).map((label) => (
                       <Button
@@ -310,18 +302,44 @@ const AIAssistant = ({ onGetStarted: _onGetStarted, open: _open, onOpenChange: _
           <DialogHeader>
             <DialogTitle>Accommodation detail</DialogTitle>
             <DialogDescription>
-              Mocked detail view for room ID: {activeRoomId || "-"}
+              {(() => {
+                const active = recommendations.find((r) => r.id === activeRoomId);
+                return active ? active.title : "Select a room to see details";
+              })()}
             </DialogDescription>
           </DialogHeader>
-          <div className="space-y-3">
-            <div className="w-full h-40 bg-muted rounded" />
-            <p className="text-sm text-muted-foreground">
-              This is a placeholder modal. Hook up navigation or detailed content later.
-            </p>
-            <div className="flex justify-end">
-              <Button onClick={() => setViewRoomOpen(false)}>Close</Button>
-            </div>
-          </div>
+          {(() => {
+            const active = recommendations.find((r) => r.id === activeRoomId);
+            return (
+              <div className="space-y-3">
+                {active ? (
+                  <img
+                    src={active.image}
+                    alt={active.title}
+                    className="w-full h-48 object-cover rounded"
+                  />
+                ) : (
+                  <div className="w-full h-48 bg-muted rounded" />
+                )}
+                {active && (
+                  <div className="text-sm text-muted-foreground">{active.description}</div>
+                )}
+                <div className="flex justify-between gap-2">
+                  <Button variant="secondary" onClick={() => setViewRoomOpen(false)}>
+                    Close
+                  </Button>
+                  <Button
+                    onClick={() => {
+                      // Placeholder: navigate or open real details
+                      setViewRoomOpen(false);
+                    }}
+                  >
+                    View details
+                  </Button>
+                </div>
+              </div>
+            );
+          })()}
         </DialogContent>
       </Dialog>
     </>
