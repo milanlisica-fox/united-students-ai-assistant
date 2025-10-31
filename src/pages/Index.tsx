@@ -4,53 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
 import AccommodationCard from "@/components/AccommodationCard";
-import accommodation1 from "@/assets/accommodation-1.jpg";
-import accommodation2 from "@/assets/accommodation-2.jpg";
-import accommodation3 from "@/assets/accommodation-3.jpg";
-import accommodation4 from "@/assets/accommodation-4.jpg";
+import { accommodations } from "@/data/accommodations";
 import mapStatic from "@/assets/map-static.jpg";
-
-const accommodations = [
-  {
-    id: 1,
-    image: accommodation1,
-    tag: "Upgraded common areas for 2024",
-    title: "Stapleton House",
-    price: 264,
-    amenities: ["Common area", "Outdoor social space", "Communal study space"],
-  },
-  {
-    id: 2,
-    image: accommodation2,
-    tag: "Close to Waterloo attractions",
-    title: "Moonraker Point",
-    price: 265,
-    amenities: ["Common area", "Communal study space"],
-  },
-  {
-    id: 3,
-    image: accommodation3,
-    tag: "Close to the Tower of London",
-    title: "Drapery Place",
-    price: 225,
-    amenities: ["Gym", "Common area", "Communal study space"],
-  },
-  {
-    id: 4,
-    image: accommodation4,
-    tag: "East London location",
-    title: "Pacific Court",
-    price: 263,
-    amenities: ["Common area", "Outdoor social space"],
-  },
-];
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const [sortBy, setSortBy] = useState("");
   const [isAIFiltered, setIsAIFiltered] = useState(false);
   const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
   const [aiInputValue, setAiInputValue] = useState("");
-  const [chatOpen, setChatOpen] = useState(false);
+  const navigate = useNavigate();
 
   // Filtered accommodations when AI is active
   const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
@@ -109,7 +72,7 @@ const Index = () => {
                   Back
                 </Button>
                 <div className="flex-1 flex relative">
-                  <AIAssistant onGetStarted={handleAIGetStarted} open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
+                  <AIAssistant />
                 </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
@@ -213,7 +176,7 @@ const Index = () => {
         {/* Top-right Chat Bot Icon */}
         <button
           aria-label="Open AI Assistant"
-          onClick={() => setChatOpen(true)}
+          onClick={() => navigate("/ai-experience")}
           className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
         >
           <Bot className="w-10 h-10 text-black" />

@@ -7,6 +7,8 @@ interface AccommodationCardProps {
   title: string;
   price: number;
   amenities: string[];
+  onView?: () => void;
+  viewButtonLabel?: string;
 }
 
 const amenityIcons: { [key: string]: React.ReactNode } = {
@@ -16,7 +18,7 @@ const amenityIcons: { [key: string]: React.ReactNode } = {
   "Gym": <Dumbbell className="w-4 h-4" />,
 };
 
-const AccommodationCard = ({ image, tag, title, price, amenities }: AccommodationCardProps) => {
+const AccommodationCard = ({ image, tag, title, price, amenities, onView, viewButtonLabel }: AccommodationCardProps) => {
   return (
     <div className="bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col md:flex-row">
       {/* Image Section - Left Side */}
@@ -59,8 +61,8 @@ const AccommodationCard = ({ image, tag, title, price, amenities }: Accommodatio
             <span className="text-sm text-muted-foreground"> Per week</span>
           </div>
           
-          <Button size="sm" className="rounded-full min-w-[140px]">
-            View rooms
+          <Button size="sm" className="rounded-full min-w-[140px]" onClick={onView}>
+            {viewButtonLabel ?? "View rooms"}
           </Button>
         </div>
       </div>
