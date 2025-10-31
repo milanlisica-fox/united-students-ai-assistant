@@ -2,7 +2,6 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SlidersHorizontal, ChevronLeft, Sparkles, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
 import AIChatWidget from "@/components/AIChatWidget";
 import AccommodationCard from "@/components/AccommodationCard";
@@ -30,7 +29,6 @@ const greetingMessage = "Hi! Tell me what you're looking for and I’ll help you
 
 const AIExperience = () => {
   const navigate = useNavigate();
-  const [sortBy, setSortBy] = useState("");
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [stage, setStage] = useState<ChatStage>("idle");
   const [inputValue, setInputValue] = useState("");
@@ -180,19 +178,6 @@ const AIExperience = () => {
                     Share your preferences and I’ll tailor options for you.
                   </p>
                 </div>
-                <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="w-[180px]">
-                    <SelectValue placeholder="Sort by" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="recommended">Recommended</SelectItem>
-                    <SelectItem value="offers">Offers</SelectItem>
-                    <SelectItem value="price-high">Price: High to low</SelectItem>
-                    <SelectItem value="price-low">Price: Low to high</SelectItem>
-                    <SelectItem value="a-to-z">A to Z</SelectItem>
-                    <SelectItem value="z-to-a">Z to A</SelectItem>
-                  </SelectContent>
-                </Select>
               </div>
             </div>
 
