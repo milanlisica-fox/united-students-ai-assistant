@@ -4,6 +4,7 @@ import { SlidersHorizontal, ChevronLeft, Sparkles, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
+import AIChatWidget from "@/components/AIChatWidget";
 import AccommodationCard from "@/components/AccommodationCard";
 import { accommodations, Accommodation } from "@/data/accommodations";
 import mapStatic from "@/assets/map-static.jpg";
@@ -37,6 +38,7 @@ const AIExperience = () => {
   const [selectedStayLength, setSelectedStayLength] = useState<StayLength | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [activeAccommodation, setActiveAccommodation] = useState<Accommodation | null>(null);
+  const [chatOpen, setChatOpen] = useState(false);
 
   const chatEndRef = useRef<HTMLDivElement | null>(null);
   const timeoutsRef = useRef<number[]>([]);
@@ -317,12 +319,14 @@ const AIExperience = () => {
         </div>
 
         <button
-          aria-label="Back to search"
-          onClick={() => navigate("/")}
+          aria-label="Open AI Assistant chat"
+          onClick={() => setChatOpen(true)}
           className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
         >
           <Bot className="w-10 h-10 text-black" />
         </button>
+
+        <AIChatWidget open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
 
         <div className="hidden lg:block flex-1 relative" />
       </div>

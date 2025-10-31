@@ -3,6 +3,7 @@ import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle, Bot } from "lu
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
+import AIChatWidget from "@/components/AIChatWidget";
 import AccommodationCard from "@/components/AccommodationCard";
 import { accommodations } from "@/data/accommodations";
 import mapStatic from "@/assets/map-static.jpg";
@@ -14,6 +15,7 @@ const Index = () => {
   const [aiAssistantOpen, setAiAssistantOpen] = useState(false);
   const [aiInputValue, setAiInputValue] = useState("");
   const navigate = useNavigate();
+  const [chatOpen, setChatOpen] = useState(false);
 
   // Filtered accommodations when AI is active
   const filteredAccommodations = isAIFiltered ? accommodations.slice(0, 1) : accommodations;
@@ -176,11 +178,13 @@ const Index = () => {
         {/* Top-right Chat Bot Icon */}
         <button
           aria-label="Open AI Assistant"
-          onClick={() => navigate("/ai-experience")}
+          onClick={() => setChatOpen(true)}
           className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
         >
           <Bot className="w-10 h-10 text-black" />
         </button>
+
+        <AIChatWidget open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
 
         {/* Right Panel - Map transparent overlay */}
         <div className="hidden lg:block flex-1 relative" />
