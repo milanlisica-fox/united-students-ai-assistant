@@ -7,6 +7,7 @@ import AIChatWidget from "@/components/AIChatWidget";
 import AccommodationCard from "@/components/AccommodationCard";
 import { accommodations, Accommodation } from "@/data/accommodations";
 import mapStatic from "@/assets/map-static.jpg";
+import mapResults from "@/assets/map-resultsmap.png";
 import {
   Dialog,
   DialogContent,
@@ -25,7 +26,7 @@ type ChatMessage = {
 type RoomType = "En-suite" | "Non-en-suite" | "Studio" | "Accessible rooms";
 type StayLength = "Full year" | "Academic year";
 
-const greetingMessage = "Hi! Tell me what you're looking for and I’ll help you find great options.";
+const greetingMessage = "What kind of place are you after? I'll sort out some options that match.";
 
 const AIExperience = () => {
   const navigate = useNavigate();
@@ -42,6 +43,13 @@ const AIExperience = () => {
   const timeoutsRef = useRef<number[]>([]);
 
   const recommendations = useMemo(() => accommodations.slice(0, 2), []);
+
+  const filterCount = useMemo(() => {
+    let count = 0;
+    if (selectedRoomType) count++;
+    if (selectedStayLength) count++;
+    return count;
+  }, [selectedRoomType, selectedStayLength]);
 
   const safeId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 
@@ -78,7 +86,7 @@ const AIExperience = () => {
           {
             id: safeId(),
             role: "ai",
-            content: "Thanks for sharing! What room type would you like?",
+            content: "Thanks for that! What kind of room are you after? Click on one of the options below to move on.",
           },
         ]);
         setStage("askedRoomType");
@@ -101,7 +109,7 @@ const AIExperience = () => {
         {
           id: safeId(),
           role: "ai",
-          content: "Got it! What is desired length of stay?",
+          content: "Got it! How long are you planning to stay? Click on one of the options below to continue.",
         },
       ]);
       setStage("askedLength");
@@ -118,7 +126,7 @@ const AIExperience = () => {
         {
           id: safeId(),
           role: "ai",
-          content: "Great choice! Based on your preferences, here are two options you might like 👇",
+          content: "Nice one! Based on what you’re after, I’ve found a couple of places you might love 👇",
         },
       ]);
       setStage("recommendations");
@@ -134,9 +142,10 @@ const AIExperience = () => {
     <div className="min-h-screen bg-background relative">
       <div className="fixed inset-0 z-0">
         <img
-          src={mapStatic}
+          key={stage === "recommendations" ? "results" : "static"}
+          src={stage === "recommendations" ? mapResults : mapStatic}
           alt="Map showing accommodation locations"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-in fade-in duration-500"
         />
       </div>
 
@@ -161,7 +170,7 @@ const AIExperience = () => {
                 </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: "#B4DADA" }}>
                   <SlidersHorizontal className="w-4 h-4" />
-                  4 × Filters
+                  {filterCount} × Filter{filterCount !== 1 ? "s" : ""}
                 </Button>
               </div>
             </div>
@@ -175,9 +184,18 @@ const AIExperience = () => {
                 <div>
                   <h1 className="text-xl font-semibold">AI Experience</h1>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Share your preferences and I’ll tailor options for you.
+                  What kind of place are you after? I'll sort out some options that match.
                   </p>
                 </div>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={() => navigate("/")}
+                  className="gap-2"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  Back to Results
+                </Button>
               </div>
             </div>
 
@@ -214,8 +232,9 @@ const AIExperience = () => {
 
                 {stage === "askedRoomType" && (
                   <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2">
-                    <div className="max-w-[75%] rounded-2xl bg-muted/80 px-4 py-4 text-sm">
-                      <p className="font-medium mb-3">Choose a room type</p>
+                    <div className="max-w-[75%] rounded-2xl bg-muted/80 px-4 py-4 text-sm border-2 border-primary/20">
+                      <p className="font-medium mb-2">Choose a room type</p>
+                      <p className="text-xs text-muted-foreground mb-3 italic">Click on an option below ↓</p>
                       <div className="grid grid-cols-2 gap-2">
                         {(["En-suite", "Non-en-suite", "Studio", "Accessible rooms"] as RoomType[]).map(
                           (label) => (
@@ -223,7 +242,12 @@ const AIExperience = () => {
                               key={label}
                               size="sm"
                               variant={selectedRoomType === label ? "default" : "secondary"}
-                              className="justify-center"
+                              className="justify-center cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-200 font-medium hover:brightness-95"
+                              style={{
+                                backgroundColor: "#ffc105",
+                                color: "#000000",
+                                borderColor: "#ffc105",
+                              }}
                               onClick={() => handlePickRoomType(label)}
                             >
                               {label}
@@ -237,15 +261,21 @@ const AIExperience = () => {
 
                 {stage === "askedLength" && (
                   <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2">
-                    <div className="max-w-[75%] rounded-2xl bg-muted/80 px-4 py-4 text-sm">
-                      <p className="font-medium mb-3">Select your stay length</p>
+                    <div className="max-w-[75%] rounded-2xl bg-muted/80 px-4 py-4 text-sm border-2 border-primary/20">
+                      <p className="font-medium mb-2">Select your stay length</p>
+                      <p className="text-xs text-muted-foreground mb-3 italic">Click on an option below ↓</p>
                       <div className="grid grid-cols-2 gap-2">
                         {(["Full year", "Academic year"] as StayLength[]).map((label) => (
                           <Button
                             key={label}
                             size="sm"
                             variant={selectedStayLength === label ? "default" : "secondary"}
-                            className="justify-center"
+                            className="justify-center cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-200 font-medium hover:brightness-95"
+                            style={{
+                              backgroundColor: "#ffc105",
+                              color: "#000000",
+                              borderColor: "#ffc105",
+                            }}
                             onClick={() => handlePickStayLength(label)}
                           >
                             {label}
@@ -291,8 +321,16 @@ const AIExperience = () => {
                   <input
                     value={inputValue}
                     onChange={(event) => setInputValue(event.target.value)}
-                    placeholder={greetingMessage}
-                    className="flex-1 bg-background border border-input rounded-lg px-4 py-3 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    placeholder={
+                      stage === "askedRoomType" || stage === "askedLength"
+                        ? "Or type your answer instead..."
+                        : greetingMessage
+                    }
+                    className={`flex-1 bg-background border rounded-lg px-4 py-3 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                      stage === "askedRoomType" || stage === "askedLength"
+                        ? "border-input/50 opacity-60"
+                        : "border-input"
+                    }`}
                   />
                   <Button type="submit" size="sm" className="px-5">
                     Send

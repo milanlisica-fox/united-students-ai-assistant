@@ -78,7 +78,7 @@ const Index = () => {
                 </div>
                 <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
-                  4 × Filters
+                  0 × Filters
                 </Button>
               </div>
             </div>
