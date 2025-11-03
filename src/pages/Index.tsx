@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle, Bot } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft, Sparkles, ArrowUpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import AIAssistant from "@/components/AIAssistant";
@@ -57,41 +57,42 @@ const Index = () => {
 
       <div className="flex h-screen relative z-10">
         {/* Left Panel - Listings */}
-        <div className="w-[42%] relative flex flex-col">
+        <div className="w-full lg:w-[42%] relative flex flex-col">
           {/* Controls Bar - Fixed at top */}
-          <div className="fixed top-0 left-0 w-full z-20 px-3 pt-6">
-            <div className="w-[42%] flex items-center gap-4">
-              <div className="flex items-center justify-center px-4 py-4 rounded-2xl bg-white">
+          <div className="fixed top-0 left-0 w-full z-20 px-2 sm:px-3 pt-2 sm:pt-6">
+            <div className="w-full lg:w-[42%] flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4">
+              <div className="flex items-center justify-center px-3 sm:px-4 py-2 sm:py-4 rounded-xl sm:rounded-2xl bg-white shrink-0">
                 <img 
                   src="/unite-students-real-logo.jpg" 
                   alt="Unite Students Logo" 
-                  className="h-7 w-auto"
+                  className="h-6 sm:h-7 w-auto"
                 />
               </div>
-              <div className="flex items-center flex-1 px-4 py-3 rounded-2xl bg-white gap-4">
-                <Button variant="ghost" size="sm" disabled className="gap-2">
+              <div className="flex items-center flex-1 px-2 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-white gap-2 sm:gap-4">
+                <Button variant="ghost" size="sm" disabled className="gap-1 sm:gap-2 shrink-0 px-2 sm:px-3">
                   <ChevronLeft className="w-4 h-4" />
-                  Back
+                  <span className="hidden sm:inline">Back</span>
                 </Button>
-                <div className="flex-1 flex relative">
+                <div className="flex-1 flex relative min-w-0">
                   <AIAssistant />
                 </div>
-                <Button variant="outline" size="sm" className="gap-2" style={{ backgroundColor: '#B4DADA' }}>
+                <Button variant="outline" size="sm" className="gap-1 sm:gap-2 shrink-0 px-2 sm:px-3" style={{ backgroundColor: '#B4DADA' }}>
                   <SlidersHorizontal className="w-4 h-4" />
-                  0 × Filters
+                  <span className="hidden sm:inline">0 × Filters</span>
+                  <span className="sm:hidden">Filters</span>
                 </Button>
               </div>
             </div>
           </div>
 
           {/* Gap - Shows map background */}
-          <div className="h-24 flex-shrink-0" />
+          <div className="h-20 sm:h-24 flex-shrink-0" />
 
           {/* AI Assistant Input - Appears between control bar and results */}
           {aiAssistantOpen && (
-            <div className="relative z-20 bg-white px-6 py-4 border-b">
-              <div className="mb-4">
-                <p className="text-muted-foreground text-sm">
+            <div className="relative z-20 bg-white px-4 sm:px-6 py-3 sm:py-4 border-b">
+              <div className="mb-3 sm:mb-4">
+                <p className="text-muted-foreground text-xs sm:text-sm">
                   Hello! I'm your AI assistant. I can help you find the perfect accommodation based on your preferences.
                 </p>
               </div>
@@ -101,7 +102,7 @@ const Index = () => {
                   value={aiInputValue}
                   onChange={(e) => setAiInputValue(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  className="flex-1 min-h-[100px] max-h-[200px] resize-none rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex-1 min-h-[80px] sm:min-h-[100px] max-h-[200px] resize-none rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   autoFocus
                 />
                 <Button
@@ -117,28 +118,30 @@ const Index = () => {
           )}
 
           {/* Results header - Fixed */}
-          <div className="relative z-20 bg-white rounded-tr-2xl">
-            <div className="p-6 pt-0 pb-2">
-              <div className="flex items-center justify-between p-4 rounded-2xl bg-white">
-                <div className="flex items-center gap-4">
-                  <h2 className="text-lg font-semibold">
+          <div className="relative z-20 bg-white rounded-tr-none lg:rounded-tr-2xl">
+            <div className="p-3 sm:p-6 pt-0 pb-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-0 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 flex-1">
+                  <h2 className="text-base sm:text-lg font-semibold">
                     {isAIFiltered ? "My picks for you" : "22 results"}
                   </h2>
                   {isAIFiltered && (
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 flex-wrap">
                       <Button 
                         variant="outline" 
                         size="sm" 
                         onClick={handleModifySearch}
-                        className="gap-2"
+                        className="gap-1 sm:gap-2 text-xs sm:text-sm"
                       >
-                        <Sparkles className="w-4 h-4 text-accent" />
-                        Modify search
+                        <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-accent" />
+                        <span className="hidden sm:inline">Modify search</span>
+                        <span className="sm:hidden">Modify</span>
                       </Button>
                       <Button 
                         variant="outline" 
                         size="sm" 
                         onClick={handleClear}
+                        className="text-xs sm:text-sm"
                       >
                         Clear
                       </Button>
@@ -147,7 +150,7 @@ const Index = () => {
                 </div>
                 
                 <Select value={sortBy} onValueChange={setSortBy}>
-                  <SelectTrigger className="w-[180px]">
+                  <SelectTrigger className="w-full sm:w-[180px] text-xs sm:text-sm">
                     <SelectValue placeholder="Sort by" />
                   </SelectTrigger>
                   <SelectContent>
@@ -165,8 +168,8 @@ const Index = () => {
 
           {/* Scrollable Listings */}
           <div className="flex-1 overflow-y-auto relative z-20 bg-white">
-            <div className="p-6 pt-0">
-              <div className="grid gap-6">
+            <div className="p-3 sm:p-6 pt-0">
+              <div className="grid gap-4 sm:gap-6">
                 {filteredAccommodations.map((accommodation) => (
                   <AccommodationCard key={accommodation.id} {...accommodation} />
                 ))}
@@ -174,15 +177,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-
-        {/* Top-right Chat Bot Icon */}
-        <button
-          aria-label="Open AI Assistant"
-          onClick={() => setChatOpen(true)}
-          className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
-        >
-          <Bot className="w-10 h-10 text-black" />
-        </button>
 
         <AIChatWidget open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
 

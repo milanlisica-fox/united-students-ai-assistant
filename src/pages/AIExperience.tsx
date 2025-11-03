@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { SlidersHorizontal, ChevronLeft, Sparkles, Bot } from "lucide-react";
+import { SlidersHorizontal, ChevronLeft, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AIAssistant from "@/components/AIAssistant";
 import AIChatWidget from "@/components/AIChatWidget";
@@ -337,14 +337,6 @@ const AIExperience = () => {
             </div>
           </div>
         </div>
-
-        <button
-          aria-label="Open AI Assistant chat"
-          onClick={() => setChatOpen(true)}
-          className="fixed top-4 right-4 z-50 h-20 w-20 rounded-full bg-yellow-400 shadow-lg hover:bg-yellow-300 flex items-center justify-center"
-        >
-          <Bot className="w-10 h-10 text-black" />
-        </button>
 
         <AIChatWidget open={chatOpen} onOpenChange={setChatOpen} placement="top-right" />
 
