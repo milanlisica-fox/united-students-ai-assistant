@@ -183,9 +183,6 @@ const AIExperience = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <h1 className="text-xl font-semibold">AI Experience</h1>
-                  <p className="text-sm text-muted-foreground mt-1">
-                  What kind of place are you after? I'll sort out some options that match.
-                  </p>
                 </div>
                 <Button 
                   variant="outline" 
@@ -314,7 +311,7 @@ const AIExperience = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold">AI Assistant</p>
-                    <p className="text-xs text-muted-foreground">Ready to help you discover great places</p>
+                    <p className="text-xs text-muted-foreground">Here to make finding your next student home nice and easy</p>
                   </div>
                 </div>
                 <form onSubmit={handleSubmit} className="flex items-center gap-3">
