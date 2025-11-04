@@ -177,12 +177,12 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
         <div
           className={
             placement === "top-right"
-              ? "fixed top-4 right-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)]"
-              : "fixed bottom-4 left-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)]"
+              ? "fixed top-4 right-4 lg:right-4 lg:top-4 lg:w-[360px] lg:max-w-[calc(100vw-2rem)] bottom-0 left-0 lg:bottom-auto lg:left-auto w-full lg:max-w-none lg:h-auto h-[50vh] z-[2147483647]"
+              : "fixed bottom-4 left-4 z-[2147483647] w-[360px] max-w-[calc(100vw-2rem)] lg:h-auto h-[50vh]"
           }
         >
-          <Card className="border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-xl overflow-hidden">
-            <div className="px-4 py-3 border-b border-border flex items-center justify-between">
+          <Card className="border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 shadow-xl overflow-hidden h-full flex flex-col lg:h-auto">
+            <div className="px-4 py-3 border-b border-border flex items-center justify-between shrink-0">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-accent" />
                 <span className="text-sm font-medium">AI Assistant</span>
@@ -196,7 +196,7 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
               </button>
             </div>
 
-            <div className="h-[360px] p-3 overflow-y-auto space-y-2">
+            <div className="flex-1 lg:h-[360px] p-3 overflow-y-auto space-y-2">
               {messages.length === 0 && stage === "idle" && (
                 <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
                   <div className="max-w-[85%] rounded-2xl bg-muted text-foreground px-3 py-2 text-sm">
@@ -299,7 +299,7 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
               <div ref={chatEndRef} />
             </div>
 
-            <form onSubmit={handleSubmit} className="p-3 border-t border-border flex items-center gap-2">
+            <form onSubmit={handleSubmit} className="p-3 border-t border-border flex items-center gap-2 shrink-0">
               <input
                 value={inputValue}
                 onChange={(event) => setInputValue(event.target.value)}

@@ -140,7 +140,8 @@ const AIExperience = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <div className="fixed inset-0 z-0">
+      {/* Map background - hidden on mobile */}
+      <div className="fixed inset-0 z-0 lg:block hidden">
         <img
           key={stage === "recommendations" ? "results" : "static"}
           src={stage === "recommendations" ? mapResults : mapStatic}
@@ -149,7 +150,176 @@ const AIExperience = () => {
         />
       </div>
 
-      <div className="flex h-screen relative z-10">
+      {/* Mobile: Full-width modal overlay */}
+      <div className="lg:hidden fixed inset-0 z-50 bg-background">
+        <div className="h-full flex flex-col">
+          {/* Mobile Header */}
+          <div className="flex items-center justify-between px-4 py-3 border-b bg-white shrink-0">
+            <div className="flex items-center gap-3">
+              <Button variant="ghost" size="sm" className="gap-2 -ml-2" onClick={() => navigate("/")}>
+                <ChevronLeft className="w-4 h-4" />
+                <span className="hidden sm:inline">Back</span>
+              </Button>
+              <div>
+                <h1 className="text-lg font-semibold">AI Experience</h1>
+              </div>
+            </div>
+            <div className="flex items-center justify-center px-3 py-2 rounded-xl bg-white">
+              <img
+                src="/unite-students-real-logo.jpg"
+                alt="Unite Students Logo"
+                className="h-6 w-auto"
+              />
+            </div>
+          </div>
+
+          {/* Mobile Content */}
+          <div className="flex-1 flex flex-col overflow-hidden bg-white">
+            <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+              {/* Mobile Chat Content */}
+              {messages.length === 0 && stage === "idle" && (
+                <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2 duration-300">
+                  <div className="max-w-[85%] rounded-2xl bg-muted px-4 py-3 text-sm text-foreground">
+                    {greetingMessage}
+                  </div>
+                </div>
+              )}
+
+              {messages.map((message) => (
+                <div
+                  key={message.id}
+                  className={
+                    message.role === "ai"
+                      ? "flex justify-start animate-in fade-in slide-in-from-bottom-1"
+                      : "flex justify-end animate-in fade-in slide-in-from-bottom-1"
+                  }
+                >
+                  <div
+                    className={
+                      message.role === "ai"
+                        ? "max-w-[85%] rounded-2xl bg-muted px-4 py-3 text-sm text-foreground"
+                        : "max-w-[85%] rounded-2xl bg-accent px-4 py-3 text-sm text-accent-foreground"
+                    }
+                  >
+                    {message.content}
+                  </div>
+                </div>
+              ))}
+
+              {stage === "askedRoomType" && (
+                <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2">
+                  <div className="max-w-[85%] rounded-2xl bg-muted/80 px-4 py-4 text-sm border-2 border-primary/20">
+                    <p className="font-medium mb-2">Choose a room type</p>
+                    <p className="text-xs text-muted-foreground mb-3 italic">Click on an option below ↓</p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {(["En-suite", "Non-en-suite", "Studio", "Accessible rooms"] as RoomType[]).map(
+                        (label) => (
+                          <Button
+                            key={label}
+                            size="sm"
+                            variant={selectedRoomType === label ? "default" : "secondary"}
+                            className="justify-center cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-200 font-medium hover:brightness-95"
+                            style={{
+                              backgroundColor: "#ffc105",
+                              color: "#000000",
+                              borderColor: "#ffc105",
+                            }}
+                            onClick={() => handlePickRoomType(label)}
+                          >
+                            {label}
+                          </Button>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {stage === "askedLength" && (
+                <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2">
+                  <div className="max-w-[85%] rounded-2xl bg-muted/80 px-4 py-4 text-sm border-2 border-primary/20">
+                    <p className="font-medium mb-2">Select your stay length</p>
+                    <p className="text-xs text-muted-foreground mb-3 italic">Click on an option below ↓</p>
+                    <div className="grid grid-cols-2 gap-2">
+                      {(["Full year", "Academic year"] as StayLength[]).map((label) => (
+                        <Button
+                          key={label}
+                          size="sm"
+                          variant={selectedStayLength === label ? "default" : "secondary"}
+                          className="justify-center cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-200 font-medium hover:brightness-95"
+                          style={{
+                            backgroundColor: "#ffc105",
+                            color: "#000000",
+                            borderColor: "#ffc105",
+                          }}
+                          onClick={() => handlePickStayLength(label)}
+                        >
+                          {label}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {stage === "recommendations" && (
+                <div className="space-y-4 pt-1 animate-in fade-in slide-in-from-bottom-2">
+                  <div className="space-y-4">
+                    {recommendations.map((accommodation) => (
+                      <div key={accommodation.id} className="flex justify-start">
+                        <div className="w-full max-w-lg">
+                          <AccommodationCard
+                            {...accommodation}
+                            viewButtonLabel="View room"
+                            onView={() => handleOpenAccommodation(accommodation)}
+                          />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div ref={chatEndRef} />
+            </div>
+
+            {/* Mobile Input Section */}
+            <div className="border-t border-border px-4 py-4 bg-white shrink-0">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/20 shrink-0">
+                  <Sparkles className="w-4 h-4 text-accent" />
+                </div>
+                <div className="min-w-0">
+                  <p className="text-xs font-semibold">AI Assistant</p>
+                  <p className="text-xs text-muted-foreground truncate">Here to make finding your next student home nice and easy</p>
+                </div>
+              </div>
+              <form onSubmit={handleSubmit} className="flex items-center gap-2">
+                <input
+                  value={inputValue}
+                  onChange={(event) => setInputValue(event.target.value)}
+                  placeholder={
+                    stage === "askedRoomType" || stage === "askedLength"
+                      ? "Or type your answer instead..."
+                      : greetingMessage
+                  }
+                  className={`flex-1 bg-background border rounded-lg px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                    stage === "askedRoomType" || stage === "askedLength"
+                      ? "border-input/50 opacity-60"
+                      : "border-input"
+                  }`}
+                />
+                <Button type="submit" size="sm" className="px-4 shrink-0">
+                  Send
+                </Button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden lg:flex h-screen relative z-10">
         <div className="w-[42%] relative flex flex-col">
           <div className="fixed top-0 left-0 w-full z-20 px-3 pt-6">
             <div className="w-[42%] flex items-center gap-4">
