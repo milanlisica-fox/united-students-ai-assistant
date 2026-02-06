@@ -59,6 +59,8 @@ export interface PropertyData {
   citySlug: string;
   featuredAttribute?: { text: string };
   roomTypes?: string[];
+  latitude?: number;
+  longitude?: number;
 }
 
 // Room classification types

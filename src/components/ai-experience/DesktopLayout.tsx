@@ -58,11 +58,11 @@ export default function DesktopLayout({
   const navigate = useNavigate();
 
   return (
-    <div className="hidden lg:flex h-screen relative z-10">
-      <div className="w-[42%] relative flex flex-col">
+    <div className="hidden lg:flex h-screen relative z-10 pointer-events-none">
+      <div className="w-[47%] relative flex flex-col pointer-events-auto">
         {/* Desktop Header */}
         <div className="fixed top-0 left-0 w-full z-20 px-3 pt-6">
-          <div className="w-[42%] flex items-center gap-4">
+          <div className="w-[47%] flex items-center gap-4">
             <div className="flex items-center justify-center px-4 py-4 rounded-2xl bg-white">
               <img
                 src="/unite-students-real-logo.jpg"
@@ -152,11 +152,13 @@ export default function DesktopLayout({
         </div>
       </div>
 
-      <AIChatWidget
-        open={chatOpen}
-        onOpenChange={onChatOpenChange}
-        placement="top-right"
-      />
+      <div className="pointer-events-auto">
+        <AIChatWidget
+          open={chatOpen}
+          onOpenChange={onChatOpenChange}
+          placement="top-right"
+        />
+      </div>
 
       <div className="hidden lg:block flex-1 relative" />
     </div>

@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Home, Users, BookOpen, Dumbbell, Tv, Building2, Coffee } from "lucide-react";
+import {
+  ExternalLink,
+  Home,
+  Users,
+  BookOpen,
+  Dumbbell,
+  Tv,
+  Building2,
+  Coffee,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 // Icon mapping for features - maps iconText to lucide icons
@@ -49,11 +58,11 @@ const PropertySearchCard = ({
   cta,
   tag,
   isSelected = false,
-  onViewRooms
+  onViewRooms,
 }: PropertySearchCardProps) => {
   return (
     <div
-      className="relative w-full"
+      className="relative w-full overflow-hidden"
       data-testid="property-card"
       data-property-id={propertyId}
     >
@@ -61,7 +70,7 @@ const PropertySearchCard = ({
         className={cn(
           "flex flex-col overflow-hidden rounded-xl bg-white shadow-sm",
           "md:h-[13.125rem] md:flex-row",
-          "lg:h-44",
+          "lg:h-48",
           "border border-gray-200",
           isSelected && "ring-4 ring-teal-500"
         )}
@@ -70,8 +79,8 @@ const PropertySearchCard = ({
         <div
           className={cn(
             "relative h-32 w-full overflow-hidden flex-shrink-0",
-            "md:h-full md:w-[12.5rem]",
-            "lg:w-[14rem]"
+            "md:h-full md:w-[11rem]",
+            "lg:w-[12rem]"
           )}
         >
           {image ? (
@@ -86,9 +95,7 @@ const PropertySearchCard = ({
             </div>
           )}
           {tag && (
-            <span
-              className="absolute left-2 top-2 z-20 inline-block rounded-full bg-yellow-400 py-1 px-2 text-xs font-normal text-gray-900"
-            >
+            <span className="absolute left-2 top-2 z-20 inline-block rounded-full bg-yellow-400 py-1 px-2 text-xs font-normal text-gray-900">
               {tag}
             </span>
           )}
@@ -134,20 +141,32 @@ const PropertySearchCard = ({
           </div>
 
           {/* Price and CTA */}
-          <div className="mt-2 flex w-full items-center justify-between gap-2">
+          <div className="mt-2 flex w-full items-end justify-between gap-3">
             {(cta.type === "view-rooms" || cta.type === "book-now") && price ? (
-              <div className="flex flex-col min-w-0">
-                <span className="text-xs font-normal text-gray-500">
+              <div className="flex flex-col flex-1 min-w-0">
+                {/* Single line layout for larger screens */}
+                <div className="hidden xl:block text-xs font-normal text-gray-500">
                   From{" "}
                   <span className="text-lg font-bold text-gray-900">
                     £{price}
-                  </span>
-                  {" "}Per week
-                </span>
+                  </span>{" "}
+                  Per week
+                </div>
+                {/* Two line layout for smaller screens */}
+                <div className="xl:hidden">
+                  <div className="text-xs font-normal text-gray-500 whitespace-nowrap">
+                    From{" "}
+                    <span className="text-lg font-bold text-gray-900">
+                      £{price}
+                    </span>
+                  </div>
+                  <div className="text-xs text-gray-500">Per week</div>
+                </div>
+                {/* Tenancy weeks on separate line for book-now */}
                 {cta.type === "book-now" && tenancyWeeks && (
-                  <span className="text-xs text-gray-500">
+                  <div className="text-xs text-gray-500">
                     {tenancyWeeks} weeks
-                  </span>
+                  </div>
                 )}
               </div>
             ) : (
@@ -164,8 +183,9 @@ const PropertySearchCard = ({
               }}
               disabled={cta.type === "sold-out"}
               className={cn(
-                "min-w-24 md:min-w-32 rounded-full flex-shrink-0",
-                cta.type === "sold-out" && "bg-yellow-400 text-gray-900 hover:bg-yellow-400 cursor-not-allowed"
+                "min-w-28 rounded-full flex-shrink-0 whitespace-nowrap",
+                cta.type === "sold-out" &&
+                  "bg-yellow-400 text-gray-900 hover:bg-yellow-400 cursor-not-allowed"
               )}
               size="sm"
             >

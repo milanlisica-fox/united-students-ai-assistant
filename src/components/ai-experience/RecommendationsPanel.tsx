@@ -46,7 +46,7 @@ const RecommendationsPanel = ({
   getBookingUrlForProperty,
 }: RecommendationsPanelProps) => {
   return (
-    <div className="space-y-4 pt-1 animate-in fade-in slide-in-from-bottom-2">
+    <div className="space-y-4 pt-1 animate-in fade-in slide-in-from-bottom-2 overflow-hidden">
       <div className="flex flex-wrap gap-2">
         {selectedRoomType && (
           <Badge

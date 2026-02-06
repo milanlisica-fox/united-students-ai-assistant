@@ -77,7 +77,7 @@ const AIExperience = () => {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <MapBackground stage={stage} />
+      <MapBackground stage={stage} recommendations={recommendations} />
 
       <MobileLayout {...layoutProps} />
 
