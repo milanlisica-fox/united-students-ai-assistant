@@ -34,10 +34,7 @@ import {
   getPrice,
   getFavoritedFeatures,
 } from "@/utils/propertyHelpers";
-import {
-  GREETING_MESSAGE,
-  ROOM_TYPE_OPTIONS,
-} from "@/constants/ai-experience";
+import { GREETING_MESSAGE, ROOM_TYPE_OPTIONS } from "@/constants/ai-experience";
 import type { RoomType, RoomClass, ContractType } from "@/types/ai-experience";
 
 // Types for property data (used by listings panel)
@@ -71,7 +68,7 @@ const getListingPrice = (property: ListingPropertyData): number | undefined => {
 };
 
 const getListingImageUrl = (
-  property: ListingPropertyData
+  property: ListingPropertyData,
 ): string | undefined => {
   const firstImage = property.images?.[0];
   if (!firstImage?.image) return undefined;
@@ -118,7 +115,7 @@ const DEFAULT_YEAR_CONFIG = {
 };
 
 const generateFullListingBookingUrl = (
-  property: ListingPropertyData
+  property: ListingPropertyData,
 ): string => {
   const bookingPath = generateBookingUrl({
     cityId: "SF",
@@ -156,7 +153,8 @@ const Index = () => {
     selectedRoomType,
     selectedRoomClass,
     selectedContractType,
-    chatEndRef,
+    desktopChatEndRef,
+    mobileChatEndRef,
     handleSubmit,
     handlePickRoomType,
     handlePickRoomClass,
@@ -182,12 +180,10 @@ const Index = () => {
       stage === "recommendations" &&
       recommendations.length > 0
     ) {
-      const recommendedIds = new Set(
-        recommendations.map((r) => r.propertyId)
-      );
+      const recommendedIds = new Set(recommendations.map((r) => r.propertyId));
       return {
         properties: allPropertyMarkers.filter((p) =>
-          recommendedIds.has(p.propertyId)
+          recommendedIds.has(p.propertyId),
         ),
         universities: universityMarkers,
       };
@@ -449,7 +445,7 @@ const Index = () => {
                     stage={stage}
                     messages={messages}
                     greetingMessage={GREETING_MESSAGE}
-                    chatEndRef={chatEndRef}
+                    chatEndRef={desktopChatEndRef}
                     bubbleMaxWidthClass="max-w-[75%]"
                     panelMaxWidthClass="max-w-[75%]"
                     roomTypeOptions={ROOM_TYPE_OPTIONS}
@@ -691,7 +687,7 @@ const Index = () => {
                     stage={stage}
                     messages={messages}
                     greetingMessage={GREETING_MESSAGE}
-                    chatEndRef={chatEndRef}
+                    chatEndRef={mobileChatEndRef}
                     bubbleMaxWidthClass="max-w-[85%]"
                     panelMaxWidthClass="max-w-[85%]"
                     roomTypeOptions={ROOM_TYPE_OPTIONS}

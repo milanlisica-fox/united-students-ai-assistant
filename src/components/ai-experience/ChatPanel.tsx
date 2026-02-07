@@ -59,7 +59,7 @@ const ChatPanel = ({
           <div
             className={cn(
               bubbleMaxWidthClass,
-              "rounded-2xl bg-muted px-4 py-3 text-sm text-foreground"
+              "rounded-2xl bg-muted px-4 py-3 text-sm text-foreground",
             )}
           >
             {greetingMessage}
@@ -81,7 +81,7 @@ const ChatPanel = ({
               bubbleMaxWidthClass,
               message.role === "ai"
                 ? "rounded-2xl bg-muted px-4 py-3 text-sm text-foreground"
-                : "rounded-2xl bg-accent px-4 py-3 text-sm text-accent-foreground"
+                : "rounded-2xl bg-accent px-4 py-3 text-sm text-accent-foreground",
             )}
           >
             {message.content}

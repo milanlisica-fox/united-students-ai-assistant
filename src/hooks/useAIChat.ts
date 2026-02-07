@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type {
   ChatMessage,
   ChatStage,
@@ -18,7 +18,8 @@ interface UseAIChatReturn {
   selectedRoomType: RoomType | null;
   selectedRoomClass: RoomClass | null;
   selectedContractType: ContractType | null;
-  chatEndRef: React.RefObject<HTMLDivElement | null>;
+  desktopChatEndRef: React.RefObject<HTMLDivElement | null>;
+  mobileChatEndRef: React.RefObject<HTMLDivElement | null>;
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   handlePickRoomType: (room: RoomType) => void;
   handlePickRoomClass: (roomClass: RoomClass) => void;
@@ -30,21 +31,90 @@ export function useAIChat(): UseAIChatReturn {
   const [stage, setStage] = useState<ChatStage>("idle");
   const [inputValue, setInputValue] = useState("");
   const [selectedRoomType, setSelectedRoomType] = useState<RoomType | null>(
-    null
+    null,
   );
   const [selectedRoomClass, setSelectedRoomClass] = useState<RoomClass | null>(
-    null
+    null,
   );
   const [selectedContractType, setSelectedContractType] =
     useState<ContractType | null>(null);
 
-  const chatEndRef = useRef<HTMLDivElement | null>(null);
+  const desktopChatEndRef = useRef<HTMLDivElement | null>(null);
+  const mobileChatEndRef = useRef<HTMLDivElement | null>(null);
   const timeoutsRef = useRef<number[]>([]);
+  const scrollTimerRef = useRef<number | null>(null);
 
-  // Scroll to bottom when messages or stage changes
+  // Find the nearest scrollable ancestor of an element
+  const findScrollParent = useCallback(
+    (el: HTMLElement | null): HTMLElement | null => {
+      let current = el?.parentElement ?? null;
+      while (current) {
+        const { overflowY } = window.getComputedStyle(current);
+        if (overflowY === "auto" || overflowY === "scroll") {
+          return current;
+        }
+        current = current.parentElement;
+      }
+      return null;
+    },
+    [],
+  );
+
+  // Scroll both desktop and mobile containers to bottom.
+  // Only the visible one will actually have scrollable content.
+  const scrollToBottom = useCallback(() => {
+    for (const ref of [desktopChatEndRef, mobileChatEndRef]) {
+      const container = findScrollParent(ref.current);
+      if (container && container.scrollHeight > container.clientHeight) {
+        container.scrollTop = container.scrollHeight;
+      }
+    }
+  }, [findScrollParent]);
+
+  // Scroll to bottom when messages or stage changes.
+  // Fires immediately and again after 400ms to catch CSS animations.
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, stage]);
+    scrollToBottom();
+
+    const delayed = window.setTimeout(() => {
+      scrollToBottom();
+    }, 400);
+
+    return () => window.clearTimeout(delayed);
+  }, [messages, stage, scrollToBottom]);
+
+  // MutationObserver on both containers: debounced scroll when DOM changes.
+  useEffect(() => {
+    const observers: MutationObserver[] = [];
+
+    for (const ref of [desktopChatEndRef, mobileChatEndRef]) {
+      const container = findScrollParent(ref.current);
+      if (!container) continue;
+
+      const observer = new MutationObserver(() => {
+        if (scrollTimerRef.current !== null) {
+          window.clearTimeout(scrollTimerRef.current);
+        }
+        scrollTimerRef.current = window.setTimeout(() => {
+          scrollToBottom();
+          scrollTimerRef.current = null;
+        }, 50);
+      });
+
+      observer.observe(container, {
+        childList: true,
+        subtree: true,
+      });
+      observers.push(observer);
+    }
+
+    return () => {
+      observers.forEach((o) => o.disconnect());
+      if (scrollTimerRef.current !== null) {
+        window.clearTimeout(scrollTimerRef.current);
+      }
+    };
+  }, [stage, findScrollParent, scrollToBottom]);
 
   // Cleanup timeouts on unmount
   useEffect(() => {
@@ -77,7 +147,7 @@ export function useAIChat(): UseAIChatReturn {
       scheduleResponse(() => {
         addMessage(
           "ai",
-          "Thanks for that! What kind of room are you after? Click on one of the options below to move on."
+          "Thanks for that! What kind of room are you after? Click on one of the options below to move on.",
         );
         setStage("askedRoomType");
       });
@@ -109,7 +179,7 @@ export function useAIChat(): UseAIChatReturn {
     scheduleResponse(() => {
       addMessage(
         "ai",
-        "Got it! How long would you like to stay? Pick a contract length that works for you."
+        "Got it! How long would you like to stay? Pick a contract length that works for you.",
       );
       setStage("askedContractType");
     });
@@ -122,7 +192,7 @@ export function useAIChat(): UseAIChatReturn {
     scheduleResponse(() => {
       addMessage(
         "ai",
-        "Nice one! Based on what you're after, I've found a couple of places you might love 👇"
+        "Nice one! Based on what you're after, I've found a couple of places you might love 👇",
       );
       setStage("recommendations");
     });
@@ -136,7 +206,8 @@ export function useAIChat(): UseAIChatReturn {
     selectedRoomType,
     selectedRoomClass,
     selectedContractType,
-    chatEndRef,
+    desktopChatEndRef,
+    mobileChatEndRef,
     handleSubmit,
     handlePickRoomType,
     handlePickRoomClass,
