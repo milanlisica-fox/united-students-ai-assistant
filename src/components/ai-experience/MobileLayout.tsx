@@ -16,7 +16,7 @@ import { GREETING_MESSAGE, ROOM_TYPE_OPTIONS } from "@/constants/ai-experience";
 interface MobileLayoutProps {
   stage: ChatStage;
   messages: ChatMessage[];
-  chatEndRef: React.RefObject<HTMLDivElement | null>;
+  mobileChatEndRef: React.RefObject<HTMLDivElement | null>;
   roomClassOptions: string[];
   contractTypeOptions: ContractType[];
   selectedRoomType: RoomType | null;
@@ -38,7 +38,7 @@ interface MobileLayoutProps {
 export default function MobileLayout({
   stage,
   messages,
-  chatEndRef,
+  mobileChatEndRef,
   roomClassOptions,
   contractTypeOptions,
   selectedRoomType,
@@ -106,7 +106,7 @@ export default function MobileLayout({
               stage={stage}
               messages={messages}
               greetingMessage={GREETING_MESSAGE}
-              chatEndRef={chatEndRef}
+              chatEndRef={mobileChatEndRef}
               bubbleMaxWidthClass="max-w-[85%]"
               panelMaxWidthClass="max-w-[85%]"
               roomTypeOptions={ROOM_TYPE_OPTIONS}

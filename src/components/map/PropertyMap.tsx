@@ -31,7 +31,7 @@ const PropertyMap = ({
 	const mapContainerRef = useRef<HTMLDivElement>(null);
 	const mapRef = useRef<H.Map | null>(null);
 	const clusterDataProviderRef = useRef<H.clustering.Provider | null>(null);
-	const apiKey = import.meta.env.VITE_HERE_MAPS_API_KEY;
+	const apiKey = "8r3KupLI_oABk71p_Nedj7dhgRIkO_zHht_P1sK3zD4";
 
 	const { platform, isMapLoading } = useHereMaps(apiKey);
 

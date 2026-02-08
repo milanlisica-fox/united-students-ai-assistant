@@ -18,7 +18,7 @@ import { GREETING_MESSAGE, ROOM_TYPE_OPTIONS } from "@/constants/ai-experience";
 interface DesktopLayoutProps {
   stage: ChatStage;
   messages: ChatMessage[];
-  chatEndRef: React.RefObject<HTMLDivElement | null>;
+  desktopChatEndRef: React.RefObject<HTMLDivElement | null>;
   roomClassOptions: string[];
   contractTypeOptions: ContractType[];
   selectedRoomType: RoomType | null;
@@ -42,7 +42,7 @@ interface DesktopLayoutProps {
 export default function DesktopLayout({
   stage,
   messages,
-  chatEndRef,
+  desktopChatEndRef,
   roomClassOptions,
   contractTypeOptions,
   selectedRoomType,
@@ -133,7 +133,7 @@ export default function DesktopLayout({
                 stage={stage}
                 messages={messages}
                 greetingMessage={GREETING_MESSAGE}
-                chatEndRef={chatEndRef}
+                chatEndRef={desktopChatEndRef}
                 bubbleMaxWidthClass="max-w-[75%]"
                 panelMaxWidthClass="max-w-[75%]"
                 roomTypeOptions={ROOM_TYPE_OPTIONS}
