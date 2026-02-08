@@ -1,0 +1,3175 @@
+{
+  "status": 200,
+  "data": {
+    "universityDataList": [
+      {
+        "name": "Sheffield College",
+        "latitude": 53.37253,
+        "longitude": -1.45997
+      },
+      {
+        "name": "Sheffield Hallam University",
+        "latitude": 53.379212,
+        "longitude": -1.465255
+      },
+      {
+        "name": "Sheffield Hallam University",
+        "latitude": 53.373498,
+        "longitude": -1.490021,
+        "campus": "Collegiate Crescent Campus"
+      },
+      {
+        "name": "University of Sheffield",
+        "latitude": 53.381409,
+        "longitude": -1.488709
+      },
+      {
+        "name": "University of Sheffield",
+        "latitude": 53.382784,
+        "longitude": -1.479002,
+        "campus": "North Campus"
+      }
+    ],
+    "propertyDataList": [
+      {
+        "propertyId": "STVNCT",
+        "propertyName": "St Vincents Place",
+        "availability": true,
+        "nomsStatus": "NOMS_REFFERAL_AND_NOMS_THIRD_PARTY",
+        "nomsPartners": [],
+        "lowestMonthlyPrice": 812.56,
+        "priceRange": {
+          "lowest": 187,
+          "highest": 195
+        },
+        "features": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                },
+                {
+                  "title": "Printing (extra charge)",
+                  "serial": "FreePrinting",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "l",
+                  "favorited": false,
+                  "sortOrder": 23
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Outdoor social space",
+                  "serial": "OutdoorSocialSpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "v",
+                  "favorited": false,
+                  "sortOrder": 14
+                },
+                {
+                  "title": "Cinema room",
+                  "serial": "CinemaRoom",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": true,
+                  "sortOrder": 1
+                },
+                {
+                  "title": "Communal study space",
+                  "serial": "CommunalStudySpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "“",
+                  "favorited": true,
+                  "sortOrder": 3
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Gas",
+                  "serial": "Gas",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "g",
+                  "favorited": false,
+                  "sortOrder": 37
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                },
+                {
+                  "title": "Unite Students app",
+                  "serial": "MyUnite",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "Ä",
+                  "favorited": false,
+                  "sortOrder": 29
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                },
+                {
+                  "title": "Secure access",
+                  "serial": "SecureAccess",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "√",
+                  "favorited": false,
+                  "sortOrder": 19
+                },
+                {
+                  "title": "Maintenance support",
+                  "serial": "MaintenanceSupport",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "®",
+                  "favorited": false,
+                  "sortOrder": 22
+                }
+              ]
+            },
+            {
+              "category": "Key Features",
+              "features": [
+                {
+                  "title": "Music room",
+                  "serial": "MusicRoom",
+                  "omitted": false,
+                  "category": "Key Features",
+                  "iconText": "∞",
+                  "favorited": false,
+                  "sortOrder": 17
+                }
+              ]
+            }
+          ],
+          "propertyId": "STVNCT"
+        },
+        "images": [
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7vDQ3Xd0KocU649RLIXINo"
+            },
+            "description": "Students in the common room",
+            "focalPoint": {
+              "x": 3371,
+              "y": 3222
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.webp",
+              "filename": "Sheffield_StVincents_CommonRoom_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2emkIyUNz9Khx9Pf1vfWtg"
+            },
+            "description": "Students in the  TV area",
+            "focalPoint": {
+              "x": 4143,
+              "y": 3129
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.webp",
+              "filename": "Sheffield_StVincents_TVArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2pnAwjGPLSUTVucQ5jFf5z"
+            },
+            "description": "Students in the games area",
+            "focalPoint": {
+              "x": 5992,
+              "y": 3292
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.webp",
+              "filename": "Sheffield_StVincents_GamesArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5kq23kbgPbZBHA4KDjDl80"
+            },
+            "description": "Students in a shared kitchen",
+            "focalPoint": {
+              "x": 4050,
+              "y": 2777
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.webp",
+              "filename": "Sheffield_StVincents_SharedKitchen.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "20W1pQJ0Tc8oQhzBTBgLTW"
+            },
+            "description": "Cinema room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.webp",
+              "filename": "Sheffield_StVincents_CinemaRoom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6xVhyn642tZYqwsJHJdZFO"
+            },
+            "description": "Students in the study area",
+            "focalPoint": {
+              "x": 4682,
+              "y": 2941
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.webp",
+              "filename": "Sheffield_StVincents_UpperStudyArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3q22MFaliJDs39vaGdgVmS"
+            },
+            "description": "Students in the common room",
+            "focalPoint": {
+              "x": 4096,
+              "y": 2732
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.webp",
+              "filename": "Sheffield_StVincents_CommonRoom_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5c8pCrMEkMIoK6hmc5VL4j"
+            },
+            "description": "Exterior of St Vincent's Place",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.preview.webp"
+              },
+              "width": 4500,
+              "height": 3000,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.webp",
+              "filename": "Sheffield_StVincents_outdoorsocial.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4XR7Hpp5xSiffFU0rwHMmx"
+            },
+            "description": "Bed, study space in an En-suite Classic",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicEnsuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3wR4QAAuX9W1Ho05wvAKtH"
+            },
+            "description": "Bed in a Classic En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicEnsuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4Jl9ubEAJQdKuLIloqDVtO"
+            },
+            "description": "En-suite bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6x6rVZdXTqJGHscrZOOMPc"
+            },
+            "description": "Bed area in a Classic Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.preview.png"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.png",
+              "filename": "Sheffield_StVincents_ClassicStudio_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.png",
+              "previewUrl": "https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.preview.png"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5zxlObsr6NlmMKeJMio4K4"
+            },
+            "description": "Study area in a Classic Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.preview.png"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.png",
+              "filename": "Sheffield_StVincents_ClassicStudio_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.png",
+              "previewUrl": "https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.preview.png"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6FDR0xCaScqzCKP0nnFqq9"
+            },
+            "description": "Kitchen in a Classic Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.preview.png"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.png",
+              "filename": "Sheffield_StVincents_ClassicStudio_03.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.png",
+              "previewUrl": "https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.preview.png"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "368wnvWHYqoKb9jQSric3j"
+            },
+            "description": "Bathroom in a Classic Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.preview.png"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.png",
+              "filename": "Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.png",
+              "previewUrl": "https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.preview.png"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3YhgyAOxZtOSeMRu0Yl827"
+            },
+            "description": "Bed in a Classic Accessible Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicAccessibleStudio_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "L6jpdByrkaqhkSx6zRMDh"
+            },
+            "description": "Study space in an Accessible Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicAccessibleStudio_03.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5t4jpsU3NmL1uUJqssvFs3"
+            },
+            "description": "Kitchen in a Classic Accessible Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicAccessibleStudio_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "1w8diuO2ukECXkebLzsZlU"
+            },
+            "description": "Accessible Studio bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.webp",
+              "filename": "Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4XQEsNMwZltDOvIyHM9Lef"
+            },
+            "description": "Bedroom in a Premium Range 1 Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.webp",
+              "filename": "Sheffield_StVincents_Premium1Studio_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4M1JEyhqMBu5zVLXbJrB6x"
+            },
+            "description": "Studio bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.webp",
+              "filename": "Sheffield_StVincents_Studio_04_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "1BWuMKNQwcRoP2cA3FJg6R"
+            },
+            "description": "Study space in a Premium Range 1 Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.webp",
+              "filename": "Sheffield_StVincents_Premium1Studio_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6Y7AgpwgbiqWzOJI1Dv8Eo"
+            },
+            "description": "Kitchen in a Premium Range 1 Studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.webp",
+              "filename": "Sheffield_StVincents_Premium1Studio_03.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.preview.webp"
+            }
+          }
+        ],
+        "propertySlug": "st-vincents-place",
+        "citySlug": "sheffield",
+        "featuredAttribute": {
+          "text": "Restored Victorian church",
+          "icon": "map-filters/property"
+        },
+        "description": "A unique, city-centre home to nearly 600 students – with buzzing Kelham Island close by. At our centre is a beautifully-restored Victorian church with pool, ping pong, a music room and a cinema room.",
+        "latitude": 53.384715,
+        "longitude": -1.476147,
+        "propertyAddress": "30 Hollis Croft, Sheffield, England, S1 4BA",
+        "roomTypes": [
+          "STUDIO",
+          "ENSUITE: THREE BED FLAT",
+          "ENSUITE: TWO BED FLAT",
+          "ENSUITE",
+          "PARTLY ACCESSIBLE STUDIO"
+        ],
+        "promotion": {
+          "title": "Price Promise",
+          "icon": "actions/offers",
+          "shortDescription": {
+            "__typename": "PropertyPromotionCardShortDescription",
+            "json": {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Book today for 2026/27 & if prices drop, so will yours",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            }
+          }
+        }
+      },
+      {
+        "propertyId": "ARCHWA",
+        "propertyName": "Archways",
+        "availability": true,
+        "nomsStatus": "DIRECT_LET",
+        "nomsPartners": [],
+        "lowestPrice": 89,
+        "lowestMonthlyPrice": 386.73,
+        "priceRange": {
+          "lowest": 89,
+          "highest": 104
+        },
+        "features": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Outdoor social space",
+                  "serial": "OutdoorSocialSpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "v",
+                  "favorited": true,
+                  "sortOrder": 14
+                },
+                {
+                  "title": "TV Lounge",
+                  "serial": "TelevisionLounge",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "‘",
+                  "favorited": false,
+                  "sortOrder": 39
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Gas",
+                  "serial": "Gas",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "g",
+                  "favorited": false,
+                  "sortOrder": 37
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                },
+                {
+                  "title": "Unite Students app",
+                  "serial": "MyUnite",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "Ä",
+                  "favorited": false,
+                  "sortOrder": 29
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                },
+                {
+                  "title": "Secure access",
+                  "serial": "SecureAccess",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "√",
+                  "favorited": false,
+                  "sortOrder": 19
+                },
+                {
+                  "title": "Maintenance support",
+                  "serial": "MaintenanceSupport",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "®",
+                  "favorited": false,
+                  "sortOrder": 22
+                }
+              ]
+            }
+          ],
+          "propertyId": "ARCHWA"
+        },
+        "images": [
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "kKEWZPigPfw0f1WPnvm55"
+            },
+            "description": "Students in the courtyard",
+            "focalPoint": {
+              "x": 3019,
+              "y": 3082
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/daade2df-50d8-4ea1-8c98-a943b47d3519/Sheffield_Archways_Courtyard.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/daade2df-50d8-4ea1-8c98-a943b47d3519/Sheffield_Archways_Courtyard.jpg.webp",
+              "filename": "Sheffield_Archways_Courtyard.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/daade2df-50d8-4ea1-8c98-a943b47d3519/Sheffield_Archways_Courtyard.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/daade2df-50d8-4ea1-8c98-a943b47d3519/Sheffield_Archways_Courtyard.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3cpitnuaB2pdE9ffyExUmo"
+            },
+            "description": "Bed and study space in an En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e2cb01cc-b6db-4805-9a39-1382d7c3869d/Sheffield_Archways_ClassicEnsuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e2cb01cc-b6db-4805-9a39-1382d7c3869d/Sheffield_Archways_ClassicEnsuite_01.jpg.webp",
+              "filename": "Sheffield_Archways_ClassicEnsuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e2cb01cc-b6db-4805-9a39-1382d7c3869d/Sheffield_Archways_ClassicEnsuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e2cb01cc-b6db-4805-9a39-1382d7c3869d/Sheffield_Archways_ClassicEnsuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7C2NcxuU4tk0pO2kZ43RsP"
+            },
+            "description": "Study space in an En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/5e5d3c5a-5268-4476-9037-51d97e46cb49/Sheffield_Archways_ClassicEnsuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/5e5d3c5a-5268-4476-9037-51d97e46cb49/Sheffield_Archways_ClassicEnsuite_02.jpg.webp",
+              "filename": "Sheffield_Archways_ClassicEnsuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/5e5d3c5a-5268-4476-9037-51d97e46cb49/Sheffield_Archways_ClassicEnsuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/5e5d3c5a-5268-4476-9037-51d97e46cb49/Sheffield_Archways_ClassicEnsuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "1Xze15dSZc1IRzSGHp5Lni"
+            },
+            "description": "En-suite bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/44fbffb3-86ce-4d93-878f-8f19d5d4b637/Sheffield_Archways_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/44fbffb3-86ce-4d93-878f-8f19d5d4b637/Sheffield_Archways_Bathroom.jpg.webp",
+              "filename": "Sheffield_Archways_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/44fbffb3-86ce-4d93-878f-8f19d5d4b637/Sheffield_Archways_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/44fbffb3-86ce-4d93-878f-8f19d5d4b637/Sheffield_Archways_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "43AxMIzx3xAe7fCumShl31"
+            },
+            "description": "Bed in a Premium 1 En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/676d6eb1-cb44-456f-8fe0-e23dfa9719db/Sheffield_Archways_Premium1Ensuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/676d6eb1-cb44-456f-8fe0-e23dfa9719db/Sheffield_Archways_Premium1Ensuite_01.jpg.webp",
+              "filename": "Sheffield_Archways_Premium1Ensuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/676d6eb1-cb44-456f-8fe0-e23dfa9719db/Sheffield_Archways_Premium1Ensuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/676d6eb1-cb44-456f-8fe0-e23dfa9719db/Sheffield_Archways_Premium1Ensuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7GvckGL87JXCSUybd7fLd0"
+            },
+            "description": "Study space in a Premium En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/bba60562-e2cf-4b06-9b56-d77f2ec79578/Sheffield_Archways_Premium1Ensuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bba60562-e2cf-4b06-9b56-d77f2ec79578/Sheffield_Archways_Premium1Ensuite_02.jpg.webp",
+              "filename": "Sheffield_Archways_Premium1Ensuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bba60562-e2cf-4b06-9b56-d77f2ec79578/Sheffield_Archways_Premium1Ensuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/bba60562-e2cf-4b06-9b56-d77f2ec79578/Sheffield_Archways_Premium1Ensuite_02.jpg.preview.webp"
+            }
+          }
+        ],
+        "propertySlug": "archways",
+        "citySlug": "sheffield",
+        "featuredAttribute": {
+          "text": "City centre location",
+          "icon": "actions/nearby"
+        },
+        "description": "A city-centre home of over 200 students just 5-minutes walk from Sheffield Hallam University. We have a courtyard with ping pong, plus a common room (shared with Leadmill Point) with pool and foosball.",
+        "latitude": 53.3760679980316,
+        "longitude": -1.46500889549256,
+        "propertyAddress": "18 Leadmill Road, Sheffield, England, S1 4SG",
+        "roomTypes": ["ENSUITE", "ENSUITE: THREE BED FLAT"],
+        "promotion": {
+          "title": "Price Promise",
+          "icon": "actions/offers",
+          "shortDescription": {
+            "__typename": "PropertyPromotionCardShortDescription",
+            "json": {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Book today for 2026/27 & if prices drop, so will yours",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            }
+          }
+        }
+      },
+      {
+        "propertyId": "BRSSFD",
+        "propertyName": "Brass Founders",
+        "availability": true,
+        "nomsStatus": "NOMS_REFFERAL_AND_DIRECT_LET",
+        "nomsPartners": [],
+        "lowestPrice": 109,
+        "lowestMonthlyPrice": 473.63,
+        "priceRange": {
+          "lowest": 109,
+          "highest": 160
+        },
+        "features": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                },
+                {
+                  "title": "Gym",
+                  "serial": "Gym",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "†",
+                  "favorited": true,
+                  "sortOrder": 6
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Outdoor social space",
+                  "serial": "OutdoorSocialSpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "v",
+                  "favorited": false,
+                  "sortOrder": 14
+                },
+                {
+                  "title": "Cinema room",
+                  "serial": "CinemaRoom",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": true,
+                  "sortOrder": 1
+                },
+                {
+                  "title": "Communal study space",
+                  "serial": "CommunalStudySpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "“",
+                  "favorited": false,
+                  "sortOrder": 3
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Gas",
+                  "serial": "Gas",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "g",
+                  "favorited": false,
+                  "sortOrder": 37
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                },
+                {
+                  "title": "Unite Students app",
+                  "serial": "MyUnite",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "Ä",
+                  "favorited": false,
+                  "sortOrder": 29
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                },
+                {
+                  "title": "Secure access",
+                  "serial": "SecureAccess",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "√",
+                  "favorited": false,
+                  "sortOrder": 19
+                },
+                {
+                  "title": "Maintenance support",
+                  "serial": "MaintenanceSupport",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "®",
+                  "favorited": false,
+                  "sortOrder": 22
+                }
+              ]
+            }
+          ],
+          "propertyId": "BRSSFD"
+        },
+        "images": [
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3VGnRu1vywJqpdP1rac9qc"
+            },
+            "description": "Students in the gym at Brass Founders",
+            "focalPoint": {
+              "x": 3815,
+              "y": 2192
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/588aa2c4-b9ad-4a85-9318-2988b5066aff/Sheffield_BrassFounders_Gym.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/588aa2c4-b9ad-4a85-9318-2988b5066aff/Sheffield_BrassFounders_Gym.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Gym.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/588aa2c4-b9ad-4a85-9318-2988b5066aff/Sheffield_BrassFounders_Gym.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/588aa2c4-b9ad-4a85-9318-2988b5066aff/Sheffield_BrassFounders_Gym.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7vdkACFlFR1IfjgVue3RGx"
+            },
+            "description": "Students in study area at Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/b9d70a50-d4b9-4845-a83b-e891d2a9f0a9/Sheffield_BrassFounders_StudyArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/b9d70a50-d4b9-4845-a83b-e891d2a9f0a9/Sheffield_BrassFounders_StudyArea.jpg.webp",
+              "filename": "Sheffield_BrassFounders_StudyArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/b9d70a50-d4b9-4845-a83b-e891d2a9f0a9/Sheffield_BrassFounders_StudyArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/b9d70a50-d4b9-4845-a83b-e891d2a9f0a9/Sheffield_BrassFounders_StudyArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3fk0XdhTWFjrjdZ0HUP4hV"
+            },
+            "description": "Students in The Nook at Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/f7d228eb-c7d2-43fc-b08a-37ed301e45d1/Sheffield_BrassFounders_TheNook.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/f7d228eb-c7d2-43fc-b08a-37ed301e45d1/Sheffield_BrassFounders_TheNook.jpg.webp",
+              "filename": "Sheffield_BrassFounders_TheNook.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/f7d228eb-c7d2-43fc-b08a-37ed301e45d1/Sheffield_BrassFounders_TheNook.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/f7d228eb-c7d2-43fc-b08a-37ed301e45d1/Sheffield_BrassFounders_TheNook.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3HWQpJtubMAn6iuKwkqrVw"
+            },
+            "description": "Students in common room Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e59b7c2c-5e95-420e-a031-8377d531c75c/Sheffield_BrassFounders_CommonArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e59b7c2c-5e95-420e-a031-8377d531c75c/Sheffield_BrassFounders_CommonArea.jpg.webp",
+              "filename": "Sheffield_BrassFounders_CommonArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e59b7c2c-5e95-420e-a031-8377d531c75c/Sheffield_BrassFounders_CommonArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e59b7c2c-5e95-420e-a031-8377d531c75c/Sheffield_BrassFounders_CommonArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "398BMYicKJRnlwiuMoXVWH"
+            },
+            "description": "Courtyard at Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/a50eaa6a-339b-4af2-8ce0-27d7d769674a/Sheffield_BrassFounders_Courtyard.jpg.preview.png"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/a50eaa6a-339b-4af2-8ce0-27d7d769674a/Sheffield_BrassFounders_Courtyard.jpg.png",
+              "filename": "Sheffield_BrassFounders_Courtyard.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/a50eaa6a-339b-4af2-8ce0-27d7d769674a/Sheffield_BrassFounders_Courtyard.jpg.png",
+              "previewUrl": "https://us-cdn.dxp.plus/a50eaa6a-339b-4af2-8ce0-27d7d769674a/Sheffield_BrassFounders_Courtyard.jpg.preview.png"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7i3O1wKzbSCHDKYYcTla9B"
+            },
+            "description": "Students in a shared kitchen",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/89a5b210-4153-4e85-93af-32f680012fb5/Sheffield_BrassFounders_SharedKitchen.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/89a5b210-4153-4e85-93af-32f680012fb5/Sheffield_BrassFounders_SharedKitchen.jpg.webp",
+              "filename": "Sheffield_BrassFounders_SharedKitchen.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/89a5b210-4153-4e85-93af-32f680012fb5/Sheffield_BrassFounders_SharedKitchen.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/89a5b210-4153-4e85-93af-32f680012fb5/Sheffield_BrassFounders_SharedKitchen.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "KVQgN4vGU8gc0IUIPOJpQ"
+            },
+            "description": "Students in the games area",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/fed9f152-c77c-4597-8150-d5e8c1d15f70/Sheffield_BrassFounders_GamesArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/fed9f152-c77c-4597-8150-d5e8c1d15f70/Sheffield_BrassFounders_GamesArea.jpg.webp",
+              "filename": "Sheffield_BrassFounders_GamesArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/fed9f152-c77c-4597-8150-d5e8c1d15f70/Sheffield_BrassFounders_GamesArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/fed9f152-c77c-4597-8150-d5e8c1d15f70/Sheffield_BrassFounders_GamesArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2O6XK8LhK51YWCCQSWJsOV"
+            },
+            "description": "Exterior of Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/c6513a37-7420-4931-9bd5-c2a48c43f133/shef_bf_ext_mg_3070_jj_07.jpg.preview.webp"
+              },
+              "width": 4500,
+              "height": 3000,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/c6513a37-7420-4931-9bd5-c2a48c43f133/shef_bf_ext_mg_3070_jj_07.jpg.webp",
+              "filename": "shef_bf_ext_mg_3070_jj_07.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/c6513a37-7420-4931-9bd5-c2a48c43f133/shef_bf_ext_mg_3070_jj_07.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/c6513a37-7420-4931-9bd5-c2a48c43f133/shef_bf_ext_mg_3070_jj_07.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4fr65gPLEQwsOGE6BikJit"
+            },
+            "description": "Bed in an ensuite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/3bcb801a-d2df-465e-8c9c-610c0bd627ef/Sheffield_BrassFounders_ClassicEnsuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/3bcb801a-d2df-465e-8c9c-610c0bd627ef/Sheffield_BrassFounders_ClassicEnsuite_01.jpg.webp",
+              "filename": "Sheffield_BrassFounders_ClassicEnsuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/3bcb801a-d2df-465e-8c9c-610c0bd627ef/Sheffield_BrassFounders_ClassicEnsuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/3bcb801a-d2df-465e-8c9c-610c0bd627ef/Sheffield_BrassFounders_ClassicEnsuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "23jgc0k2oo317tCOd9bEtj"
+            },
+            "description": "Study space in an Ensuite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/9ebb6625-48c0-4245-9ec9-aaa89db2d06f/Sheffield_BrassFounders_ClassicEnsuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9ebb6625-48c0-4245-9ec9-aaa89db2d06f/Sheffield_BrassFounders_ClassicEnsuite_02.jpg.webp",
+              "filename": "Sheffield_BrassFounders_ClassicEnsuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9ebb6625-48c0-4245-9ec9-aaa89db2d06f/Sheffield_BrassFounders_ClassicEnsuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/9ebb6625-48c0-4245-9ec9-aaa89db2d06f/Sheffield_BrassFounders_ClassicEnsuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5t5l6naJYbtzwaXx5TOrrF"
+            },
+            "description": "Bed in a Studio room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/9ae0ad7b-3818-4bac-ad3d-7bc8a5cf026c/Sheffield_BrassFounders_ClassicStudio_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9ae0ad7b-3818-4bac-ad3d-7bc8a5cf026c/Sheffield_BrassFounders_ClassicStudio_01.jpg.webp",
+              "filename": "Sheffield_BrassFounders_ClassicStudio_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9ae0ad7b-3818-4bac-ad3d-7bc8a5cf026c/Sheffield_BrassFounders_ClassicStudio_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/9ae0ad7b-3818-4bac-ad3d-7bc8a5cf026c/Sheffield_BrassFounders_ClassicStudio_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3bWXWmlOF28yBjP3O3YGbv"
+            },
+            "description": "Study space in a Studio room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/896b6389-6ac0-4556-a86f-510d02fb1f90/Sheffield_BrassFounders_ClassicStudio_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/896b6389-6ac0-4556-a86f-510d02fb1f90/Sheffield_BrassFounders_ClassicStudio_02.jpg.webp",
+              "filename": "Sheffield_BrassFounders_ClassicStudio_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/896b6389-6ac0-4556-a86f-510d02fb1f90/Sheffield_BrassFounders_ClassicStudio_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/896b6389-6ac0-4556-a86f-510d02fb1f90/Sheffield_BrassFounders_ClassicStudio_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5HuQhF1jrnpQH01q04ckUB"
+            },
+            "description": "Kitchen in a Studio room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/88f474da-d5d0-408e-87b7-ce35f4505de8/Sheffield_BrassFounders_ClassicStudio_03.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/88f474da-d5d0-408e-87b7-ce35f4505de8/Sheffield_BrassFounders_ClassicStudio_03.jpg.webp",
+              "filename": "Sheffield_BrassFounders_ClassicStudio_03.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/88f474da-d5d0-408e-87b7-ce35f4505de8/Sheffield_BrassFounders_ClassicStudio_03.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/88f474da-d5d0-408e-87b7-ce35f4505de8/Sheffield_BrassFounders_ClassicStudio_03.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2gUPPG5nPkTZEPlTTSw0IK"
+            },
+            "description": "Bathroom at Brass Founders",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/a0f3969b-e129-441e-8106-dc00324bc266/Sheffield_BrassFounders_Studio_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/a0f3969b-e129-441e-8106-dc00324bc266/Sheffield_BrassFounders_Studio_Bathroom.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Studio_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/a0f3969b-e129-441e-8106-dc00324bc266/Sheffield_BrassFounders_Studio_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/a0f3969b-e129-441e-8106-dc00324bc266/Sheffield_BrassFounders_Studio_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "58QYXcfC1qQ6FJ9oU9VPlz"
+            },
+            "description": "Premium En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/bf44a3fe-4c15-49cc-8f1d-240e0f269b9e/Sheffield_BrassFounders_Premium1Ensuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bf44a3fe-4c15-49cc-8f1d-240e0f269b9e/Sheffield_BrassFounders_Premium1Ensuite_01.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium1Ensuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bf44a3fe-4c15-49cc-8f1d-240e0f269b9e/Sheffield_BrassFounders_Premium1Ensuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/bf44a3fe-4c15-49cc-8f1d-240e0f269b9e/Sheffield_BrassFounders_Premium1Ensuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5umF5eNOsyv6mEggSnm0Fe"
+            },
+            "description": "Study space in a Premium En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/eda261c3-35eb-4011-add8-ce877ffd16d6/Sheffield_BrassFounders_Premium1Ensuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/eda261c3-35eb-4011-add8-ce877ffd16d6/Sheffield_BrassFounders_Premium1Ensuite_02.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium1Ensuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/eda261c3-35eb-4011-add8-ce877ffd16d6/Sheffield_BrassFounders_Premium1Ensuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/eda261c3-35eb-4011-add8-ce877ffd16d6/Sheffield_BrassFounders_Premium1Ensuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "1NVNu0Cs2p1xs8DCHyNKxF"
+            },
+            "description": "Bed in a premium accessible studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/54bce018-7872-4808-ac94-b884072aafb6/Sheffield_BrassFounders_Premium3AccessibleStudio_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/54bce018-7872-4808-ac94-b884072aafb6/Sheffield_BrassFounders_Premium3AccessibleStudio_01.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium3AccessibleStudio_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/54bce018-7872-4808-ac94-b884072aafb6/Sheffield_BrassFounders_Premium3AccessibleStudio_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/54bce018-7872-4808-ac94-b884072aafb6/Sheffield_BrassFounders_Premium3AccessibleStudio_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3N9JfppWDCYkMkKqsrGKRr"
+            },
+            "description": "Study space in premium accessible studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/ea0d5271-6957-4490-a0be-854e016f9c42/Sheffield_BrassFounders_Premium3AccessibleStudio_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ea0d5271-6957-4490-a0be-854e016f9c42/Sheffield_BrassFounders_Premium3AccessibleStudio_02.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium3AccessibleStudio_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ea0d5271-6957-4490-a0be-854e016f9c42/Sheffield_BrassFounders_Premium3AccessibleStudio_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/ea0d5271-6957-4490-a0be-854e016f9c42/Sheffield_BrassFounders_Premium3AccessibleStudio_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2rtVnZnVakutRDKNUKPjLz"
+            },
+            "description": "Kitchen in premium accessible studio",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/35b85a09-b30a-4e55-9483-f5d623d5c6ae/Sheffield_BrassFounders_Premium3AccessibleStudio_03.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/35b85a09-b30a-4e55-9483-f5d623d5c6ae/Sheffield_BrassFounders_Premium3AccessibleStudio_03.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium3AccessibleStudio_03.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/35b85a09-b30a-4e55-9483-f5d623d5c6ae/Sheffield_BrassFounders_Premium3AccessibleStudio_03.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/35b85a09-b30a-4e55-9483-f5d623d5c6ae/Sheffield_BrassFounders_Premium3AccessibleStudio_03.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7qO3Y0GpnSIwWIHWrkDSyD"
+            },
+            "description": "Accessible studio bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e53d1f61-fec9-4779-92cc-44c356ac2654/Sheffield_BrassFounders_Premium3AccessibleStudio_04_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e53d1f61-fec9-4779-92cc-44c356ac2654/Sheffield_BrassFounders_Premium3AccessibleStudio_04_Bathroom.jpg.webp",
+              "filename": "Sheffield_BrassFounders_Premium3AccessibleStudio_04_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e53d1f61-fec9-4779-92cc-44c356ac2654/Sheffield_BrassFounders_Premium3AccessibleStudio_04_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e53d1f61-fec9-4779-92cc-44c356ac2654/Sheffield_BrassFounders_Premium3AccessibleStudio_04_Bathroom.jpg.preview.webp"
+            }
+          }
+        ],
+        "propertySlug": "brass-founders",
+        "citySlug": "sheffield",
+        "featuredAttribute": {
+          "text": "Free on-site gym",
+          "icon": "building-features/basketball"
+        },
+        "description": "Brass Founders is only a 10-minute walk from the city centre and the University of Sheffield. We've got a gym, cinema room, outside space, plus a common room with sofas, built-in Twister, air hockey and a basketball hoop.",
+        "latitude": 53.3856402787984,
+        "longitude": -1.47637274515228,
+        "propertyAddress": "130 Scotland Street, Sheffield, England, S3 7DD",
+        "roomTypes": [
+          "STUDIO",
+          "ENSUITE",
+          "PARTLY ACCESSIBLE STUDIO",
+          "PARTLY ACCESSIBLE ENSUITE"
+        ],
+        "promotion": {
+          "title": "Lower Price for 2026/27",
+          "icon": "actions/offers",
+          "shortDescription": {
+            "__typename": "PropertyPromotionCardShortDescription",
+            "json": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Cheaper Than 25/26 - Book Early & Save!",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "propertyId": "WSTHLL",
+        "propertyName": "Westhill Hall",
+        "availability": true,
+        "nomsStatus": "NOMS_REFFERAL_AND_DIRECT_LET",
+        "nomsPartners": [],
+        "lowestPrice": 84,
+        "lowestMonthlyPrice": 365,
+        "priceRange": {
+          "lowest": 84,
+          "highest": 99
+        },
+        "features": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Car parking on site (extra charge)",
+                  "serial": "CarParkSpaces",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "˙",
+                  "favorited": false,
+                  "sortOrder": 7
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Cinema room",
+                  "serial": "CinemaRoom",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": true,
+                  "sortOrder": 1
+                },
+                {
+                  "title": "Communal study space",
+                  "serial": "CommunalStudySpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "“",
+                  "favorited": true,
+                  "sortOrder": 3
+                },
+                {
+                  "title": "Access to cinema room in other property",
+                  "serial": "CinemaRoomAccessInOtherProperty",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": false,
+                  "sortOrder": 13
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                }
+              ]
+            }
+          ],
+          "propertyId": "WSTHLL"
+        },
+        "images": [
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "35lBFRWvolxYWdokxAwYR6"
+            },
+            "description": "Students in the cinema room",
+            "focalPoint": {
+              "x": 4494,
+              "y": 2356
+            },
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/293ee812-9246-46d7-a8bd-5e8469f077c8/Sheffield_WesthillHall_CinemaRoom_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/293ee812-9246-46d7-a8bd-5e8469f077c8/Sheffield_WesthillHall_CinemaRoom_02.jpg.webp",
+              "filename": "Sheffield_WesthillHall_CinemaRoom_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/293ee812-9246-46d7-a8bd-5e8469f077c8/Sheffield_WesthillHall_CinemaRoom_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/293ee812-9246-46d7-a8bd-5e8469f077c8/Sheffield_WesthillHall_CinemaRoom_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "5s9PL0F2bsj4ppv5mjCuCg"
+            },
+            "description": "Students in a shared kitchen",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e4f365c7-0733-41ad-bee7-643abb23bc6f/Sheffield_WesthillHall_SharedKitchen.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e4f365c7-0733-41ad-bee7-643abb23bc6f/Sheffield_WesthillHall_SharedKitchen.jpg.webp",
+              "filename": "Sheffield_WesthillHall_SharedKitchen.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e4f365c7-0733-41ad-bee7-643abb23bc6f/Sheffield_WesthillHall_SharedKitchen.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e4f365c7-0733-41ad-bee7-643abb23bc6f/Sheffield_WesthillHall_SharedKitchen.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2nbpyGfqiHYfYz2a8W7wNw"
+            },
+            "description": "Students in the study pods",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/8b34378f-59fa-42fc-a0a0-58bfbe1d0a23/Sheffield_WesthillHall_StudyPods.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/8b34378f-59fa-42fc-a0a0-58bfbe1d0a23/Sheffield_WesthillHall_StudyPods.jpg.webp",
+              "filename": "Sheffield_WesthillHall_StudyPods.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/8b34378f-59fa-42fc-a0a0-58bfbe1d0a23/Sheffield_WesthillHall_StudyPods.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/8b34378f-59fa-42fc-a0a0-58bfbe1d0a23/Sheffield_WesthillHall_StudyPods.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4430zCD1HNOybxAUptDKvr"
+            },
+            "description": "Students in the games area",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/a6a4082e-a046-4cb6-bb81-e77dc4ec186c/Sheffield_WesthillHall_GamesArea.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/a6a4082e-a046-4cb6-bb81-e77dc4ec186c/Sheffield_WesthillHall_GamesArea.jpg.webp",
+              "filename": "Sheffield_WesthillHall_GamesArea.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/a6a4082e-a046-4cb6-bb81-e77dc4ec186c/Sheffield_WesthillHall_GamesArea.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/a6a4082e-a046-4cb6-bb81-e77dc4ec186c/Sheffield_WesthillHall_GamesArea.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4Dy025TVsNEkHjuGRbgdPw"
+            },
+            "description": "Students in the courtyard",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/ea04060c-787b-4486-9c2c-0679dcf2bd07/Sheffield_WesthillHall_Courtyard.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ea04060c-787b-4486-9c2c-0679dcf2bd07/Sheffield_WesthillHall_Courtyard.jpg.webp",
+              "filename": "Sheffield_WesthillHall_Courtyard.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ea04060c-787b-4486-9c2c-0679dcf2bd07/Sheffield_WesthillHall_Courtyard.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/ea04060c-787b-4486-9c2c-0679dcf2bd07/Sheffield_WesthillHall_Courtyard.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3epH4rm0V0jQw36MnEDIp5"
+            },
+            "description": "Students in the common room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/c660312f-487e-406b-8b92-9b806322bd72/Sheffield_WesthillHall_CommonRoom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/c660312f-487e-406b-8b92-9b806322bd72/Sheffield_WesthillHall_CommonRoom.jpg.webp",
+              "filename": "Sheffield_WesthillHall_CommonRoom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/c660312f-487e-406b-8b92-9b806322bd72/Sheffield_WesthillHall_CommonRoom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/c660312f-487e-406b-8b92-9b806322bd72/Sheffield_WesthillHall_CommonRoom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6stpgm5CL1rLJHK9ZXF2eX"
+            },
+            "description": "Exterior of Westhill Hall",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/866ffad4-6b50-4bc1-91d4-a6ea2dbb4367/Sheffield_WesthillHall_Exterior_04.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/866ffad4-6b50-4bc1-91d4-a6ea2dbb4367/Sheffield_WesthillHall_Exterior_04.jpg.webp",
+              "filename": "Sheffield_WesthillHall_Exterior_04.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/866ffad4-6b50-4bc1-91d4-a6ea2dbb4367/Sheffield_WesthillHall_Exterior_04.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/866ffad4-6b50-4bc1-91d4-a6ea2dbb4367/Sheffield_WesthillHall_Exterior_04.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "3enD0CzdQsR3DStBUWkDLt"
+            },
+            "description": "Bed and study space in an En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/8ec1e71b-ca66-4c32-883b-4ab135a71efc/Sheffield_WesthillHall_BasicEnsuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/8ec1e71b-ca66-4c32-883b-4ab135a71efc/Sheffield_WesthillHall_BasicEnsuite_01.jpg.webp",
+              "filename": "Sheffield_WesthillHall_BasicEnsuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/8ec1e71b-ca66-4c32-883b-4ab135a71efc/Sheffield_WesthillHall_BasicEnsuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/8ec1e71b-ca66-4c32-883b-4ab135a71efc/Sheffield_WesthillHall_BasicEnsuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "4qTGGavrQUFrLy6IjvRvsj"
+            },
+            "description": "Study space in an En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/5a49f2d1-ecf6-45ef-b7f1-dcf2691eaae7/Sheffield_WesthillHall_BasicEnsuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/5a49f2d1-ecf6-45ef-b7f1-dcf2691eaae7/Sheffield_WesthillHall_BasicEnsuite_02.jpg.webp",
+              "filename": "Sheffield_WesthillHall_BasicEnsuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/5a49f2d1-ecf6-45ef-b7f1-dcf2691eaae7/Sheffield_WesthillHall_BasicEnsuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/5a49f2d1-ecf6-45ef-b7f1-dcf2691eaae7/Sheffield_WesthillHall_BasicEnsuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "vWP2YnNmdNRfdMFJfIEJv"
+            },
+            "description": "En-suite bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/dee2e3d6-f2f5-4d10-aa93-0288f22d4588/Sheffield_WesthillHall_BasicEnsuite_03_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/dee2e3d6-f2f5-4d10-aa93-0288f22d4588/Sheffield_WesthillHall_BasicEnsuite_03_Bathroom.jpg.webp",
+              "filename": "Sheffield_WesthillHall_BasicEnsuite_03_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/dee2e3d6-f2f5-4d10-aa93-0288f22d4588/Sheffield_WesthillHall_BasicEnsuite_03_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/dee2e3d6-f2f5-4d10-aa93-0288f22d4588/Sheffield_WesthillHall_BasicEnsuite_03_Bathroom.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "6EoNnkCEdJqvfCzkAX2ACK"
+            },
+            "description": "Study space in a Classic En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/841aba34-e40d-4502-9595-381022c97333/Sheffield_WesthillHall_ClassicEnsuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/841aba34-e40d-4502-9595-381022c97333/Sheffield_WesthillHall_ClassicEnsuite_01.jpg.webp",
+              "filename": "Sheffield_WesthillHall_ClassicEnsuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/841aba34-e40d-4502-9595-381022c97333/Sheffield_WesthillHall_ClassicEnsuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/841aba34-e40d-4502-9595-381022c97333/Sheffield_WesthillHall_ClassicEnsuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "1Zg5TCp3rANgu2n49R8Ny7"
+            },
+            "description": "Bed and study space in an En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.webp",
+              "filename": "Sheffield_WesthillHall_ClassicEnsuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "2cVdgNENxxJcBKqZe0K5Uq"
+            },
+            "description": "Study space in a Premium En-suite",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+              "filename": "Sheffield_WesthillHall_Premium1Ensuite_02.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7Chz7k0kn1nE4ISo8Gpqjm"
+            },
+            "description": "Bed in a Premium En-suite room",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+              "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+            }
+          },
+          {
+            "sys": {
+              "__typename": "Sys",
+              "id": "7l0GP2j6TakPnCqi0BMOQH"
+            },
+            "description": "Premium En-suite bathroom",
+            "image": {
+              "metadata": {
+                "system_mime_type": "image/jpeg",
+                "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+              },
+              "width": 8192,
+              "height": 5464,
+              "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+              "filename": "Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg",
+              "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+              "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+            }
+          }
+        ],
+        "propertySlug": "westhill-hall",
+        "citySlug": "sheffield",
+        "featuredAttribute": {
+          "text": "City centre location",
+          "icon": "actions/nearby"
+        },
+        "description": "Home to a community of 499 students, Westhill Hall is an ideal student home with the city centre right on your doorstep and campus only a 10-minutes walk away.",
+        "latitude": 53.3785055288375,
+        "longitude": -1.47698112481143,
+        "propertyAddress": "61 Eldon Street, Sheffield, United Kingdom, S1 4NN",
+        "roomTypes": ["ENSUITE: THREE BED FLAT", "ENSUITE"],
+        "promotion": {
+          "title": "Lower Price for 2026/27",
+          "icon": "actions/offers",
+          "shortDescription": {
+            "__typename": "PropertyPromotionCardShortDescription",
+            "json": {
+              "nodeType": "document",
+              "data": {},
+              "content": [
+                {
+                  "nodeType": "paragraph",
+                  "data": {},
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "Cheaper Than 25/26 - Book Early & Save!",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "propertiesWeeklyPriceRange": {
+      "lowest": 84,
+      "highest": 160
+    },
+    "closeMatchList": [
+      {
+        "property": {
+          "propertyId": "STVNCT",
+          "propertyName": "St Vincents Place",
+          "availability": true,
+          "nomsStatus": "NOMS_REFFERAL_AND_NOMS_THIRD_PARTY_AND_DIRECT_LET",
+          "nomsPartners": [],
+          "lowestPrice": 187,
+          "lowestMonthlyPrice": 812.56,
+          "priceRange": {
+            "lowest": 187,
+            "highest": 195
+          },
+          "features": {
+            "data": [
+              {
+                "category": "Facilities",
+                "features": [
+                  {
+                    "title": "Bike storage",
+                    "serial": "BikeStorageCount",
+                    "omitted": false,
+                    "category": "Facilities",
+                    "iconText": "]",
+                    "favorited": false,
+                    "sortOrder": 25
+                  },
+                  {
+                    "title": "Laundry",
+                    "serial": "LaundryRoomCount",
+                    "omitted": false,
+                    "category": "Facilities",
+                    "iconText": "L",
+                    "favorited": false,
+                    "sortOrder": 15
+                  },
+                  {
+                    "title": "Vending machine",
+                    "serial": "VendingMachineCount",
+                    "omitted": false,
+                    "category": "Facilities",
+                    "iconText": "V",
+                    "favorited": false,
+                    "sortOrder": 24
+                  },
+                  {
+                    "title": "Recycling",
+                    "serial": "Recyling",
+                    "omitted": false,
+                    "category": "Facilities",
+                    "iconText": "æ",
+                    "favorited": false,
+                    "sortOrder": 32
+                  },
+                  {
+                    "title": "Printing (extra charge)",
+                    "serial": "FreePrinting",
+                    "omitted": false,
+                    "category": "Facilities",
+                    "iconText": "l",
+                    "favorited": false,
+                    "sortOrder": 23
+                  }
+                ]
+              },
+              {
+                "category": "Social and Study",
+                "features": [
+                  {
+                    "title": "Common area",
+                    "serial": "CommonAreaCount",
+                    "omitted": false,
+                    "category": "Social and Study",
+                    "iconText": "r",
+                    "favorited": true,
+                    "sortOrder": 2
+                  },
+                  {
+                    "title": "Outdoor social space",
+                    "serial": "OutdoorSocialSpace",
+                    "omitted": false,
+                    "category": "Social and Study",
+                    "iconText": "v",
+                    "favorited": false,
+                    "sortOrder": 14
+                  },
+                  {
+                    "title": "Cinema room",
+                    "serial": "CinemaRoom",
+                    "omitted": false,
+                    "category": "Social and Study",
+                    "iconText": "-",
+                    "favorited": true,
+                    "sortOrder": 1
+                  },
+                  {
+                    "title": "Communal study space",
+                    "serial": "CommunalStudySpace",
+                    "omitted": false,
+                    "category": "Social and Study",
+                    "iconText": "“",
+                    "favorited": true,
+                    "sortOrder": 3
+                  }
+                ]
+              },
+              {
+                "category": "Living Essentials (free)",
+                "features": [
+                  {
+                    "title": "Heating",
+                    "serial": "Heating",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "h",
+                    "favorited": false,
+                    "sortOrder": 35
+                  },
+                  {
+                    "title": "Water",
+                    "serial": "Water",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "w",
+                    "favorited": false,
+                    "sortOrder": 36
+                  },
+                  {
+                    "title": "Gas",
+                    "serial": "Gas",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "g",
+                    "favorited": false,
+                    "sortOrder": 37
+                  },
+                  {
+                    "title": "Wi-Fi in your flat & communal areas",
+                    "serial": "WifiCommunalArea",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "W",
+                    "favorited": false,
+                    "sortOrder": 34
+                  },
+                  {
+                    "title": "Ultrafast Broadband & Wi-Fi*",
+                    "serial": "WifiFlat",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "W",
+                    "favorited": false,
+                    "sortOrder": 33
+                  },
+                  {
+                    "title": "Electric",
+                    "serial": "Electric",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "e",
+                    "favorited": false,
+                    "sortOrder": 38
+                  },
+                  {
+                    "title": "Unite Students app",
+                    "serial": "MyUnite",
+                    "omitted": false,
+                    "category": "Living Essentials (free)",
+                    "iconText": "Ä",
+                    "favorited": false,
+                    "sortOrder": 29
+                  }
+                ]
+              },
+              {
+                "category": "Safety and Security",
+                "features": [
+                  {
+                    "title": "CCTV",
+                    "serial": "CCTV",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "&",
+                    "favorited": false,
+                    "sortOrder": 27
+                  },
+                  {
+                    "title": "24/7 assistance",
+                    "serial": "24/7Assistance",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "É",
+                    "favorited": false,
+                    "sortOrder": 20
+                  },
+                  {
+                    "title": "Onsite service team",
+                    "serial": "OnSiteServiceTem",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "Œ",
+                    "favorited": false,
+                    "sortOrder": 21
+                  },
+                  {
+                    "title": "Fire system",
+                    "serial": "FireSystem",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": ":",
+                    "favorited": false,
+                    "sortOrder": 26
+                  },
+                  {
+                    "title": "Contents insurance",
+                    "serial": "ContentInsurance",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "i",
+                    "favorited": false,
+                    "sortOrder": 28
+                  },
+                  {
+                    "title": "Secure access",
+                    "serial": "SecureAccess",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "√",
+                    "favorited": false,
+                    "sortOrder": 19
+                  },
+                  {
+                    "title": "Maintenance support",
+                    "serial": "MaintenanceSupport",
+                    "omitted": false,
+                    "category": "Safety and Security",
+                    "iconText": "®",
+                    "favorited": false,
+                    "sortOrder": 22
+                  }
+                ]
+              },
+              {
+                "category": "Key Features",
+                "features": [
+                  {
+                    "title": "Music room",
+                    "serial": "MusicRoom",
+                    "omitted": false,
+                    "category": "Key Features",
+                    "iconText": "∞",
+                    "favorited": false,
+                    "sortOrder": 17
+                  }
+                ]
+              }
+            ],
+            "propertyId": "STVNCT"
+          },
+          "images": [
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "7vDQ3Xd0KocU649RLIXINo"
+              },
+              "description": "Students in the common room",
+              "focalPoint": {
+                "x": 3371,
+                "y": 3222
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.webp",
+                "filename": "Sheffield_StVincents_CommonRoom_01.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/ed2c9be9-6a72-492e-8ca8-36b66fb9a5ee/Sheffield_StVincents_CommonRoom_01.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "2emkIyUNz9Khx9Pf1vfWtg"
+              },
+              "description": "Students in the  TV area",
+              "focalPoint": {
+                "x": 4143,
+                "y": 3129
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.webp",
+                "filename": "Sheffield_StVincents_TVArea.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/59f9cbda-6fca-447a-b879-d4a0d5894896/Sheffield_StVincents_TVArea.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "2pnAwjGPLSUTVucQ5jFf5z"
+              },
+              "description": "Students in the games area",
+              "focalPoint": {
+                "x": 5992,
+                "y": 3292
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.webp",
+                "filename": "Sheffield_StVincents_GamesArea.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/73b656fe-b021-463f-a369-ebb80765e799/Sheffield_StVincents_GamesArea.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "5kq23kbgPbZBHA4KDjDl80"
+              },
+              "description": "Students in a shared kitchen",
+              "focalPoint": {
+                "x": 4050,
+                "y": 2777
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.webp",
+                "filename": "Sheffield_StVincents_SharedKitchen.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/23429009-bfb0-42f1-8440-774ba853b388/Sheffield_StVincents_SharedKitchen.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "20W1pQJ0Tc8oQhzBTBgLTW"
+              },
+              "description": "Cinema room",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.webp",
+                "filename": "Sheffield_StVincents_CinemaRoom.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/023d1e6a-a0e5-40af-849a-d6a8c42be8e8/Sheffield_StVincents_CinemaRoom.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "6xVhyn642tZYqwsJHJdZFO"
+              },
+              "description": "Students in the study area",
+              "focalPoint": {
+                "x": 4682,
+                "y": 2941
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.webp",
+                "filename": "Sheffield_StVincents_UpperStudyArea.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/6a6315fa-a5f5-496e-bde7-8279feb32ffe/Sheffield_StVincents_UpperStudyArea.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "3q22MFaliJDs39vaGdgVmS"
+              },
+              "description": "Students in the common room",
+              "focalPoint": {
+                "x": 4096,
+                "y": 2732
+              },
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.webp",
+                "filename": "Sheffield_StVincents_CommonRoom_02.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/9917bd00-1972-4a11-b509-071750f2e475/Sheffield_StVincents_CommonRoom_02.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "5c8pCrMEkMIoK6hmc5VL4j"
+              },
+              "description": "Exterior of St Vincent's Place",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.preview.webp"
+                },
+                "width": 4500,
+                "height": 3000,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.webp",
+                "filename": "Sheffield_StVincents_outdoorsocial.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/46367d30-f45d-4dc4-a3d8-abf1a2473a9f/Sheffield_StVincents_outdoorsocial.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "4XR7Hpp5xSiffFU0rwHMmx"
+              },
+              "description": "Bed, study space in an En-suite Classic",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicEnsuite_01.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/f02b171d-476d-48a8-9cf3-76312a0ea83b/Sheffield_StVincents_ClassicEnsuite_01.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "3wR4QAAuX9W1Ho05wvAKtH"
+              },
+              "description": "Bed in a Classic En-suite",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicEnsuite_02.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/e878b031-3990-4488-9dd0-f6d9af75dcf4/Sheffield_StVincents_ClassicEnsuite_02.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "4Jl9ubEAJQdKuLIloqDVtO"
+              },
+              "description": "En-suite bathroom",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/9d13ca96-5c84-4cdf-a481-62638288ba5f/Sheffield_StVincents_ClassicEnsuite_03_Bathroom.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "6x6rVZdXTqJGHscrZOOMPc"
+              },
+              "description": "Bed area in a Classic Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.preview.png"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.png",
+                "filename": "Sheffield_StVincents_ClassicStudio_01.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.png",
+                "previewUrl": "https://us-cdn.dxp.plus/065c9e1d-eebc-4704-ba95-716bd1704acd/Sheffield_StVincents_ClassicStudio_01.jpg.preview.png"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "5zxlObsr6NlmMKeJMio4K4"
+              },
+              "description": "Study area in a Classic Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.preview.png"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.png",
+                "filename": "Sheffield_StVincents_ClassicStudio_02.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.png",
+                "previewUrl": "https://us-cdn.dxp.plus/b5ebb785-c293-4c14-9fac-4e7c8258f8fc/Sheffield_StVincents_ClassicStudio_02.jpg.preview.png"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "6FDR0xCaScqzCKP0nnFqq9"
+              },
+              "description": "Kitchen in a Classic Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.preview.png"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.png",
+                "filename": "Sheffield_StVincents_ClassicStudio_03.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.png",
+                "previewUrl": "https://us-cdn.dxp.plus/f6aeb3d4-b614-472e-9ff6-8937798a8add/Sheffield_StVincents_ClassicStudio_03.jpg.preview.png"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "368wnvWHYqoKb9jQSric3j"
+              },
+              "description": "Bathroom in a Classic Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.preview.png"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.png",
+                "filename": "Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.png",
+                "previewUrl": "https://us-cdn.dxp.plus/8f85b3d5-e730-46fc-96be-abc711d66908/Sheffield_StVincents_ClassicStudio_04_Bathroom.jpg.preview.png"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "3YhgyAOxZtOSeMRu0Yl827"
+              },
+              "description": "Bed in a Classic Accessible Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicAccessibleStudio_01.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/407335d5-3c30-4c59-b4aa-13d9ea0445e5/Sheffield_StVincents_ClassicAccessibleStudio_01.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "L6jpdByrkaqhkSx6zRMDh"
+              },
+              "description": "Study space in an Accessible Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicAccessibleStudio_03.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/7b9ee092-12bc-4ef5-9873-b446b62a8d70/Sheffield_StVincents_ClassicAccessibleStudio_03.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "5t4jpsU3NmL1uUJqssvFs3"
+              },
+              "description": "Kitchen in a Classic Accessible Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicAccessibleStudio_02.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/79666ec0-8019-4b2c-a983-a45ecf6ac355/Sheffield_StVincents_ClassicAccessibleStudio_02.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "1w8diuO2ukECXkebLzsZlU"
+              },
+              "description": "Accessible Studio bathroom",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.webp",
+                "filename": "Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/e74185cf-478d-47bf-863a-524036c962ce/Sheffield_StVincents_ClassicAccessibleStudio_04_Bathroom.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "4XQEsNMwZltDOvIyHM9Lef"
+              },
+              "description": "Bedroom in a Premium Range 1 Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.webp",
+                "filename": "Sheffield_StVincents_Premium1Studio_01.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/a2f297d4-fab1-4d38-bd03-ad004dc238f5/Sheffield_StVincents_Premium1Studio_01.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "4M1JEyhqMBu5zVLXbJrB6x"
+              },
+              "description": "Studio bathroom",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.webp",
+                "filename": "Sheffield_StVincents_Studio_04_Bathroom.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/9348b969-6362-47c5-a130-ffa070b7ca39/Sheffield_StVincents_Studio_04_Bathroom.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "1BWuMKNQwcRoP2cA3FJg6R"
+              },
+              "description": "Study space in a Premium Range 1 Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.webp",
+                "filename": "Sheffield_StVincents_Premium1Studio_02.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/ce32e42d-ec7b-4300-8594-7ac380169d8a/Sheffield_StVincents_Premium1Studio_02.jpg.preview.webp"
+              }
+            },
+            {
+              "sys": {
+                "__typename": "Sys",
+                "id": "6Y7AgpwgbiqWzOJI1Dv8Eo"
+              },
+              "description": "Kitchen in a Premium Range 1 Studio",
+              "image": {
+                "metadata": {
+                  "system_mime_type": "image/jpeg",
+                  "previewUrl": "https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.preview.webp"
+                },
+                "width": 8192,
+                "height": 5464,
+                "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.webp",
+                "filename": "Sheffield_StVincents_Premium1Studio_03.jpg",
+                "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.webp",
+                "previewUrl": "https://us-cdn.dxp.plus/e0a7369d-0e5d-4cf5-be67-82f6d1e4d282/Sheffield_StVincents_Premium1Studio_03.jpg.preview.webp"
+              }
+            }
+          ],
+          "propertySlug": "st-vincents-place",
+          "citySlug": "sheffield",
+          "featuredAttribute": {
+            "text": "Restored Victorian church",
+            "icon": "map-filters/property"
+          },
+          "description": "A unique, city-centre home to nearly 600 students – with buzzing Kelham Island close by. At our centre is a beautifully-restored Victorian church with pool, ping pong, a music room and a cinema room.",
+          "latitude": 53.384715,
+          "longitude": -1.476147,
+          "propertyAddress": "30 Hollis Croft, Sheffield, England, S1 4BA",
+          "roomTypes": [
+            "STUDIO",
+            "ENSUITE: THREE BED FLAT",
+            "ENSUITE: TWO BED FLAT",
+            "ENSUITE",
+            "PARTLY ACCESSIBLE STUDIO"
+          ],
+          "promotion": {
+            "title": "Price Promise",
+            "icon": "actions/offers",
+            "shortDescription": {
+              "__typename": "PropertyPromotionCardShortDescription",
+              "json": {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "Book today for 2026/27 & if prices drop, so will yours",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "document"
+              }
+            }
+          }
+        },
+        "closeMatchValue": "LENGTH_OF_STAY_MISMATCH"
+      }
+    ],
+    "rankProperties": [
+      "WSTHLL",
+      "BRSSFD",
+      "ARCHWA",
+      "STVNCT",
+      "TANVIL",
+      "LEADPT"
+    ],
+    "cityCentrePoint": {
+      "latitude": 53.38311,
+      "longitude": -1.46455
+    }
+  }
+}

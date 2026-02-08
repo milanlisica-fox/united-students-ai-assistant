@@ -1,18 +1,15 @@
 import { Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 interface AIAssistantProps {
   className?: string;
-  to?: string;
+  onClick?: () => void;
 }
 
-const AIAssistant = ({ className, to = "/ai-experience" }: AIAssistantProps) => {
-  const navigate = useNavigate();
-
+const AIAssistant = ({ className, onClick }: AIAssistantProps) => {
   return (
     <button
       type="button"
-      onClick={() => navigate(to)}
+      onClick={onClick}
       className={`w-full flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 bg-card border border-border rounded-lg hover:bg-muted/50 transition-colors ${className ?? ""}`}
     >
       <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-accent shrink-0" />
@@ -22,4 +19,3 @@ const AIAssistant = ({ className, to = "/ai-experience" }: AIAssistantProps) => 
 };
 
 export default AIAssistant;
- 

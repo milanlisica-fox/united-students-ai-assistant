@@ -1,0 +1,2009 @@
+{
+  "status": 200,
+  "data": {
+    "rooms": [
+      {
+        "name": "ENSUITE: THREE BED FLAT",
+        "showFloorplan": false,
+        "roomClassifications": [
+          {
+            "classification": "EXTRA LARGE STANDARD DOUBLE",
+            "tenancyType": "DIRECT_LET",
+            "roomTypeName": "ENSUITE: THREE BED FLAT",
+            "roomFacilities": [
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Oven",
+                "sortOrder": 31,
+                "serial": "OvenCooking"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": ".",
+                "title": "Fridge freezer",
+                "sortOrder": 20,
+                "serial": "FridgeFreezer"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "%",
+                "title": "Breakfast bar",
+                "sortOrder": 7,
+                "serial": "BreakfastBar"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Cooking hobs",
+                "sortOrder": 13,
+                "serial": "CookingHobs"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "á",
+                "title": "Chairs",
+                "sortOrder": 9,
+                "serial": "Chairs"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "¬",
+                "title": "Kitchen Bin",
+                "sortOrder": 25,
+                "serial": "KitchenBin"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Õ",
+                "title": "Sofa",
+                "sortOrder": 33,
+                "serial": "Sofa"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "œ",
+                "title": "Stools",
+                "sortOrder": 34,
+                "serial": "Stools"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "·",
+                "title": "Ventilation system",
+                "sortOrder": 43,
+                "serial": "VentilationSystem"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Coffee Table",
+                "sortOrder": 11,
+                "serial": "CoffeeTable"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "‰",
+                "title": "Microwave",
+                "sortOrder": 26,
+                "serial": "Microwave"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "j",
+                "title": "Desk",
+                "sortOrder": 15,
+                "serial": "Desk"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "*",
+                "title": "Desk chair",
+                "sortOrder": 8,
+                "serial": "Chair"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Under bed storage",
+                "sortOrder": 41,
+                "serial": "UnderBedStorage"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Wardrobe",
+                "sortOrder": 44,
+                "serial": "Wardrobe"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ª",
+                "title": "Noticeboard",
+                "sortOrder": 30,
+                "serial": "Noticeboard"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Bedside table",
+                "sortOrder": 5,
+                "serial": "BedsideTable"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "Ë",
+                "title": "Full length mirror",
+                "sortOrder": 21,
+                "serial": "FullLengthMirror"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "»",
+                "title": "Curtains",
+                "sortOrder": 14,
+                "serial": "Curtains"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "¬",
+                "title": "Bedroom bin",
+                "sortOrder": 4,
+                "serial": "BedroomBin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "B",
+                "title": "Shower",
+                "sortOrder": 32,
+                "serial": "Shower"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ÿ",
+                "title": "Toilet",
+                "sortOrder": 36,
+                "serial": "Toilet"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Â",
+                "title": "Washbasin",
+                "sortOrder": 45,
+                "serial": "Washbasin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "ÿ",
+                "title": "Toilet roll holder",
+                "sortOrder": 37,
+                "serial": "ToiletRollHolder"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ë",
+                "title": "Bathroom mirror",
+                "sortOrder": 3,
+                "serial": "BathroomMirror"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ﬁ",
+                "title": "Vacuum cleaner",
+                "sortOrder": 42,
+                "serial": "VacuumCleaner"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Æ",
+                "title": "Mop and bucket",
+                "sortOrder": 29,
+                "serial": "MopAndBucket"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ï",
+                "title": "Ironing board",
+                "sortOrder": 23,
+                "serial": "IroningBoard"
+              }
+            ],
+            "roomFeatures": {
+              "bedSize": "Small Double",
+              "flatMates": "2",
+              "roomSizeM2": "16.4 - 22.5"
+            },
+            "availabilityBands": [
+              {
+                "contractLengthWeeks": 44,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-07-17T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 99,
+                "contractName": "Academic Year"
+              }
+            ],
+            "lowestPrice": 99,
+            "lowestMonthlyPrice": 430.18,
+            "description": "A private room and bathroom in a 3-bedroom flat, with a shared living area and kitchen.",
+            "soldOut": false,
+            "tags": [],
+            "matterport": {
+              "link": "https://my.matterport.com/show/?m=vAjNhhQEW4Z",
+              "shortDescription": "Premium En-suite tour",
+              "thumbnailTenovos": {
+                "tenovosImage": [
+                  {
+                    "width": 8192,
+                    "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "height": 5464,
+                    "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                    "metadata": {
+                      "ai_tags": "Indoors, Interior Design, Cushion, Home Decor, Bed, Furniture, Plant",
+                      "keywords": null,
+                      "with_people": null,
+                      "system_match": "Unique File",
+                      "area_room_table": [
+                        {
+                          "area_room_cascade": {
+                            "area_type": "Room",
+                            "room_type": "Ensuite"
+                          }
+                        }
+                      ],
+                      "portal_category": ["Property Photography"],
+                      "system_checksum": "de7cb3c70b7c98941810be9090c94a64",
+                      "system_mime_type": "image/jpeg",
+                      "system_created_by": "Saffa Freebrey (saffa.freebrey@unitestudents.com)",
+                      "is_animated_pathway": null,
+                      "system_content_type": "Image",
+                      "system_created_date": 1684368000000,
+                      "system_is_federated": "No",
+                      "system_layout_links": [
+                        {
+                          "link_md5": null,
+                          "link_type": null,
+                          "link_index": null,
+                          "link_filename": null,
+                          "link_dimension": null,
+                          "link_file_path": null,
+                          "link_file_size": null,
+                          "link_mime_type": null,
+                          "link_object_id": null,
+                          "link_file_status": null,
+                          "link_resource_uri": null,
+                          "link_unconfirmed_object_ids": null
+                        }
+                      ],
+                      "system_created_epoch": "1684400762838",
+                      "system_dominant_color": "silver",
+                      "system_process_source": null,
+                      "system_skip_transcode": "No",
+                      "system_last_updated_by": "Charles Sartain (charles.sartain@unitestudents.com)",
+                      "system_last_updated_date": 1711411200000,
+                      "system_metadata_templates": "Property Photography",
+                      "system_security_templates": [
+                        "Finals",
+                        "All Internal Incl Field Ops 2024",
+                        "Brand Portal Visibility 2024"
+                      ],
+                      "location_information_table": [
+                        {
+                          "location_cascade": {
+                            "city": "Sheffield",
+                            "property": "Westhill Hall"
+                          }
+                        }
+                      ]
+                    },
+                    "recordId": "e45ad8ed-a881-47d6-a403-b46667f1fd45",
+                    "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "createdAt": 1684400762838,
+                    "updatedAt": 1711460360644,
+                    "versionId": "e7663941-1d4b-4908-9b0a-3389ab678a29",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  }
+                ],
+                "focalPointObject": null,
+                "shortDescription": "Bed in a Premium En-suite room",
+                "blurUrl": null
+              }
+            },
+            "images": [
+              {
+                "description": "Study space in a Premium En-suite",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_02.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Bed in a Premium En-suite room",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Premium En-suite bathroom",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                }
+              }
+            ]
+          },
+          {
+            "classification": "LARGE STANDARD DOUBLE",
+            "tenancyType": "DIRECT_LET",
+            "roomTypeName": "ENSUITE: THREE BED FLAT",
+            "roomFacilities": [
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Oven",
+                "sortOrder": 31,
+                "serial": "OvenCooking"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": ".",
+                "title": "Fridge freezer",
+                "sortOrder": 20,
+                "serial": "FridgeFreezer"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "%",
+                "title": "Breakfast bar",
+                "sortOrder": 7,
+                "serial": "BreakfastBar"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Cooking hobs",
+                "sortOrder": 13,
+                "serial": "CookingHobs"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "á",
+                "title": "Chairs",
+                "sortOrder": 9,
+                "serial": "Chairs"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "¬",
+                "title": "Kitchen Bin",
+                "sortOrder": 25,
+                "serial": "KitchenBin"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Õ",
+                "title": "Sofa",
+                "sortOrder": 33,
+                "serial": "Sofa"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "œ",
+                "title": "Stools",
+                "sortOrder": 34,
+                "serial": "Stools"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "·",
+                "title": "Ventilation system",
+                "sortOrder": 43,
+                "serial": "VentilationSystem"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Coffee Table",
+                "sortOrder": 11,
+                "serial": "CoffeeTable"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "‰",
+                "title": "Microwave",
+                "sortOrder": 26,
+                "serial": "Microwave"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "j",
+                "title": "Desk",
+                "sortOrder": 15,
+                "serial": "Desk"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "*",
+                "title": "Desk chair",
+                "sortOrder": 8,
+                "serial": "Chair"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Under bed storage",
+                "sortOrder": 41,
+                "serial": "UnderBedStorage"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Wardrobe",
+                "sortOrder": 44,
+                "serial": "Wardrobe"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ª",
+                "title": "Noticeboard",
+                "sortOrder": 30,
+                "serial": "Noticeboard"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Bedside table",
+                "sortOrder": 5,
+                "serial": "BedsideTable"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "Ë",
+                "title": "Full length mirror",
+                "sortOrder": 21,
+                "serial": "FullLengthMirror"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "»",
+                "title": "Curtains",
+                "sortOrder": 14,
+                "serial": "Curtains"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "¬",
+                "title": "Bedroom bin",
+                "sortOrder": 4,
+                "serial": "BedroomBin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "B",
+                "title": "Shower",
+                "sortOrder": 32,
+                "serial": "Shower"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ÿ",
+                "title": "Toilet",
+                "sortOrder": 36,
+                "serial": "Toilet"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Â",
+                "title": "Washbasin",
+                "sortOrder": 45,
+                "serial": "Washbasin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "ÿ",
+                "title": "Toilet roll holder",
+                "sortOrder": 37,
+                "serial": "ToiletRollHolder"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ë",
+                "title": "Bathroom mirror",
+                "sortOrder": 3,
+                "serial": "BathroomMirror"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ﬁ",
+                "title": "Vacuum cleaner",
+                "sortOrder": 42,
+                "serial": "VacuumCleaner"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Æ",
+                "title": "Mop and bucket",
+                "sortOrder": 29,
+                "serial": "MopAndBucket"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ï",
+                "title": "Ironing board",
+                "sortOrder": 23,
+                "serial": "IroningBoard"
+              }
+            ],
+            "roomFeatures": {
+              "bedSize": "Small Double",
+              "flatMates": "2",
+              "roomSizeM2": "12.8"
+            },
+            "availabilityBands": [
+              {
+                "contractLengthWeeks": 44,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-07-17T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 94,
+                "contractName": "Academic Year"
+              }
+            ],
+            "lowestPrice": 94,
+            "lowestMonthlyPrice": 408.45,
+            "description": "A private room and bathroom in a 3-bedroom flat, with a shared living area and kitchen.",
+            "soldOut": false,
+            "tags": [],
+            "matterport": {
+              "link": "https://my.matterport.com/show/?m=vAjNhhQEW4Z",
+              "shortDescription": "Premium En-suite tour",
+              "thumbnailTenovos": {
+                "tenovosImage": [
+                  {
+                    "width": 8192,
+                    "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "height": 5464,
+                    "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                    "metadata": {
+                      "ai_tags": "Indoors, Interior Design, Cushion, Home Decor, Bed, Furniture, Plant",
+                      "keywords": null,
+                      "with_people": null,
+                      "system_match": "Unique File",
+                      "area_room_table": [
+                        {
+                          "area_room_cascade": {
+                            "area_type": "Room",
+                            "room_type": "Ensuite"
+                          }
+                        }
+                      ],
+                      "portal_category": ["Property Photography"],
+                      "system_checksum": "de7cb3c70b7c98941810be9090c94a64",
+                      "system_mime_type": "image/jpeg",
+                      "system_created_by": "Saffa Freebrey (saffa.freebrey@unitestudents.com)",
+                      "is_animated_pathway": null,
+                      "system_content_type": "Image",
+                      "system_created_date": 1684368000000,
+                      "system_is_federated": "No",
+                      "system_layout_links": [
+                        {
+                          "link_md5": null,
+                          "link_type": null,
+                          "link_index": null,
+                          "link_filename": null,
+                          "link_dimension": null,
+                          "link_file_path": null,
+                          "link_file_size": null,
+                          "link_mime_type": null,
+                          "link_object_id": null,
+                          "link_file_status": null,
+                          "link_resource_uri": null,
+                          "link_unconfirmed_object_ids": null
+                        }
+                      ],
+                      "system_created_epoch": "1684400762838",
+                      "system_dominant_color": "silver",
+                      "system_process_source": null,
+                      "system_skip_transcode": "No",
+                      "system_last_updated_by": "Charles Sartain (charles.sartain@unitestudents.com)",
+                      "system_last_updated_date": 1711411200000,
+                      "system_metadata_templates": "Property Photography",
+                      "system_security_templates": [
+                        "Finals",
+                        "All Internal Incl Field Ops 2024",
+                        "Brand Portal Visibility 2024"
+                      ],
+                      "location_information_table": [
+                        {
+                          "location_cascade": {
+                            "city": "Sheffield",
+                            "property": "Westhill Hall"
+                          }
+                        }
+                      ]
+                    },
+                    "recordId": "e45ad8ed-a881-47d6-a403-b46667f1fd45",
+                    "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "createdAt": 1684400762838,
+                    "updatedAt": 1711460360644,
+                    "versionId": "e7663941-1d4b-4908-9b0a-3389ab678a29",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  }
+                ],
+                "focalPointObject": null,
+                "shortDescription": "Bed in a Premium En-suite room",
+                "blurUrl": null
+              }
+            },
+            "images": [
+              {
+                "description": "Bed in a Premium En-suite room",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Premium En-suite bathroom",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Study space in a Premium En-suite",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_02.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                }
+              }
+            ]
+          }
+        ],
+        "description": "A private room & bathroom in a shared flat, with a shared kitchen & living space.",
+        "soldOut": false,
+        "price": 94,
+        "accessible": false,
+        "imageObject": {
+          "description": "Bed in a Premium En-suite room",
+          "image": {
+            "metadata": {
+              "system_mime_type": "image/jpeg",
+              "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+            },
+            "width": 8192,
+            "height": 5464,
+            "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+            "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+            "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+            "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+          }
+        },
+        "propertySlug": "westhill-hall",
+        "citySlug": "sheffield",
+        "propertyFeatures": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Car parking on site (extra charge)",
+                  "serial": "CarParkSpaces",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "˙",
+                  "favorited": false,
+                  "sortOrder": 7
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Cinema room",
+                  "serial": "CinemaRoom",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": true,
+                  "sortOrder": 1
+                },
+                {
+                  "title": "Communal study space",
+                  "serial": "CommunalStudySpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "“",
+                  "favorited": true,
+                  "sortOrder": 3
+                },
+                {
+                  "title": "Access to cinema room in other property",
+                  "serial": "CinemaRoomAccessInOtherProperty",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": false,
+                  "sortOrder": 13
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                }
+              ]
+            }
+          ],
+          "propertyId": "WSTHLL"
+        },
+        "cityCode": "SF",
+        "bookViewingUrl": "https://www.unitestudents.com/viewings/sheffield/westhill-hall",
+        "paymentOptionsBlock": {
+          "title": "Ways to pay",
+          "descriptionRichText": {
+            "__typename": "GlobalConfigPaymentOptionsDescription",
+            "json": {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Pay in instalments, by card, direct debit or UnionPay. Whatever works best for you.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            },
+            "links": {
+              "__typename": "GlobalConfigPaymentOptionsDescriptionLinks",
+              "entries": {
+                "__typename": "GlobalConfigPaymentOptionsDescriptionEntries",
+                "hyperlink": []
+              }
+            }
+          },
+          "icon": "payment/payment"
+        }
+      },
+      {
+        "name": "ENSUITE",
+        "showFloorplan": false,
+        "roomClassifications": [
+          {
+            "classification": "LARGE STANDARD DOUBLE",
+            "tenancyType": "DIRECT_LET",
+            "roomTypeName": "ENSUITE",
+            "roomFacilities": [
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Oven",
+                "sortOrder": 31,
+                "serial": "OvenCooking"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": ".",
+                "title": "Fridge freezer",
+                "sortOrder": 20,
+                "serial": "FridgeFreezer"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "%",
+                "title": "Breakfast bar",
+                "sortOrder": 7,
+                "serial": "BreakfastBar"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Cooking hobs",
+                "sortOrder": 13,
+                "serial": "CookingHobs"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "á",
+                "title": "Chairs",
+                "sortOrder": 9,
+                "serial": "Chairs"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "¬",
+                "title": "Kitchen Bin",
+                "sortOrder": 25,
+                "serial": "KitchenBin"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Õ",
+                "title": "Sofa",
+                "sortOrder": 33,
+                "serial": "Sofa"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "œ",
+                "title": "Stools",
+                "sortOrder": 34,
+                "serial": "Stools"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "·",
+                "title": "Ventilation system",
+                "sortOrder": 43,
+                "serial": "VentilationSystem"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Coffee Table",
+                "sortOrder": 11,
+                "serial": "CoffeeTable"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "‰",
+                "title": "Microwave",
+                "sortOrder": 26,
+                "serial": "Microwave"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "j",
+                "title": "Desk",
+                "sortOrder": 15,
+                "serial": "Desk"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "*",
+                "title": "Desk chair",
+                "sortOrder": 8,
+                "serial": "Chair"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Under bed storage",
+                "sortOrder": 41,
+                "serial": "UnderBedStorage"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Wardrobe",
+                "sortOrder": 44,
+                "serial": "Wardrobe"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ª",
+                "title": "Noticeboard",
+                "sortOrder": 30,
+                "serial": "Noticeboard"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Bedside table",
+                "sortOrder": 5,
+                "serial": "BedsideTable"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "Ë",
+                "title": "Full length mirror",
+                "sortOrder": 21,
+                "serial": "FullLengthMirror"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "»",
+                "title": "Curtains",
+                "sortOrder": 14,
+                "serial": "Curtains"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "¬",
+                "title": "Bedroom bin",
+                "sortOrder": 4,
+                "serial": "BedroomBin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "B",
+                "title": "Shower",
+                "sortOrder": 32,
+                "serial": "Shower"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ÿ",
+                "title": "Toilet",
+                "sortOrder": 36,
+                "serial": "Toilet"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Â",
+                "title": "Washbasin",
+                "sortOrder": 45,
+                "serial": "Washbasin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "ÿ",
+                "title": "Toilet roll holder",
+                "sortOrder": 37,
+                "serial": "ToiletRollHolder"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ë",
+                "title": "Bathroom mirror",
+                "sortOrder": 3,
+                "serial": "BathroomMirror"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ﬁ",
+                "title": "Vacuum cleaner",
+                "sortOrder": 42,
+                "serial": "VacuumCleaner"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Æ",
+                "title": "Mop and bucket",
+                "sortOrder": 29,
+                "serial": "MopAndBucket"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ï",
+                "title": "Ironing board",
+                "sortOrder": 23,
+                "serial": "IroningBoard"
+              }
+            ],
+            "roomFeatures": {
+              "bedSize": "Small Double",
+              "flatMates": "3",
+              "roomSizeM2": "12.8"
+            },
+            "availabilityBands": [
+              {
+                "contractLengthWeeks": 51,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-09-04T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 84,
+                "contractName": "Full Year"
+              },
+              {
+                "contractLengthWeeks": 44,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-07-17T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 89,
+                "contractName": "Academic Year"
+              }
+            ],
+            "lowestPrice": 84,
+            "lowestMonthlyPrice": 365,
+            "description": "A private room & bathroom in a shared flat, with a shared kitchen & living space.",
+            "soldOut": false,
+            "tags": [],
+            "matterport": {
+              "link": "https://my.matterport.com/show/?m=vAjNhhQEW4Z",
+              "shortDescription": "Premium En-suite tour",
+              "thumbnailTenovos": {
+                "tenovosImage": [
+                  {
+                    "width": 8192,
+                    "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "height": 5464,
+                    "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                    "metadata": {
+                      "ai_tags": "Indoors, Interior Design, Cushion, Home Decor, Bed, Furniture, Plant",
+                      "keywords": null,
+                      "with_people": null,
+                      "system_match": "Unique File",
+                      "area_room_table": [
+                        {
+                          "area_room_cascade": {
+                            "area_type": "Room",
+                            "room_type": "Ensuite"
+                          }
+                        }
+                      ],
+                      "portal_category": ["Property Photography"],
+                      "system_checksum": "de7cb3c70b7c98941810be9090c94a64",
+                      "system_mime_type": "image/jpeg",
+                      "system_created_by": "Saffa Freebrey (saffa.freebrey@unitestudents.com)",
+                      "is_animated_pathway": null,
+                      "system_content_type": "Image",
+                      "system_created_date": 1684368000000,
+                      "system_is_federated": "No",
+                      "system_layout_links": [
+                        {
+                          "link_md5": null,
+                          "link_type": null,
+                          "link_index": null,
+                          "link_filename": null,
+                          "link_dimension": null,
+                          "link_file_path": null,
+                          "link_file_size": null,
+                          "link_mime_type": null,
+                          "link_object_id": null,
+                          "link_file_status": null,
+                          "link_resource_uri": null,
+                          "link_unconfirmed_object_ids": null
+                        }
+                      ],
+                      "system_created_epoch": "1684400762838",
+                      "system_dominant_color": "silver",
+                      "system_process_source": null,
+                      "system_skip_transcode": "No",
+                      "system_last_updated_by": "Charles Sartain (charles.sartain@unitestudents.com)",
+                      "system_last_updated_date": 1711411200000,
+                      "system_metadata_templates": "Property Photography",
+                      "system_security_templates": [
+                        "Finals",
+                        "All Internal Incl Field Ops 2024",
+                        "Brand Portal Visibility 2024"
+                      ],
+                      "location_information_table": [
+                        {
+                          "location_cascade": {
+                            "city": "Sheffield",
+                            "property": "Westhill Hall"
+                          }
+                        }
+                      ]
+                    },
+                    "recordId": "e45ad8ed-a881-47d6-a403-b46667f1fd45",
+                    "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "createdAt": 1684400762838,
+                    "updatedAt": 1711460360644,
+                    "versionId": "e7663941-1d4b-4908-9b0a-3389ab678a29",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  }
+                ],
+                "focalPointObject": null,
+                "shortDescription": "Bed in a Premium En-suite room",
+                "blurUrl": null
+              }
+            },
+            "images": [
+              {
+                "description": "Bed in a Premium En-suite room",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Premium En-suite bathroom",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Study space in a Premium En-suite",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_02.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                }
+              }
+            ]
+          },
+          {
+            "classification": "EXTRA LARGE STANDARD DOUBLE",
+            "tenancyType": "DIRECT_LET",
+            "roomTypeName": "ENSUITE",
+            "roomFacilities": [
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Oven",
+                "sortOrder": 31,
+                "serial": "OvenCooking"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": ".",
+                "title": "Fridge freezer",
+                "sortOrder": 20,
+                "serial": "FridgeFreezer"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "%",
+                "title": "Breakfast bar",
+                "sortOrder": 7,
+                "serial": "BreakfastBar"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Ô",
+                "title": "Cooking hobs",
+                "sortOrder": 13,
+                "serial": "CookingHobs"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "á",
+                "title": "Chairs",
+                "sortOrder": 9,
+                "serial": "Chairs"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "¬",
+                "title": "Kitchen Bin",
+                "sortOrder": 25,
+                "serial": "KitchenBin"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Õ",
+                "title": "Sofa",
+                "sortOrder": 33,
+                "serial": "Sofa"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "œ",
+                "title": "Stools",
+                "sortOrder": 34,
+                "serial": "Stools"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "·",
+                "title": "Ventilation system",
+                "sortOrder": 43,
+                "serial": "VentilationSystem"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Coffee Table",
+                "sortOrder": 11,
+                "serial": "CoffeeTable"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "‰",
+                "title": "Microwave",
+                "sortOrder": 26,
+                "serial": "Microwave"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "j",
+                "title": "Desk",
+                "sortOrder": 15,
+                "serial": "Desk"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "*",
+                "title": "Desk chair",
+                "sortOrder": 8,
+                "serial": "Chair"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Under bed storage",
+                "sortOrder": 41,
+                "serial": "UnderBedStorage"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "–",
+                "title": "Wardrobe",
+                "sortOrder": 44,
+                "serial": "Wardrobe"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ª",
+                "title": "Noticeboard",
+                "sortOrder": 30,
+                "serial": "Noticeboard"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "J",
+                "title": "Bedside table",
+                "sortOrder": 5,
+                "serial": "BedsideTable"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "Ë",
+                "title": "Full length mirror",
+                "sortOrder": 21,
+                "serial": "FullLengthMirror"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "»",
+                "title": "Curtains",
+                "sortOrder": 14,
+                "serial": "Curtains"
+              },
+              {
+                "category": ["Bedroom Features"],
+                "iconText": "¬",
+                "title": "Bedroom bin",
+                "sortOrder": 4,
+                "serial": "BedroomBin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "B",
+                "title": "Shower",
+                "sortOrder": 32,
+                "serial": "Shower"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ÿ",
+                "title": "Toilet",
+                "sortOrder": 36,
+                "serial": "Toilet"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Â",
+                "title": "Washbasin",
+                "sortOrder": 45,
+                "serial": "Washbasin"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "ÿ",
+                "title": "Toilet roll holder",
+                "sortOrder": 37,
+                "serial": "ToiletRollHolder"
+              },
+              {
+                "category": ["Bathroom Features"],
+                "iconText": "Ë",
+                "title": "Bathroom mirror",
+                "sortOrder": 3,
+                "serial": "BathroomMirror"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ﬁ",
+                "title": "Vacuum cleaner",
+                "sortOrder": 42,
+                "serial": "VacuumCleaner"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "Æ",
+                "title": "Mop and bucket",
+                "sortOrder": 29,
+                "serial": "MopAndBucket"
+              },
+              {
+                "category": ["Kitchen Features"],
+                "iconText": "ï",
+                "title": "Ironing board",
+                "sortOrder": 23,
+                "serial": "IroningBoard"
+              }
+            ],
+            "roomFeatures": {
+              "bedSize": "Small Double",
+              "flatMates": "0 - 4",
+              "roomSizeM2": "14.2 - 21.2"
+            },
+            "availabilityBands": [
+              {
+                "contractLengthWeeks": 44,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-07-17T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 94,
+                "contractName": "Academic Year"
+              },
+              {
+                "contractLengthWeeks": 51,
+                "contractStartDate": "2026-09-12T00:00:00.000Z",
+                "contractEndDate": "2027-09-04T00:00:00.000Z",
+                "contractOriginalStartDate": "2026-09-12T00:00:00.000Z",
+                "price": 89,
+                "contractName": "Full Year"
+              }
+            ],
+            "lowestPrice": 89,
+            "lowestMonthlyPrice": 386.73,
+            "description": "A private room & bathroom in a shared flat, with a shared kitchen & living space.",
+            "soldOut": false,
+            "tags": [],
+            "matterport": {
+              "link": "https://my.matterport.com/show/?m=vAjNhhQEW4Z",
+              "shortDescription": "Premium En-suite tour",
+              "thumbnailTenovos": {
+                "tenovosImage": [
+                  {
+                    "width": 8192,
+                    "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "height": 5464,
+                    "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                    "metadata": {
+                      "ai_tags": "Indoors, Interior Design, Cushion, Home Decor, Bed, Furniture, Plant",
+                      "keywords": null,
+                      "with_people": null,
+                      "system_match": "Unique File",
+                      "area_room_table": [
+                        {
+                          "area_room_cascade": {
+                            "area_type": "Room",
+                            "room_type": "Ensuite"
+                          }
+                        }
+                      ],
+                      "portal_category": ["Property Photography"],
+                      "system_checksum": "de7cb3c70b7c98941810be9090c94a64",
+                      "system_mime_type": "image/jpeg",
+                      "system_created_by": "Saffa Freebrey (saffa.freebrey@unitestudents.com)",
+                      "is_animated_pathway": null,
+                      "system_content_type": "Image",
+                      "system_created_date": 1684368000000,
+                      "system_is_federated": "No",
+                      "system_layout_links": [
+                        {
+                          "link_md5": null,
+                          "link_type": null,
+                          "link_index": null,
+                          "link_filename": null,
+                          "link_dimension": null,
+                          "link_file_path": null,
+                          "link_file_size": null,
+                          "link_mime_type": null,
+                          "link_object_id": null,
+                          "link_file_status": null,
+                          "link_resource_uri": null,
+                          "link_unconfirmed_object_ids": null
+                        }
+                      ],
+                      "system_created_epoch": "1684400762838",
+                      "system_dominant_color": "silver",
+                      "system_process_source": null,
+                      "system_skip_transcode": "No",
+                      "system_last_updated_by": "Charles Sartain (charles.sartain@unitestudents.com)",
+                      "system_last_updated_date": 1711411200000,
+                      "system_metadata_templates": "Property Photography",
+                      "system_security_templates": [
+                        "Finals",
+                        "All Internal Incl Field Ops 2024",
+                        "Brand Portal Visibility 2024"
+                      ],
+                      "location_information_table": [
+                        {
+                          "location_cascade": {
+                            "city": "Sheffield",
+                            "property": "Westhill Hall"
+                          }
+                        }
+                      ]
+                    },
+                    "recordId": "e45ad8ed-a881-47d6-a403-b46667f1fd45",
+                    "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                    "createdAt": 1684400762838,
+                    "updatedAt": 1711460360644,
+                    "versionId": "e7663941-1d4b-4908-9b0a-3389ab678a29",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  }
+                ],
+                "focalPointObject": null,
+                "shortDescription": "Bed in a Premium En-suite room",
+                "blurUrl": null
+              }
+            },
+            "images": [
+              {
+                "description": "Study space in a Premium En-suite",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_02.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/bcfedf19-fb89-4e9e-8e8e-f731c9276b2e/Sheffield_WesthillHall_Premium1Ensuite_02.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Bed in a Premium En-suite room",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_01.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/e7663941-1d4b-4908-9b0a-3389ab678a29/Sheffield_WesthillHall_Premium1Ensuite_01.jpg.preview.webp"
+                }
+              },
+              {
+                "description": "Premium En-suite bathroom",
+                "image": {
+                  "metadata": {
+                    "system_mime_type": "image/jpeg",
+                    "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                  },
+                  "width": 8192,
+                  "height": 5464,
+                  "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "filename": "Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg",
+                  "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.webp",
+                  "previewUrl": "https://us-cdn.dxp.plus/1ef6d43d-194b-4192-802a-41c41e0deffc/Sheffield_WesthillHall_Premium1Ensuite_03_Bathroom.jpg.preview.webp"
+                }
+              }
+            ]
+          }
+        ],
+        "description": "A private room & bathroom in a shared flat, with a shared kitchen & living space.",
+        "soldOut": false,
+        "price": 84,
+        "accessible": false,
+        "imageObject": {
+          "description": "Bed and study space in an En-suite room",
+          "image": {
+            "metadata": {
+              "system_mime_type": "image/jpeg",
+              "previewUrl": "https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.preview.webp"
+            },
+            "width": 8192,
+            "height": 5464,
+            "thumbUrl": "https://dxp.plus/cdn-cgi/image/width=148,format=webp/https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.webp",
+            "filename": "Sheffield_WesthillHall_ClassicEnsuite_02.jpg",
+            "cdnUrl": "https://dxp.plus/cdn-cgi/image/__TRANSFORM_PARAMS__/https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.webp",
+            "previewUrl": "https://us-cdn.dxp.plus/dc067444-5928-4cf7-af92-0666b8714462/Sheffield_WesthillHall_ClassicEnsuite_02.jpg.preview.webp"
+          }
+        },
+        "propertySlug": "westhill-hall",
+        "citySlug": "sheffield",
+        "propertyFeatures": {
+          "data": [
+            {
+              "category": "Facilities",
+              "features": [
+                {
+                  "title": "Bike storage",
+                  "serial": "BikeStorageCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "]",
+                  "favorited": false,
+                  "sortOrder": 25
+                },
+                {
+                  "title": "Laundry",
+                  "serial": "LaundryRoomCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "L",
+                  "favorited": false,
+                  "sortOrder": 15
+                },
+                {
+                  "title": "Vending machine",
+                  "serial": "VendingMachineCount",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "V",
+                  "favorited": false,
+                  "sortOrder": 24
+                },
+                {
+                  "title": "Car parking on site (extra charge)",
+                  "serial": "CarParkSpaces",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "˙",
+                  "favorited": false,
+                  "sortOrder": 7
+                },
+                {
+                  "title": "Recycling",
+                  "serial": "Recyling",
+                  "omitted": false,
+                  "category": "Facilities",
+                  "iconText": "æ",
+                  "favorited": false,
+                  "sortOrder": 32
+                }
+              ]
+            },
+            {
+              "category": "Social and Study",
+              "features": [
+                {
+                  "title": "Common area",
+                  "serial": "CommonAreaCount",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "r",
+                  "favorited": true,
+                  "sortOrder": 2
+                },
+                {
+                  "title": "Cinema room",
+                  "serial": "CinemaRoom",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": true,
+                  "sortOrder": 1
+                },
+                {
+                  "title": "Communal study space",
+                  "serial": "CommunalStudySpace",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "“",
+                  "favorited": true,
+                  "sortOrder": 3
+                },
+                {
+                  "title": "Access to cinema room in other property",
+                  "serial": "CinemaRoomAccessInOtherProperty",
+                  "omitted": false,
+                  "category": "Social and Study",
+                  "iconText": "-",
+                  "favorited": false,
+                  "sortOrder": 13
+                }
+              ]
+            },
+            {
+              "category": "Living Essentials (free)",
+              "features": [
+                {
+                  "title": "Heating",
+                  "serial": "Heating",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "h",
+                  "favorited": false,
+                  "sortOrder": 35
+                },
+                {
+                  "title": "Water",
+                  "serial": "Water",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "w",
+                  "favorited": false,
+                  "sortOrder": 36
+                },
+                {
+                  "title": "Wi-Fi in your flat & communal areas",
+                  "serial": "WifiCommunalArea",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 34
+                },
+                {
+                  "title": "Ultrafast Broadband & Wi-Fi*",
+                  "serial": "WifiFlat",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "W",
+                  "favorited": false,
+                  "sortOrder": 33
+                },
+                {
+                  "title": "Electric",
+                  "serial": "Electric",
+                  "omitted": false,
+                  "category": "Living Essentials (free)",
+                  "iconText": "e",
+                  "favorited": false,
+                  "sortOrder": 38
+                }
+              ]
+            },
+            {
+              "category": "Safety and Security",
+              "features": [
+                {
+                  "title": "CCTV",
+                  "serial": "CCTV",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "&",
+                  "favorited": false,
+                  "sortOrder": 27
+                },
+                {
+                  "title": "24/7 assistance",
+                  "serial": "24/7Assistance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "É",
+                  "favorited": false,
+                  "sortOrder": 20
+                },
+                {
+                  "title": "Onsite service team",
+                  "serial": "OnSiteServiceTem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "Œ",
+                  "favorited": false,
+                  "sortOrder": 21
+                },
+                {
+                  "title": "Fire system",
+                  "serial": "FireSystem",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": ":",
+                  "favorited": false,
+                  "sortOrder": 26
+                },
+                {
+                  "title": "Contents insurance",
+                  "serial": "ContentInsurance",
+                  "omitted": false,
+                  "category": "Safety and Security",
+                  "iconText": "i",
+                  "favorited": false,
+                  "sortOrder": 28
+                }
+              ]
+            }
+          ],
+          "propertyId": "WSTHLL"
+        },
+        "cityCode": "SF",
+        "bookViewingUrl": "https://www.unitestudents.com/viewings/sheffield/westhill-hall",
+        "paymentOptionsBlock": {
+          "title": "Ways to pay",
+          "descriptionRichText": {
+            "__typename": "GlobalConfigPaymentOptionsDescription",
+            "json": {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Pay in instalments, by card, direct debit or UnionPay. Whatever works best for you.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "document"
+            },
+            "links": {
+              "__typename": "GlobalConfigPaymentOptionsDescriptionLinks",
+              "entries": {
+                "__typename": "GlobalConfigPaymentOptionsDescriptionEntries",
+                "hyperlink": []
+              }
+            }
+          },
+          "icon": "payment/payment"
+        }
+      }
+    ],
+    "roomOptions": [
+      {
+        "roomTypeName": "ENSUITE",
+        "roomSizeOptions": [
+          {
+            "name": "Large",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": "12.8"
+          },
+          {
+            "name": "Extra Large",
+            "soldOut": false,
+            "priceDelta": 5,
+            "size": "14.2 - 21.2"
+          }
+        ],
+        "bedSizeOptions": [
+          {
+            "name": "Double",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": ""
+          }
+        ],
+        "floorLevelOptions": [
+          {
+            "name": "Standard",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": ""
+          }
+        ]
+      },
+      {
+        "roomTypeName": "ENSUITE: THREE BED FLAT",
+        "roomSizeOptions": [
+          {
+            "name": "Extra Large",
+            "soldOut": false,
+            "priceDelta": 5,
+            "size": "16.4 - 22.5"
+          },
+          {
+            "name": "Large",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": "12.8"
+          }
+        ],
+        "bedSizeOptions": [
+          {
+            "name": "Double",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": ""
+          }
+        ],
+        "floorLevelOptions": [
+          {
+            "name": "Standard",
+            "soldOut": false,
+            "priceDelta": 0,
+            "size": ""
+          }
+        ]
+      }
+    ]
+  }
+}

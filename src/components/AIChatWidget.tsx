@@ -29,9 +29,14 @@ interface AIChatWidgetProps {
   placement?: "bottom-left" | "top-right";
 }
 
-const greetingMessage = "Hi! Tell me what you're looking for and I’ll help you find great options.";
+const greetingMessage =
+  "Hi! Tell me what you're looking for and I’ll help you find great options.";
 
-const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWidgetProps) => {
+const AIChatWidget = ({
+  open,
+  onOpenChange,
+  placement = "top-right",
+}: AIChatWidgetProps) => {
   const [internalOpen, setInternalOpen] = useState(false);
   const isOpen = open ?? internalOpen;
 
@@ -45,17 +50,22 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [stage, setStage] = useState<ChatStage>("idle");
   const [inputValue, setInputValue] = useState("");
-  const [selectedRoomType, setSelectedRoomType] = useState<RoomType | null>(null);
-  const [selectedStayLength, setSelectedStayLength] = useState<StayLength | null>(null);
+  const [selectedRoomType, setSelectedRoomType] = useState<RoomType | null>(
+    null,
+  );
+  const [selectedStayLength, setSelectedStayLength] =
+    useState<StayLength | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [activeAccommodation, setActiveAccommodation] = useState<Accommodation | null>(null);
+  const [activeAccommodation, setActiveAccommodation] =
+    useState<Accommodation | null>(null);
 
   const chatEndRef = useRef<HTMLDivElement | null>(null);
   const timeoutsRef = useRef<number[]>([]);
 
   const recommendations = useMemo(() => accommodations.slice(0, 2), []);
 
-  const safeId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+  const safeId = () =>
+    `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 
   useEffect(() => {
     if (isOpen) {
@@ -96,7 +106,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
     const trimmed = text.trim();
     if (!trimmed) return;
 
-    setMessages((prev) => [...prev, { id: safeId(), role: "user", content: trimmed }]);
+    setMessages((prev) => [
+      ...prev,
+      { id: safeId(), role: "user", content: trimmed },
+    ]);
     setInputValue("");
 
     if (stage === "idle") {
@@ -121,7 +134,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
 
   const handlePickRoomType = (room: RoomType) => {
     setSelectedRoomType(room);
-    setMessages((prev) => [...prev, { id: safeId(), role: "user", content: room }]);
+    setMessages((prev) => [
+      ...prev,
+      { id: safeId(), role: "user", content: room },
+    ]);
 
     scheduleResponse(() => {
       setMessages((prev) => [
@@ -138,7 +154,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
 
   const handlePickStayLength = (length: StayLength) => {
     setSelectedStayLength(length);
-    setMessages((prev) => [...prev, { id: safeId(), role: "user", content: length }]);
+    setMessages((prev) => [
+      ...prev,
+      { id: safeId(), role: "user", content: length },
+    ]);
 
     scheduleResponse(() => {
       setMessages((prev) => [
@@ -146,7 +165,8 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
         {
           id: safeId(),
           role: "ai",
-          content: "Great choice! Based on your preferences, here are two options you might like 👇",
+          content:
+            "Great choice! Based on your preferences, here are two options you might like 👇",
         },
       ]);
       setStage("recommendations");
@@ -229,11 +249,20 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
               {stage === "askedRoomType" && (
                 <div className="flex flex-col gap-2 animate-in fade-in slide-in-from-bottom-2">
                   <div className="grid grid-cols-2 gap-2">
-                    {(["En-suite", "Non-en-suite", "Studio", "Accessible rooms"] as RoomType[]).map((label) => (
+                    {(
+                      [
+                        "En-suite",
+                        "Non-en-suite",
+                        "Studio",
+                        "Accessible rooms",
+                      ] as RoomType[]
+                    ).map((label) => (
                       <Button
                         key={label}
                         size="sm"
-                        variant={selectedRoomType === label ? "default" : "secondary"}
+                        variant={
+                          selectedRoomType === label ? "default" : "secondary"
+                        }
                         className="justify-center"
                         onClick={() => handlePickRoomType(label)}
                       >
@@ -247,17 +276,23 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
               {stage === "askedLength" && (
                 <div className="flex flex-col gap-2 animate-in fade-in slide-in-from-bottom-2">
                   <div className="grid grid-cols-2 gap-2">
-                    {(["Full year", "Academic year"] as StayLength[]).map((label) => (
-                      <Button
-                        key={label}
-                        size="sm"
-                        variant={selectedStayLength === label ? "default" : "secondary"}
-                        className="justify-center"
-                        onClick={() => handlePickStayLength(label)}
-                      >
-                        {label}
-                      </Button>
-                    ))}
+                    {(["Full year", "Academic year"] as StayLength[]).map(
+                      (label) => (
+                        <Button
+                          key={label}
+                          size="sm"
+                          variant={
+                            selectedStayLength === label
+                              ? "default"
+                              : "secondary"
+                          }
+                          className="justify-center"
+                          onClick={() => handlePickStayLength(label)}
+                        >
+                          {label}
+                        </Button>
+                      ),
+                    )}
                   </div>
                 </div>
               )}
@@ -266,7 +301,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
                 <div className="flex flex-col gap-3 animate-in fade-in slide-in-from-bottom-2">
                   <div className="grid grid-cols-1 gap-3">
                     {recommendations.map((accommodation) => (
-                      <Card key={accommodation.id} className="overflow-hidden border-border">
+                      <Card
+                        key={accommodation.id}
+                        className="overflow-hidden border-border"
+                      >
                         <div className="flex gap-3 p-3">
                           <img
                             src={accommodation.image}
@@ -284,7 +322,12 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
                               {formatDescription(accommodation)}
                             </div>
                             <div className="mt-2">
-                              <Button size="sm" onClick={() => handleOpenAccommodation(accommodation)}>
+                              <Button
+                                size="sm"
+                                onClick={() =>
+                                  handleOpenAccommodation(accommodation)
+                                }
+                              >
                                 View room
                               </Button>
                             </div>
@@ -299,7 +342,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
               <div ref={chatEndRef} />
             </div>
 
-            <form onSubmit={handleSubmit} className="p-3 border-t border-border flex items-center gap-2 shrink-0">
+            <form
+              onSubmit={handleSubmit}
+              className="p-3 border-t border-border flex items-center gap-2 shrink-0"
+            >
               <input
                 value={inputValue}
                 onChange={(event) => setInputValue(event.target.value)}
@@ -312,13 +358,15 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
             </form>
           </Card>
         </div>,
-        document.body
+        document.body,
       )}
 
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>{activeAccommodation?.title ?? "Accommodation detail"}</DialogTitle>
+            <DialogTitle>
+              {activeAccommodation?.title ?? "Accommodation detail"}
+            </DialogTitle>
             <DialogDescription>
               {activeAccommodation
                 ? `${activeAccommodation.tag} • £${activeAccommodation.price} per week`
@@ -341,7 +389,10 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
                 </ul>
               </div>
               <div className="flex justify-between gap-2">
-                <Button variant="secondary" onClick={() => setDialogOpen(false)}>
+                <Button
+                  variant="secondary"
+                  onClick={() => setDialogOpen(false)}
+                >
                   Close
                 </Button>
                 <Button
@@ -361,4 +412,3 @@ const AIChatWidget = ({ open, onOpenChange, placement = "top-right" }: AIChatWid
 };
 
 export default AIChatWidget;
-

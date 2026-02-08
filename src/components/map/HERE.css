@@ -1,0 +1,49 @@
+@import url("https://js.api.here.com/v3/3.1/mapsjs-ui.css");
+
+.H_l_right .H_l_vertical .H_ctl {
+	border: 2px solid var(--Primary-White-100, #fff);
+	border-radius: 40px;
+	background: #e7e8ea;
+}
+
+.H_zoom .H_el {
+	border-radius: 40px 40px 0px 0px;
+	background: #e7e8ea;
+}
+
+.H_zoom .H_el:last-child {
+	border-radius: 0px 0px 40px 40px;
+}
+.H_zoom .H_el:active {
+	background: radial-gradient(#e7e8ea, #cfd1d4);
+}
+
+.H_l_vertical .H_zoom .H_el::after {
+	background: white;
+	width: 100%;
+	left: 0em !important;
+	height: 0.5px;
+	bottom: -0.5px;
+}
+
+/* Hide extra map options for traffic conditions */
+.H_overlay .H_separator {
+	display: none !important;
+}
+
+.H_overlay > *:last-child {
+	display: none !important;
+}
+
+/* Styling for map view to match zoom buttons */
+.H_ctl > .H_btn[title="Choose view"] {
+	background: #e7e8ea;
+	border: 2px solid var(--Primary-White-100, #fff);
+	border-radius: 999px;
+}
+
+.H_imprint {
+	@media (max-width: 1024px) {
+		display: none !important;
+	}
+}
