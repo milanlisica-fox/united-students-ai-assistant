@@ -4,7 +4,8 @@ export type ChatStage =
   | "askedRoomType"
   | "askedRoomClass"
   | "askedContractType"
-  | "recommendations";
+  | "recommendations"
+  | "conversationalResults";
 
 export type ChatMessage = {
   id: string;
@@ -82,6 +83,14 @@ export type PropertyRoomsPayload = {
   data?: {
     rooms?: PropertyRoomData[];
   };
+};
+
+// Conversational discovery result
+export type ConversationalResult = {
+  property: PropertyData;
+  matchedFeatures: string[];
+  missingFeatures: string[];
+  isCloseMatch: boolean;
 };
 
 // Booking selection type - includes availability band for correct dates

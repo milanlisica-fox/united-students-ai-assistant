@@ -29,7 +29,7 @@ const ChatStepPanel = ({
         <p className="font-medium mb-2">{title}</p>
         <p className="text-xs text-muted-foreground mb-3 italic">{subtitle}</p>
         {options.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 gap-2">
             {options.map((label) => (
               <Button
                 key={label}

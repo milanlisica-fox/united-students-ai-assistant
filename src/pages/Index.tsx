@@ -34,6 +34,7 @@ import {
   getPrice,
   getFavoritedFeatures,
 } from "@/utils/propertyHelpers";
+import SuggestionCards from "@/components/ai-experience/SuggestionCards";
 import { GREETING_MESSAGE, ROOM_TYPE_OPTIONS } from "@/constants/ai-experience";
 import type { RoomType, RoomClass, ContractType } from "@/types/ai-experience";
 
@@ -153,12 +154,14 @@ const Index = () => {
     selectedRoomType,
     selectedRoomClass,
     selectedContractType,
+    conversationalResults,
     desktopChatEndRef,
     mobileChatEndRef,
     handleSubmit,
     handlePickRoomType,
     handlePickRoomClass,
     handlePickContractType,
+    handleSuggestionSelect,
   } = useAIChat();
 
   const {
@@ -204,6 +207,12 @@ const Index = () => {
         getFavoritedFeatures={getFavoritedFeatures}
         getBookingUrlForProperty={getBookingUrlForProperty}
       />
+    ) : null;
+
+  // Suggestion cards for the idle screen
+  const suggestionCards =
+    stage === "idle" && messages.length === 0 ? (
+      <SuggestionCards onSelect={handleSuggestionSelect} />
     ) : null;
 
   // Listing properties from mock data
@@ -463,7 +472,10 @@ const Index = () => {
                     onPickContractType={(value) =>
                       handlePickContractType(value as ContractType)
                     }
+                    onSuggestionSelect={handleSuggestionSelect}
                     renderRecommendations={recommendationsPanel}
+                    conversationalResults={conversationalResults}
+                    renderSuggestionCards={suggestionCards}
                   />
                 </div>
 
@@ -705,7 +717,10 @@ const Index = () => {
                     onPickContractType={(value) =>
                       handlePickContractType(value as ContractType)
                     }
+                    onSuggestionSelect={handleSuggestionSelect}
                     renderRecommendations={recommendationsPanel}
+                    conversationalResults={conversationalResults}
+                    renderSuggestionCards={suggestionCards}
                   />
                 </div>
 

@@ -1,19 +1,8 @@
 import type { ReactNode, RefObject } from "react";
 import { cn } from "@/lib/utils";
+import type { ChatStage, ChatMessage, ConversationalResult } from "@/types/ai-experience";
 import ChatStepPanel from "./ChatStepPanel";
-
-type ChatStage =
-  | "idle"
-  | "askedRoomType"
-  | "askedRoomClass"
-  | "askedContractType"
-  | "recommendations";
-
-type ChatMessage = {
-  id: string;
-  role: "ai" | "user";
-  content: string;
-};
+import ConversationalResultsPanel from "./ConversationalResultsPanel";
 
 type ChatPanelProps = {
   stage: ChatStage;
@@ -31,7 +20,10 @@ type ChatPanelProps = {
   onPickRoomType: (value: string) => void;
   onPickRoomClass: (value: string) => void;
   onPickContractType: (value: string) => void;
+  onSuggestionSelect?: (suggestionId: string) => void;
   renderRecommendations?: ReactNode;
+  conversationalResults?: ConversationalResult[];
+  renderSuggestionCards?: ReactNode;
 };
 
 const ChatPanel = ({
@@ -51,20 +43,25 @@ const ChatPanel = ({
   onPickRoomClass,
   onPickContractType,
   renderRecommendations,
+  conversationalResults,
+  renderSuggestionCards,
 }: ChatPanelProps) => {
   return (
     <div className="space-y-4">
       {messages.length === 0 && stage === "idle" && (
-        <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2 duration-300">
-          <div
-            className={cn(
-              bubbleMaxWidthClass,
-              "rounded-2xl bg-muted px-4 py-3 text-sm text-foreground",
-            )}
-          >
-            {greetingMessage}
+        <>
+          <div className="flex justify-start animate-in fade-in slide-in-from-bottom-2 duration-300">
+            <div
+              className={cn(
+                bubbleMaxWidthClass,
+                "rounded-2xl bg-muted px-4 py-3 text-sm text-foreground",
+              )}
+            >
+              {greetingMessage}
+            </div>
           </div>
-        </div>
+          {renderSuggestionCards}
+        </>
       )}
 
       {messages.map((message) => (
@@ -120,6 +117,10 @@ const ChatPanel = ({
       )}
 
       {stage === "recommendations" && renderRecommendations}
+
+      {stage === "conversationalResults" && conversationalResults && conversationalResults.length > 0 && (
+        <ConversationalResultsPanel results={conversationalResults} />
+      )}
 
       <div ref={chatEndRef} />
     </div>

@@ -5,6 +5,7 @@ import MapBackground from "@/components/ai-experience/MapBackground";
 import MobileLayout from "@/components/ai-experience/MobileLayout";
 import DesktopLayout from "@/components/ai-experience/DesktopLayout";
 import RecommendationsPanel from "@/components/ai-experience/RecommendationsPanel";
+import SuggestionCards from "@/components/ai-experience/SuggestionCards";
 import {
   getImageUrl,
   getPrice,
@@ -22,11 +23,13 @@ const AIExperience = () => {
     selectedRoomType,
     selectedRoomClass,
     selectedContractType,
+    conversationalResults,
     chatEndRef,
     handleSubmit,
     handlePickRoomType,
     handlePickRoomClass,
     handlePickContractType,
+    handleSuggestionSelect,
   } = useAIChat();
 
   const {
@@ -56,6 +59,12 @@ const AIExperience = () => {
       />
     ) : null;
 
+  // Suggestion cards for the idle screen
+  const suggestionCards =
+    stage === "idle" && messages.length === 0 ? (
+      <SuggestionCards onSelect={handleSuggestionSelect} />
+    ) : null;
+
   // Shared props for both layouts
   const layoutProps = {
     stage,
@@ -67,12 +76,16 @@ const AIExperience = () => {
     selectedRoomClass,
     selectedContractType,
     inputValue,
+    filterCount,
     onInputChange: setInputValue,
     onSubmit: handleSubmit,
     onPickRoomType: handlePickRoomType,
     onPickRoomClass: handlePickRoomClass,
     onPickContractType: handlePickContractType,
+    onSuggestionSelect: handleSuggestionSelect,
     renderRecommendations: recommendationsPanel,
+    conversationalResults,
+    renderSuggestionCards: suggestionCards,
   };
 
   return (

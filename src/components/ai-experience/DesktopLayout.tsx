@@ -8,6 +8,7 @@ import ChatInputSection from "@/components/ai-experience/ChatInputSection";
 import type {
   ChatMessage,
   ChatStage,
+  ConversationalResult,
   ContractType,
   RoomClass,
   RoomType,
@@ -29,7 +30,10 @@ interface DesktopLayoutProps {
   onPickRoomType: (room: RoomType) => void;
   onPickRoomClass: (roomClass: RoomClass) => void;
   onPickContractType: (contractType: ContractType) => void;
+  onSuggestionSelect: (suggestionId: string) => void;
   renderRecommendations: React.ReactNode;
+  conversationalResults?: ConversationalResult[];
+  renderSuggestionCards?: React.ReactNode;
   filterCount: number;
   chatOpen: boolean;
   onChatOpenChange: (open: boolean) => void;
@@ -50,7 +54,10 @@ export default function DesktopLayout({
   onPickRoomType,
   onPickRoomClass,
   onPickContractType,
+  onSuggestionSelect,
   renderRecommendations,
+  conversationalResults,
+  renderSuggestionCards,
   filterCount,
   chatOpen,
   onChatOpenChange,
@@ -86,8 +93,11 @@ export default function DesktopLayout({
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-2"
-                style={{ backgroundColor: "#B4DADA" }}
+                className="gap-2 transition-transform duration-200"
+                style={{
+                  backgroundColor: "#B4DADA",
+                  transform: filterCount > 0 ? "scale(1)" : "scale(0.95)",
+                }}
               >
                 <SlidersHorizontal className="w-4 h-4" />
                 {filterCount} × Filter{filterCount !== 1 ? "s" : ""}
@@ -137,7 +147,10 @@ export default function DesktopLayout({
                 onPickContractType={(value) =>
                   onPickContractType(value as ContractType)
                 }
+                onSuggestionSelect={onSuggestionSelect}
                 renderRecommendations={renderRecommendations}
+                conversationalResults={conversationalResults}
+                renderSuggestionCards={renderSuggestionCards}
               />
             </div>
 

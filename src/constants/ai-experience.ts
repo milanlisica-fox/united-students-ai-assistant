@@ -25,6 +25,16 @@ export const ROOM_TYPE_DATA_MAPPING: Record<RoomType, string[]> = {
   "Accessible rooms": ["PARTLY ACCESSIBLE STUDIO", "ACCESSIBLE"],
 };
 
+// Suggestion prompts for the idle screen
+export const SUGGESTION_PROMPTS = [
+  { id: "view", label: "Rooms with a view", icon: "mountain" },
+  { id: "popular", label: "Most booked rooms last year", icon: "trending" },
+  { id: "value", label: "Best value for money", icon: "piggy-bank" },
+  { id: "freshers", label: "Popular with first-year students", icon: "graduation" },
+] as const;
+
+export type SuggestionPromptId = (typeof SUGGESTION_PROMPTS)[number]["id"];
+
 // Helper to get academic year string from dates (e.g., "26/27")
 export const getAcademicYearFromDate = (startDate: string): string => {
   const date = new Date(startDate);

@@ -21,12 +21,15 @@ export default function ChatInputSection({
   const isSelectionStage =
     stage === "askedRoomType" ||
     stage === "askedRoomClass" ||
-    stage === "askedLength" ||
-    stage === "askedYear";
+    stage === "askedContractType";
+
+  const isConversational = stage === "conversationalResults";
 
   const placeholder = isSelectionStage
     ? "Or type your answer instead..."
-    : GREETING_MESSAGE;
+    : isConversational
+      ? "Ask about more amenities..."
+      : GREETING_MESSAGE;
 
   const inputClassName = `flex-1 bg-background border rounded-lg text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
     isSelectionStage ? "border-input/50 opacity-60" : "border-input"
@@ -42,7 +45,8 @@ export default function ChatInputSection({
           <div className="min-w-0">
             <p className="text-xs font-semibold">AI Assistant</p>
             <p className="text-xs text-muted-foreground truncate">
-              Here to make finding your next student home nice and easy
+              AI Assitant helped 56 students book their next student home last
+              week
             </p>
           </div>
         </div>
@@ -70,7 +74,8 @@ export default function ChatInputSection({
         <div>
           <p className="text-sm font-semibold">AI Assistant</p>
           <p className="text-xs text-muted-foreground">
-            Here to make finding your next student home nice and easy
+            AI Assitant helped 56 students book their next student home last
+            week
           </p>
         </div>
       </div>

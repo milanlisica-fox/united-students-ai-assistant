@@ -2,13 +2,23 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type {
   ChatMessage,
   ChatStage,
+  ConversationalResult,
   ContractType,
   RoomClass,
   RoomType,
 } from "@/types/ai-experience";
+import {
+  extractAmenityKeywords,
+  matchPropertiesByAmenities,
+  generateConversationalResponse,
+} from "@/utils/amenityMatcher";
+import mockData from "@/data/real-accomodations.json";
+import type { PropertyData } from "@/types/ai-experience";
 
 const generateId = () =>
   `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
+const realProperties = mockData.data.propertyDataList as PropertyData[];
 
 interface UseAIChatReturn {
   messages: ChatMessage[];
@@ -18,12 +28,14 @@ interface UseAIChatReturn {
   selectedRoomType: RoomType | null;
   selectedRoomClass: RoomClass | null;
   selectedContractType: ContractType | null;
+  conversationalResults: ConversationalResult[];
   desktopChatEndRef: React.RefObject<HTMLDivElement | null>;
   mobileChatEndRef: React.RefObject<HTMLDivElement | null>;
   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   handlePickRoomType: (room: RoomType) => void;
   handlePickRoomClass: (roomClass: RoomClass) => void;
   handlePickContractType: (contractType: ContractType) => void;
+  handleSuggestionSelect: (suggestionId: string) => void;
 }
 
 export function useAIChat(): UseAIChatReturn {
@@ -38,83 +50,33 @@ export function useAIChat(): UseAIChatReturn {
   );
   const [selectedContractType, setSelectedContractType] =
     useState<ContractType | null>(null);
+  const [conversationalResults, setConversationalResults] = useState<
+    ConversationalResult[]
+  >([]);
 
   const desktopChatEndRef = useRef<HTMLDivElement | null>(null);
   const mobileChatEndRef = useRef<HTMLDivElement | null>(null);
   const timeoutsRef = useRef<number[]>([]);
-  const scrollTimerRef = useRef<number | null>(null);
 
-  // Find the nearest scrollable ancestor of an element
-  const findScrollParent = useCallback(
-    (el: HTMLElement | null): HTMLElement | null => {
-      let current = el?.parentElement ?? null;
-      while (current) {
-        const { overflowY } = window.getComputedStyle(current);
-        if (overflowY === "auto" || overflowY === "scroll") {
-          return current;
-        }
-        current = current.parentElement;
-      }
-      return null;
-    },
-    [],
-  );
-
-  // Scroll both desktop and mobile containers to bottom.
-  // Only the visible one will actually have scrollable content.
+  // Scroll both sentinel elements into view (one is hidden via CSS, so only the visible one matters)
   const scrollToBottom = useCallback(() => {
-    for (const ref of [desktopChatEndRef, mobileChatEndRef]) {
-      const container = findScrollParent(ref.current);
-      if (container && container.scrollHeight > container.clientHeight) {
-        container.scrollTop = container.scrollHeight;
-      }
-    }
-  }, [findScrollParent]);
+    requestAnimationFrame(() => {
+      desktopChatEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+      mobileChatEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+    });
+  }, []);
 
-  // Scroll to bottom when messages or stage changes.
-  // Fires immediately and again after 400ms to catch CSS animations.
+  // Scroll to bottom when messages or stage change (only for guided flow, not conversational results).
   useEffect(() => {
+    if (stage === "conversationalResults") return;
     scrollToBottom();
-
-    const delayed = window.setTimeout(() => {
-      scrollToBottom();
-    }, 400);
-
-    return () => window.clearTimeout(delayed);
-  }, [messages, stage, scrollToBottom]);
-
-  // MutationObserver on both containers: debounced scroll when DOM changes.
-  useEffect(() => {
-    const observers: MutationObserver[] = [];
-
-    for (const ref of [desktopChatEndRef, mobileChatEndRef]) {
-      const container = findScrollParent(ref.current);
-      if (!container) continue;
-
-      const observer = new MutationObserver(() => {
-        if (scrollTimerRef.current !== null) {
-          window.clearTimeout(scrollTimerRef.current);
-        }
-        scrollTimerRef.current = window.setTimeout(() => {
-          scrollToBottom();
-          scrollTimerRef.current = null;
-        }, 50);
-      });
-
-      observer.observe(container, {
-        childList: true,
-        subtree: true,
-      });
-      observers.push(observer);
-    }
-
+    const t1 = window.setTimeout(scrollToBottom, 200);
+    const t2 = window.setTimeout(scrollToBottom, 600);
     return () => {
-      observers.forEach((o) => o.disconnect());
-      if (scrollTimerRef.current !== null) {
-        window.clearTimeout(scrollTimerRef.current);
-      }
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
     };
-  }, [stage, findScrollParent, scrollToBottom]);
+  }, [messages, stage, scrollToBottom]);
 
   // Cleanup timeouts on unmount
   useEffect(() => {
@@ -136,6 +98,25 @@ export function useAIChat(): UseAIChatReturn {
     setMessages((prev) => [...prev, { id: generateId(), role, content }]);
   };
 
+  const handleConversationalQuery = (text: string) => {
+    const keywords = extractAmenityKeywords(text);
+    if (keywords.length === 0) return false;
+
+    const { perfect, close } = matchPropertiesByAmenities(
+      keywords,
+      realProperties,
+    );
+    const response = generateConversationalResponse(perfect, close, keywords);
+
+    scheduleResponse(() => {
+      addMessage("ai", response);
+      setConversationalResults([...perfect, ...close]);
+      setStage("conversationalResults");
+    });
+
+    return true;
+  };
+
   const sendUserMessage = (text: string) => {
     const trimmed = text.trim();
     if (!trimmed) return;
@@ -144,13 +125,29 @@ export function useAIChat(): UseAIChatReturn {
     setInputValue("");
 
     if (stage === "idle") {
-      scheduleResponse(() => {
-        addMessage(
-          "ai",
-          "Thanks for that! What kind of room are you after? Click on one of the options below to move on.",
-        );
-        setStage("askedRoomType");
-      });
+      // Try conversational discovery first
+      const handled = handleConversationalQuery(trimmed);
+      if (!handled) {
+        // Fall through to guided flow
+        scheduleResponse(() => {
+          addMessage(
+            "ai",
+            "Thanks for that! What kind of room are you after? Click on one of the options below to move on.",
+          );
+          setStage("askedRoomType");
+        });
+      }
+    } else if (stage === "conversationalResults") {
+      // Allow follow-up queries in conversational mode
+      const handled = handleConversationalQuery(trimmed);
+      if (!handled) {
+        scheduleResponse(() => {
+          addMessage(
+            "ai",
+            "I'm not sure what you're looking for — try asking about specific amenities like a gym, cinema room, study space, or common area!",
+          );
+        });
+      }
     }
   };
 
@@ -198,6 +195,22 @@ export function useAIChat(): UseAIChatReturn {
     });
   };
 
+  const handleSuggestionSelect = (suggestionId: string) => {
+    // Imported lazily to avoid circular deps — the actual function is in suggestionResponses
+    import("@/utils/suggestionResponses").then(({ getSuggestionResponse }) => {
+      const suggestion = getSuggestionResponse(suggestionId);
+      if (!suggestion) return;
+
+      addMessage("user", suggestion.userMessage);
+
+      scheduleResponse(() => {
+        addMessage("ai", suggestion.aiResponse);
+        setConversationalResults(suggestion.results);
+        setStage("conversationalResults");
+      });
+    });
+  };
+
   return {
     messages,
     stage,
@@ -206,11 +219,13 @@ export function useAIChat(): UseAIChatReturn {
     selectedRoomType,
     selectedRoomClass,
     selectedContractType,
+    conversationalResults,
     desktopChatEndRef,
     mobileChatEndRef,
     handleSubmit,
     handlePickRoomType,
     handlePickRoomClass,
     handlePickContractType,
+    handleSuggestionSelect,
   };
 }

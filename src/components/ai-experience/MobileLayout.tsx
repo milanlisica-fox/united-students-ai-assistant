@@ -1,4 +1,4 @@
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, SlidersHorizontal } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ChatPanel from "@/components/ai-experience/ChatPanel";
@@ -6,6 +6,7 @@ import ChatInputSection from "@/components/ai-experience/ChatInputSection";
 import type {
   ChatMessage,
   ChatStage,
+  ConversationalResult,
   ContractType,
   RoomClass,
   RoomType,
@@ -22,12 +23,16 @@ interface MobileLayoutProps {
   selectedRoomClass: RoomClass | null;
   selectedContractType: ContractType | null;
   inputValue: string;
+  filterCount: number;
   onInputChange: (value: string) => void;
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
   onPickRoomType: (room: RoomType) => void;
   onPickRoomClass: (roomClass: RoomClass) => void;
   onPickContractType: (contractType: ContractType) => void;
+  onSuggestionSelect: (suggestionId: string) => void;
   renderRecommendations: React.ReactNode;
+  conversationalResults?: ConversationalResult[];
+  renderSuggestionCards?: React.ReactNode;
 }
 
 export default function MobileLayout({
@@ -40,12 +45,16 @@ export default function MobileLayout({
   selectedRoomClass,
   selectedContractType,
   inputValue,
+  filterCount,
   onInputChange,
   onSubmit,
   onPickRoomType,
   onPickRoomClass,
   onPickContractType,
+  onSuggestionSelect,
   renderRecommendations,
+  conversationalResults,
+  renderSuggestionCards,
 }: MobileLayoutProps) {
   const navigate = useNavigate();
 
@@ -68,12 +77,25 @@ export default function MobileLayout({
               <h1 className="text-lg font-semibold">AI Experience</h1>
             </div>
           </div>
-          <div className="flex items-center justify-center px-3 py-2 rounded-xl bg-white">
-            <img
-              src="/unite-students-real-logo.jpg"
-              alt="Unite Students Logo"
-              className="h-6 w-auto"
-            />
+          <div className="flex items-center gap-2">
+            {filterCount > 0 && (
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-1.5 text-xs transition-transform duration-200 animate-in zoom-in-95"
+                style={{ backgroundColor: "#B4DADA" }}
+              >
+                <SlidersHorizontal className="w-3.5 h-3.5" />
+                {filterCount} × Filter{filterCount !== 1 ? "s" : ""}
+              </Button>
+            )}
+            <div className="flex items-center justify-center px-3 py-2 rounded-xl bg-white">
+              <img
+                src="/unite-students-real-logo.jpg"
+                alt="Unite Students Logo"
+                className="h-6 w-auto"
+              />
+            </div>
           </div>
         </div>
 
@@ -98,7 +120,10 @@ export default function MobileLayout({
               onPickContractType={(value) =>
                 onPickContractType(value as ContractType)
               }
+              onSuggestionSelect={onSuggestionSelect}
               renderRecommendations={renderRecommendations}
+              conversationalResults={conversationalResults}
+              renderSuggestionCards={renderSuggestionCards}
             />
           </div>
 
