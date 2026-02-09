@@ -162,6 +162,7 @@ const Index = () => {
     handlePickRoomClass,
     handlePickContractType,
     handleSuggestionSelect,
+    resetChat,
   } = useAIChat();
 
   const {
@@ -439,11 +440,10 @@ const Index = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => setMode("listings")}
+                    onClick={resetChat}
                     className="gap-2"
                   >
-                    <ChevronLeft className="w-4 h-4" />
-                    Back to Results
+                    Clear conversation
                   </Button>
                 </div>
               </div>
@@ -672,23 +672,23 @@ const Index = () => {
               {/* Mobile Chat Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b bg-white shrink-0">
                 <div className="flex items-center gap-3">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="gap-2 -ml-2"
-                    onClick={() => setMode("listings")}
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                    <span className="hidden sm:inline">Back</span>
-                  </Button>
                   <h1 className="text-lg font-semibold">AI Experience</h1>
                 </div>
-                <div className="flex items-center justify-center px-3 py-2 rounded-xl bg-white">
-                  <img
-                    src="/unite-students-real-logo.jpg"
-                    alt="Unite Students Logo"
-                    className="h-6 w-auto"
-                  />
+                <div className="flex items-center gap-3">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={resetChat}
+                  >
+                    Clear conversation
+                  </Button>
+                  <div className="flex items-center justify-center px-3 py-2 rounded-xl bg-white">
+                    <img
+                      src="/unite-students-real-logo.jpg"
+                      alt="Unite Students Logo"
+                      className="h-6 w-auto"
+                    />
+                  </div>
                 </div>
               </div>
 

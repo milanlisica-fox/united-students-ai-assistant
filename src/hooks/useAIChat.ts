@@ -36,6 +36,7 @@ interface UseAIChatReturn {
   handlePickRoomClass: (roomClass: RoomClass) => void;
   handlePickContractType: (contractType: ContractType) => void;
   handleSuggestionSelect: (suggestionId: string) => void;
+  resetChat: () => void;
 }
 
 export function useAIChat(): UseAIChatReturn {
@@ -195,6 +196,18 @@ export function useAIChat(): UseAIChatReturn {
     });
   };
 
+  const resetChat = useCallback(() => {
+    timeoutsRef.current.forEach((timeout) => window.clearTimeout(timeout));
+    timeoutsRef.current = [];
+    setMessages([]);
+    setStage("idle");
+    setInputValue("");
+    setSelectedRoomType(null);
+    setSelectedRoomClass(null);
+    setSelectedContractType(null);
+    setConversationalResults([]);
+  }, []);
+
   const handleSuggestionSelect = (suggestionId: string) => {
     // Imported lazily to avoid circular deps — the actual function is in suggestionResponses
     import("@/utils/suggestionResponses").then(({ getSuggestionResponse }) => {
@@ -227,5 +240,6 @@ export function useAIChat(): UseAIChatReturn {
     handlePickRoomClass,
     handlePickContractType,
     handleSuggestionSelect,
+    resetChat,
   };
 }
